@@ -1,5 +1,8 @@
 package Matala_0;
 
+
+
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -13,25 +16,40 @@ import de.micromata.opengis.kml.v_2_2_0.Placemark;
  * @author Levi and Uriel
  *
  */
-public class WriteKml {
+public class WriteKml  {
+	ArrayList<String[]> arr;
+	String path;
 
+	public String getPath() {
+		return path;
+	}
+	public void setPath(String path) {
+		this.path = path;
+	}
+	public ArrayList<String[]> getArr() {
+		return arr;
+	}
+	public void setArr(ArrayList<String[]> arr) {
+		this.arr = arr;
+	}
+	
 	/**
 	 * Receives a csv type file and creates a kml file from the csv data. 
 	 * @param filename
 	 * @throws FileNotFoundException
 	 */
-	public static void WriteKml(String filename) throws FileNotFoundException{
-		
+	
+	public  void WriteKml() throws FileNotFoundException{
+
 		Wifi wifi = new Wifi();
 		lineData ld;
-		Data data = new Data();
-		//data.nearFilter(filename, 34.84649015, 32.07683726);
-		data.loadAllFromFile(filename);
+		//Data data = new Data(this.path);
+	
 		Kml kml = new Kml();
 		Folder folder = kml.createAndSetFolder();
-		
-		for (int i = 0; i < data.arr.size(); i++) {
-			String[] array = data.arr.get(i);
+
+		for (int i = 0; i < this.arr.size(); i++) {
+			String[] array = this.arr.get(i);
 			ld = new lineData(array[0], Double.parseDouble(array[2]),Double.parseDouble(array[3]));
 			//To get all the wifi's on the line
 			for (int j = 6; j < array.length; j=j+4) {
@@ -41,9 +59,12 @@ public class WriteKml {
 				wifi.setSignal(Double.parseDouble(array[j+3]));		
 				CreatePlacemark(kml, folder, ld.getLat(), ld.getLon(), wifi.getSSID(), wifi.getMAC(), wifi.getSignal(),wifi.getFrequency(),ld.getTime());
 				
-			}					
-		}	
-		kml.marshal(new File("finalKml.kml"));
+			}
+			
+		}
+		System.out.println("size of input: "+this.arr.size());
+		
+		kml.marshal(new File("finalKml_30.kml"));
 	}
 	/**
 	 * Creates a placemark in a folder in a kml file.  
@@ -61,6 +82,6 @@ public class WriteKml {
 		Placemark placemark = folder.createAndAddPlacemark();
 		placemark.withName("SSID: "+ssid).withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
 		.createAndSetPoint().addToCoordinates(lon, lat);
-		
+
 	}
 }

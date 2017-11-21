@@ -1,4 +1,7 @@
 package Matala_0;
+
+
+
 /**
  * This class contains the variables, time, longitute, latidude and name.
  * @author Levi and Uriel
