@@ -14,12 +14,8 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 	
-		//WriteKml.WriteKml("C:/Users/Levi/Desktop/Year 2/workspace_eclipse/OOP_Work/MyTrack.csv");
+		WriteKml.WriteKml("C:/Users/Levi/Desktop/Year 2/workspace_eclipse/OOP_Work/MyTrack.csv");
 
-		//HEllO WORLD!!!!
-        //we managed to update to github!!!
-
-		System.out.println("We made it!");
 		
 	}
 }
