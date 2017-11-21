@@ -16,8 +16,7 @@ public class Main {
 	
 		WriteKml.WriteKml("C:/Users/Levi/Desktop/Year 2/workspace_eclipse/OOP_Work/MyTrack.csv");
 
-System.out.println("hello");
-System.out.println("hello again");
+System.out.println("hello again again");
 		
 	}
 }
