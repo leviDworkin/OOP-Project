@@ -150,7 +150,7 @@ public class Data {
 		arbel.setArr(arr);
 		return arbel;
 	}
-	public WriteKml FilterGiveAllAfterTime(Date user_date){
+	public WriteKml FilterGiveAllBeforeTime(Date user_date){
 		WriteKml arbel=new WriteKml();
 		String pathFile=this.path;
 		try{
@@ -189,7 +189,7 @@ public class Data {
 		arbel.setArr(arr);
 		return arbel;
 	}
-	public WriteKml FilterGiveAllBeforeTime(Date user_date){
+	public WriteKml FilterGiveAllAfterTime(Date user_date){
 		WriteKml arbel=new WriteKml();
 		String pathFile=this.path;
 		try{

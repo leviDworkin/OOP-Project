@@ -25,10 +25,10 @@ public class Main {
 		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		Date date_user_want = format.parse(string_date);
 
-		a.FilterGiveAllBeforeTime(date_user_want).WriteKml();
-//		a.FilterGiveAllAfterTime(date_user_want);
+//		a.FilterGiveAllBeforeTime(date_user_want);
+//		a.FilterGiveAllAfterTime(date_user_want).WriteKml();
 //		a.loadAllFromFile().WriteKml();
-//		a.FilterByDist(32.16866695,34.81322274, 200).WriteKml();
+		a.FilterByDist(32.16866695,34.81322274, 500).WriteKml();
 //		a.filterByName("Maxillent").WriteKml();
 
 	}

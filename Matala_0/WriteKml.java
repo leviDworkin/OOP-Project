@@ -51,7 +51,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalKml_1.kml"));
+		kml.marshal(new File("finalKml_3.kml"));
 	}
 	/**
 	 * Creates a placemark in a folder in a kml file.  
