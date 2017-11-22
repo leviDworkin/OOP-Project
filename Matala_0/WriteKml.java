@@ -7,10 +7,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 
 import de.micromata.opengis.kml.v_2_2_0.Folder;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
+import de.micromata.opengis.kml.v_2_2_0.TimePrimitive;
+import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
 /**
  * This class receives csv type files and turns them into kml type files. 
  * @author Levi and Uriel
@@ -64,7 +67,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalKml_30.kml"));
+		kml.marshal(new File("finalKml_1.kml"));
 	}
 	/**
 	 * Creates a placemark in a folder in a kml file.  
@@ -80,8 +83,17 @@ public class WriteKml  {
 	 */
 	public static void CreatePlacemark(Kml kml, Folder folder, double lat, double lon, String ssid, String mac,double signal,double frequency,String time){
 		Placemark placemark = folder.createAndAddPlacemark();
-		placemark.withName("SSID: "+ssid).withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
+		placemark.withName("SSID: "+ssid).withTimePrimitive(makeTimeStamp(time)).withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
 		.createAndSetPoint().addToCoordinates(lon, lat);
+		
+	}
+	private static TimeStamp makeTimeStamp(String time) {
+		// TODO Auto-generated method stub
+		time = time.replace(' ', 'T');
+		time = time+'Z';
+		TimeStamp ts = new TimeStamp();
+		ts.setWhen(time);
 
+		return ts;
 	}
 }
