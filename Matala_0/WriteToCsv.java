@@ -28,7 +28,7 @@ public class WriteToCsv {
 		String ready="";
 		String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
 
-		FileWriter outfile = new java.io.FileWriter("MyTrack_4.csv", true); 
+		FileWriter outfile = new java.io.FileWriter("MyTrack_7.csv", true); 
 		outfile.write(title+"\n");
 
 		for (int i = 0; i < listOfFiles.length; i++) {
@@ -38,13 +38,14 @@ public class WriteToCsv {
 
 				System.out.println("file on process name: "+file.getName());
 				arrOfFile= makeMatrix(file);
-
+				String id=arrOfFile[0][4];//keep the id
+				String good_id=id.substring(7, id.length());
 				int time[]=findTime(arrOfFile);
 				//System.out.println("FindTime:      "+Arrays.toString(time));
 
 				temp=findTheBest(arrOfFile, time);
 				System.out.println("i am ready to write");
-				ready=writeToReady(temp);
+				ready=writeToReady(temp,good_id);
 
 				outfile.write(ready);
 				System.out.println("i finished "+file.getName() + " file\n");
@@ -144,11 +145,11 @@ public class WriteToCsv {
 	 * @return String
 	 * @throws ParseException
 	 */
-	public static String writeToReady(String[][]temp) throws ParseException{
+	public static String writeToReady(String[][]temp,String id) throws ParseException{
 		String ready="";
 		int[]changes=findTime(temp);
 		for (int j = 0; j < changes.length; j=j+2) {			
-			String line=temp[changes[j]][3]+","+temp[0][1]+","+temp[changes[j]][6]+","+temp[changes[j]][7]+","+temp[changes[j]][8]+","+(changes[j+1]-changes[j]+1)+",";
+			String line=temp[changes[j]][3]+","+id+","+temp[changes[j]][6]+","+temp[changes[j]][7]+","+temp[changes[j]][8]+","+(changes[j+1]-changes[j]+1)+",";
 			for (int i = changes[j]; i <= changes[j+1]; i++) {
 				line=line+temp[i][1]+","+temp[i][0]+","+temp[i][4]+","+temp[i][5]+",";
 			}	
