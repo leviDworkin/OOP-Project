@@ -84,6 +84,11 @@ public class WriteKml  {
 		.createAndSetPoint().addToCoordinates(lon, lat);
 		
 	}
+	/**
+	 * Receives time and makes a TimeStamp.
+	 * @param time
+	 * @return TimeStamp
+	 */
 	private static TimeStamp makeTimeStamp(String time) {
 		// TODO Auto-generated method stub
 		time = time.replace(' ', 'T');
