@@ -1,8 +1,6 @@
 package Matala_0;
 
 
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -37,8 +35,7 @@ public class WriteKml  {
 	}
 	
 	/**
-	 * Receives a csv type file and creates a kml file from the csv data. 
-	 * @param filename
+	 * Creates a kml file from the csv data. 
 	 * @throws FileNotFoundException
 	 */
 	
