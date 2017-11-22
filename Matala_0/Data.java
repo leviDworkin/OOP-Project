@@ -25,8 +25,8 @@ public class Data {
 	}
 
 	/**
-	 * Loads all the data from the pathfile.
-	 * @param pathFile
+	 * Loads all the data from the current pathfile.
+	 * 
 	 */
 	public WriteKml loadAllFromFile(){
 		String pathFile=this.path;
@@ -63,10 +63,10 @@ public class Data {
 		return arbel;
 	}
 	/**
-	 * Receives a longitude and latitude coordinate and loads the data from the rows ,in the csv type file, within a certain radius.  
-	 * @param pathFile
+	 * Receives a longitude and latitude coordinate and requested radius in meters, then checks if the point is near me.  
 	 * @param user_lon 
 	 * @param user_lat
+	 * @param dist_by_meter
 	 */
 	public WriteKml FilterByDist(double user_lat, double user_lon, double dist_by_meter){
 		WriteKml arbel=new WriteKml();
@@ -109,7 +109,7 @@ public class Data {
 		return arbel;
 	}
 	/**
-	 * Receives a user name and loads the data from the rows,in the csv type file, with that user name. 
+	 * Receives a user name and loads the data from the rows with the same name 
 	 * @param pathFile
 	 * @param user_name
 	 */
@@ -235,6 +235,12 @@ public class Data {
 	 * 
 	 * lat1, lon1 Start point lat2, lon2 End point el1 Start altitude in meters
 	 * el2 End altitude in meters
+	 * @param lat1
+	 * @param lat2
+	 * @param lon1
+	 * @param lon2
+	 * @param el1
+	 * @param el2
 	 * @returns Distance in Meters
 	 */
 	public static double distance(double lat1, double lat2, double lon1, double lon2, double el1, double el2) {

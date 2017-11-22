@@ -13,7 +13,7 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 /**
  * This class writes a csv type file.
- * @author Levi
+ * @author Levi and Uriel
  *
  */
 public class WriteToCsv {
