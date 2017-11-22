@@ -58,7 +58,7 @@ public class Data {
 			System.out.println(Arrays.toString(temp));
 			i++;
 		}
-		System.out.println(i);
+		System.out.println("I found "+arr.size()+" records");
 		arbel.setArr(arr);
 		return arbel;
 	}
@@ -104,7 +104,7 @@ public class Data {
 			i++;
 
 		}
-		//System.out.println(i);
+		System.out.println("I found "+arr.size()+" records");
 		arbel.setArr(arr);
 		return arbel;
 	}
@@ -146,7 +146,7 @@ public class Data {
 			i++;
 
 		}
-		System.out.println(i);
+		System.out.println("I found "+arr.size()+" records");
 		arbel.setArr(arr);
 		return arbel;
 	}
@@ -185,7 +185,7 @@ public class Data {
 			i++;
 
 		}
-		System.out.println(i);
+		System.out.println("I found "+arr.size()+" records");
 		arbel.setArr(arr);
 		return arbel;
 	}
@@ -224,7 +224,7 @@ public class Data {
 			i++;
 
 		}
-		System.out.println(i);
+		System.out.println("I found "+arr.size()+" records");
 		arbel.setArr(arr);
 		return arbel;
 	}
@@ -242,6 +242,7 @@ public class Data {
 	 * @param el1
 	 * @param el2
 	 * @returns Distance in Meters
+	 * the function found in the net
 	 */
 	public static double distance(double lat1, double lat2, double lon1, double lon2, double el1, double el2) {
 
@@ -260,6 +261,9 @@ public class Data {
 		distance = Math.pow(distance, 2) + Math.pow(height, 2);
 
 		return Math.sqrt(distance);
+	}
+	public int getSize() {
+		return this.arr.size();
 	}
 
 }
