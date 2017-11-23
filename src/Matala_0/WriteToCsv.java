@@ -21,7 +21,7 @@ public class WriteToCsv {
 	public static void main(String[] args) throws IOException, ParseException {
 		// TODO Auto-generated method stub
 
-		File folder = new File("C:/Users/Levi/Desktop/Year 2/OOP/matala 0/files_to_read");
+		File folder = new File("C:/Users/Levi/Desktop/Year 2/OOP/matala 0/MyWiggleTrek");
 		File[] listOfFiles = folder.listFiles();
 		String [][] arrOfFile = null;
 		String [][] temp;
@@ -31,7 +31,7 @@ public class WriteToCsv {
 
 		//FileWriter outfile = new java.io.FileWriter("example_treks.csv", true); 
 
-		FileWriter outfile = new java.io.FileWriter("MyTrack_7.csv", true); 
+		FileWriter outfile = new java.io.FileWriter("MyWiggleTrek.csv", true); 
 
 		outfile.write(title+"\n");
 

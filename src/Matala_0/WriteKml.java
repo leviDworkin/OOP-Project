@@ -53,7 +53,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalKml_3.kml"));
+		kml.marshal(new File("finalkml_2.kml"));
 
 	}
 	/**
