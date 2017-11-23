@@ -3,7 +3,7 @@ package Matala_0;
 
 
 /**
- * This class contains the variables, time, longitute, latidude and name.
+ * This class contains the variables, time, longitute, latitude and name.
  * @author Levi and Uriel
  *
  */

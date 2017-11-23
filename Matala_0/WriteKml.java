@@ -22,19 +22,6 @@ import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
 public class WriteKml  {
 	ArrayList<String[]> arr;
 	String path;
-
-	public String getPath() {
-		return path;
-	}
-	public void setPath(String path) {
-		this.path = path;
-	}
-	public ArrayList<String[]> getArr() {
-		return arr;
-	}
-	public void setArr(ArrayList<String[]> arr) {
-		this.arr = arr;
-	}
 	
 	/**
 	 * Creates a kml file from the csv data. 
@@ -66,7 +53,8 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalKml_2.kml"));
+		kml.marshal(new File("finalKml_3.kml"));
+
 	}
 	/**
 	 * Creates a placemark in a folder in a kml file.  
@@ -117,5 +105,18 @@ public class WriteKml  {
 
 		return ts;
 	}
-	
+
+	public String getPath() {
+		return path;
+	}
+	public void setPath(String path) {
+		this.path = path;
+	}
+	public ArrayList<String[]> getArr() {
+		return arr;
+	}
+	public void setArr(ArrayList<String[]> arr) {
+		this.arr = arr;
+	}
+
 }

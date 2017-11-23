@@ -1,8 +1,6 @@
 package Matala_0;
 
 
-
-
 import java.util.ArrayList;
 /**
  * This class contains the variables SSID, MAC, frequency and signal.
