@@ -18,16 +18,16 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException {
 
-		String path="C:\\Users\\UF\\eclipse-workspace\\EX_0_and_1\\MyTrack_4.csv";
+		String path="C:/Users/Levi/Desktop/Year 2/workspace_eclipse/OOP_Work/example_treks.csv";
 		String string_date ="27-10-2017  16:16:40";
 		Data a=new Data(path);
 
 		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		Date date_user_want = format.parse(string_date);
 
-		a.FilterGiveAllBeforeTime(date_user_want).WriteKml();
+//		a.FilterGiveAllBeforeTime(date_user_want).WriteKml();
 //		a.FilterGiveAllAfterTime(date_user_want);
-//		a.loadAllFromFile().WriteKml();
+		a.loadAllFromFile().WriteKml();
 //		a.FilterByDist(32.16866695,34.81322274, 200).WriteKml();
 //		a.filterByName("Maxillent").WriteKml();
 

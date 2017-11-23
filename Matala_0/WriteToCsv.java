@@ -21,14 +21,14 @@ public class WriteToCsv {
 	public static void main(String[] args) throws IOException, ParseException {
 		// TODO Auto-generated method stub
 
-		File folder = new File("C:\\Users\\UF\\Desktop\\שנה ב\\מונחה עצמים\\EX_0\\files_to_read");
+		File folder = new File("C:/Users/Levi/Desktop/Year 2/OOP/matala 0/files_to_read");
 		File[] listOfFiles = folder.listFiles();
 		String [][] arrOfFile = null;
 		String [][] temp;
 		String ready="";
 		String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
 
-		FileWriter outfile = new java.io.FileWriter("MyTrack_4.csv", true); 
+		FileWriter outfile = new java.io.FileWriter("example_treks.csv", true); 
 		outfile.write(title+"\n");
 
 		for (int i = 0; i < listOfFiles.length; i++) {

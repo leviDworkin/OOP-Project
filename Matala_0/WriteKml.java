@@ -8,8 +8,10 @@ import java.util.Arrays;
 import java.util.Date;
 
 import de.micromata.opengis.kml.v_2_2_0.Folder;
+import de.micromata.opengis.kml.v_2_2_0.Icon;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
+import de.micromata.opengis.kml.v_2_2_0.Style;
 import de.micromata.opengis.kml.v_2_2_0.TimePrimitive;
 import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
 /**
@@ -64,7 +66,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalKml_1.kml"));
+		kml.marshal(new File("finalKml_2.kml"));
 	}
 	/**
 	 * Creates a placemark in a folder in a kml file.  
@@ -80,13 +82,30 @@ public class WriteKml  {
 	 */
 	public static void CreatePlacemark(Kml kml, Folder folder, double lat, double lon, String ssid, String mac,double signal,double frequency,String time){
 		Placemark placemark = folder.createAndAddPlacemark();
-		placemark.withName("SSID: "+ssid).withTimePrimitive(makeTimeStamp(time)).withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
+		placemark.withName("SSID: "+ssid).withTimePrimitive(makeTimeStamp(time)).withStyleUrl(getColour(signal))
+		.withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
 		.createAndSetPoint().addToCoordinates(lon, lat);
 		
 	}
 	/**
+	 * Receives a signal. If the signal is strong then it returns green, otherwise red. 
+	 * @param signal
+	 * @return String with colour.
+	 */
+	private static String getColour(double signal) {
+		// TODO Auto-generated method stub
+		String colour = "";
+		double sig = (signal);
+		if(signal>=-70)
+			colour = "#green";
+		else
+			colour = "#red";
+		
+		return colour;
+	}
+	/**
 	 * Receives time and makes a TimeStamp.
-	 * @param time
+	 * @param time 
 	 * @return TimeStamp
 	 */
 	private static TimeStamp makeTimeStamp(String time) {
@@ -98,4 +117,5 @@ public class WriteKml  {
 
 		return ts;
 	}
+	
 }
