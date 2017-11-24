@@ -12,6 +12,7 @@ class DataTest {
 
 	private String pathFile="C:\\Users\\UF\\eclipse-workspace\\EX_0_and_1\\MyTrack_4.csv";
 	Data a=new Data(pathFile);
+	
 
 	private int num;
 

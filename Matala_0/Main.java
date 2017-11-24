@@ -18,7 +18,7 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException {
 
-		String path="C:\\Users\\UF\\eclipse-workspace\\EX_0_and_1\\MyTrack_4.csv";
+		String path="C:\\Users\\UF\\git\\ex_0\\MyTrack_7.csv";
 		String string_date ="27-10-2017  16:16:40";
 		Data a=new Data(path);
 
