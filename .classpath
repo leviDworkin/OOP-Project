@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -14,15 +13,4 @@
 	<classpathentry kind="lib" path="C:/Users/UF/Desktop/שנה ב/מונחה עצמים/EX_0/KML api/KML api/jsr173_api-1.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path=""/>
-=======
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Levi/Desktop/Year 2/OOP/matala 0/Libraries/activation-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Levi/Desktop/Year 2/OOP/matala 0/Libraries/JavaAPIforKml-2.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Levi/Desktop/Year 2/OOP/matala 0/Libraries/jaxb-api-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Levi/Desktop/Year 2/OOP/matala 0/Libraries/jaxb-impl-2.2-promoted-b65.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Levi/Desktop/Year 2/OOP/matala 0/Libraries/jsr173_api-1.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="output" path="bin"/>
->>>>>>> branch 'master' of https://github.com/leviDworkin/ex_0.git
 </classpath>
