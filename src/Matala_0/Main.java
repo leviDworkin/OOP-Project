@@ -1,4 +1,4 @@
-package src.Matala_0;
+package Matala_0;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DateFormat;
