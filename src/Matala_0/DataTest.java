@@ -69,9 +69,4 @@ class DataTest {
 			fail("prob with FilterGiveAllAfterTime");
 	}
 
-	@Test
-	void testFilterGiveAllBeforeTime() {
-		fail("Not yet implemented");
-	}
-
 }
