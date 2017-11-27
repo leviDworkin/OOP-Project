@@ -26,11 +26,11 @@ public class Main {
 		Date date_user_want = format.parse(string_date);
 
 
-//		a.FilterGiveAllBeforeTime(date_user_want);
-//		a.FilterGiveAllAfterTime(date_user_want).WriteKml();
+		//		a.FilterGiveAllBeforeTime(date_user_want);
+		//		a.FilterGiveAllAfterTime(date_user_want).WriteKml();
 		a.loadAllFromFile().WriteKml();
-//		a.FilterByDist(32.16866695,34.81322274, 500).WriteKml();
-//		a.filterByName("Maxillent").WriteKml();
+		//		a.FilterByDist(32.16866695,34.81322274, 500).WriteKml();
+		//		a.filterByName("Maxillent").WriteKml();
 
 	}
 }
