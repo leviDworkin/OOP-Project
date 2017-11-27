@@ -1,0 +1,6263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Folder>
+        <Placemark>
+            <name>SSID: DIRECT-35-HP DeskJet 3830 series</name>
+            <description>
+MAC: 98:e7:f4:c6:4b:37
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:14:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:14:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81321794,32.16868001</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 6a:12:f5:f9:5e:71
+Signal: -85.0
+Frequency: 8.0
+Date: 2017-10-27 16:15:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81321713,32.16868528</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-A5-HP DeskJet 4670 series</name>
+            <description>
+MAC: fc:3f:db:7e:60:a6
+Signal: -81.0
+Frequency: 10.0
+Date: 2017-10-27 16:15:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81238415,32.16882634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: May</name>
+            <description>
+MAC: 14:cc:20:eb:cb:c6
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81238415,32.16882634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: LANDAU HOME</name>
+            <description>
+MAC: 58:f3:9c:62:d2:60
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81238415,32.16882634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-D1D7</name>
+            <description>
+MAC: fc:b4:e6:cf:d1:dd
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81238415,32.16882634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-72B6</name>
+            <description>
+MAC: 7c:03:4c:ba:bf:55
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:15:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81238415,32.16882634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX111</name>
+            <description>
+MAC: 90:f6:52:28:38:19
+Signal: -71.0
+Frequency: 11.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX111</name>
+            <description>
+MAC: c0:ac:54:f6:ae:5e
+Signal: -76.0
+Frequency: 11.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-A5-HP DeskJet 4670 series</name>
+            <description>
+MAC: fc:3f:db:7e:60:a6
+Signal: -81.0
+Frequency: 10.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Nomi Fix WIFI</name>
+            <description>
+MAC: c4:6e:1f:30:2b:7c
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 6a:12:f5:f9:5e:71
+Signal: -85.0
+Frequency: 8.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Robert1</name>
+            <description>
+MAC: 3c:1e:04:03:7f:17
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Howmanyistwo</name>
+            <description>
+MAC: 74:da:38:50:77:f2
+Signal: -87.0
+Frequency: 2.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: LANDAU HOME</name>
+            <description>
+MAC: 58:f3:9c:62:d2:60
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-33-HP OfficeJet 6950</name>
+            <description>
+MAC: 98:e7:f4:00:94:35
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: NGOGA</name>
+            <description>
+MAC: 30:b5:c2:fe:aa:56
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:15:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:15:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8109599,32.16874744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BARON WIFI 2.4</name>
+            <description>
+MAC: 60:e3:27:bf:a1:a5
+Signal: -80.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Oberyn Martell</name>
+            <description>
+MAC: 18:d6:c7:fb:1c:0e
+Signal: -83.0
+Frequency: 8.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: simon</name>
+            <description>
+MAC: e4:6f:13:73:0a:c2
+Signal: -87.0
+Frequency: 8.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GUYFI</name>
+            <description>
+MAC: c8:60:00:b1:d4:50
+Signal: -90.0
+Frequency: 3.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rina</name>
+            <description>
+MAC: 00:26:5a:77:8c:db
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: terry_ap</name>
+            <description>
+MAC: 5c:83:8f:33:bd:68
+Signal: -91.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81030598,32.1682687</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX111</name>
+            <description>
+MAC: 90:f6:52:28:38:19
+Signal: -71.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX111</name>
+            <description>
+MAC: c0:ac:54:f6:ae:5e
+Signal: -76.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:db:6e:71:6d
+Signal: -80.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CEO-WiFi_2.4</name>
+            <description>
+MAC: c4:12:f5:80:24:0b
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:db:6e:71:bf
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Nomi Fix WIFI</name>
+            <description>
+MAC: c4:6e:1f:30:2b:7c
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 6a:12:f5:f9:5e:71
+Signal: -85.0
+Frequency: 8.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: smartsell</name>
+            <description>
+MAC: 78:e8:b6:69:2c:91
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Robert1</name>
+            <description>
+MAC: 3c:1e:04:03:7f:17
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:6d
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80988697,32.16763949</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shaked-Guest WiFi</name>
+            <description>
+MAC: b0:aa:77:f1:3a:68
+Signal: -83.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: MOULY MAISON</name>
+            <description>
+MAC: 00:78:9e:fa:15:91
+Signal: -74.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:bf
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:be
+Signal: -86.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-a8-HP M477 LaserJet</name>
+            <description>
+MAC: aa:6b:ad:04:c6:a8
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:db:6e:71:be
+Signal: -84.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:db:6e:71:6d
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:16:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987929,32.16762928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Mouly</name>
+            <description>
+MAC: 7c:b7:33:2e:76:73
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:16:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987749,32.16762991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -87.0
+Frequency: 5.0
+Date: 2017-10-27 16:16:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987749,32.16762991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -90.0
+Frequency: 5.0
+Date: 2017-10-27 16:16:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987749,32.16762991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: lavel-2</name>
+            <description>
+MAC: 74:da:38:ae:91:7b
+Signal: -90.0
+Frequency: 2.0
+Date: 2017-10-27 16:16:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:16:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987707,32.16763013</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:6d
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shaked-Guest WiFi</name>
+            <description>
+MAC: b0:aa:77:f1:3a:68
+Signal: -77.0
+Frequency: 11.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: smartsell</name>
+            <description>
+MAC: 78:e8:b6:69:2a:e9
+Signal: -80.0
+Frequency: 11.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:cb:6e:71:6d
+Signal: -83.0
+Frequency: 44.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-a8-HP M477 LaserJet</name>
+            <description>
+MAC: aa:6b:ad:04:c6:a8
+Signal: -72.0
+Frequency: 6.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:cb:6e:71:bf
+Signal: -84.0
+Frequency: 44.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:cb:6e:71:6d
+Signal: -80.0
+Frequency: 44.0
+Date: 2017-10-27 16:17:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987711,32.16769749</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: smartsell</name>
+            <description>
+MAC: 78:e8:b6:69:2c:91
+Signal: -79.0
+Frequency: 1.0
+Date: 2017-10-27 16:17:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987698,32.16769734</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:cb:6e:71:be
+Signal: -82.0
+Frequency: 44.0
+Date: 2017-10-27 16:17:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987698,32.16769734</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:cb:6e:71:be
+Signal: -81.0
+Frequency: 44.0
+Date: 2017-10-27 16:17:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987698,32.16769734</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:c1
+Signal: -90.0
+Frequency: 11.0
+Date: 2017-10-27 16:17:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:17:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987743,32.16764789</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: lavel-2</name>
+            <description>
+MAC: 74:da:38:ae:91:7b
+Signal: -83.0
+Frequency: 2.0
+Date: 2017-10-27 16:18:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80953943,32.16739532</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rainbow Guest</name>
+            <description>
+MAC: a2:6c:ac:f3:6a:69
+Signal: -93.0
+Frequency: 5.0
+Date: 2017-10-27 16:18:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80953943,32.16739532</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: INGENEO</name>
+            <description>
+MAC: cc:b2:55:e8:4c:e6
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:18:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80930495,32.1672194</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: cactus</name>
+            <description>
+MAC: a0:4f:d4:42:ba:71
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80930495,32.1672194</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:15:58:80
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80930495,32.1672194</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CArgentina</name>
+            <description>
+MAC: 30:b5:c2:bd:55:32
+Signal: -90.0
+Frequency: 2.0
+Date: 2017-10-27 16:18:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80908431,32.16702914</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: 00:02:6f:bb:fd:ac
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80908431,32.16702914</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: 00:02:6f:bb:fd:ac
+Signal: -77.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HRZBOUTIKUE</name>
+            <description>
+MAC: 14:ae:db:a3:90:15
+Signal: -77.0
+Frequency: 11.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-A0-LaserJet Pro MFP</name>
+            <description>
+MAC: 30:f7:72:6e:8e:a0
+Signal: -82.0
+Frequency: 6.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:db:6e:71:6d
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:db:6e:71:6d
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:6d
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq2.4</name>
+            <description>
+MAC: 14:ae:db:b3:7b:65
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:db:6e:71:be
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -88.0
+Frequency: 5.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Mouly</name>
+            <description>
+MAC: 7c:b7:33:2e:76:73
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:18:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8088424,32.16686569</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CMT-ALap</name>
+            <description>
+MAC: 94:10:3e:a8:34:a0
+Signal: -85.0
+Frequency: 36.0
+Date: 2017-10-27 16:18:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80873304,32.16681721</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ASUS</name>
+            <description>
+MAC: d0:17:c2:60:e7:38
+Signal: -88.0
+Frequency: 3.0
+Date: 2017-10-27 16:18:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:18:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80873304,32.16681721</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-2017</name>
+            <description>
+MAC: 18:1e:78:86:00:63
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-2017</name>
+            <description>
+MAC: 08:6a:0a:37:66:66
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks NC</name>
+            <description>
+MAC: 00:1d:aa:34:1e:58
+Signal: -86.0
+Frequency: 11.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:3a:f4:80
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BENY PUR</name>
+            <description>
+MAC: d8:fe:e3:03:c7:b1
+Signal: -91.0
+Frequency: 6.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: c0:56:27:a0:6c:9a
+Signal: -95.0
+Frequency: 3.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraGuest</name>
+            <description>
+MAC: 00:f6:63:3a:f4:82
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: fa:8f:ca:93:a5:64
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:19:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:19:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80854031,32.16688561</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SAGARMATHA</name>
+            <description>
+MAC: 6c:b0:ce:aa:73:31
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-007</name>
+            <description>
+MAC: 00:78:9e:fb:20:75
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq Free 9A236D</name>
+            <description>
+MAC: 6a:b0:ce:aa:73:32
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Dekel</name>
+            <description>
+MAC: cc:b2:55:e6:f2:15
+Signal: -93.0
+Frequency: 6.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Dekel2</name>
+            <description>
+MAC: 74:da:38:a9:2c:6c
+Signal: -90.0
+Frequency: 2.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GilPil</name>
+            <description>
+MAC: 2c:b0:5d:2c:fe:54
+Signal: -91.0
+Frequency: 11.0
+Date: 2017-10-27 16:26:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81140622,32.17274362</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-9666</name>
+            <description>
+MAC: 7c:b7:33:c0:96:6c
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Sokol</name>
+            <description>
+MAC: 08:02:8e:8c:24:e0
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dan38</name>
+            <description>
+MAC: 84:16:f9:c2:fa:6e
+Signal: -87.0
+Frequency: 4.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Ron</name>
+            <description>
+MAC: 84:16:f9:e5:fa:66
+Signal: -93.0
+Frequency: 9.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Dan38</name>
+            <description>
+MAC: e8:fc:af:99:22:43
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOT</name>
+            <description>
+MAC: b4:ee:b4:a7:37:d5
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:26:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:26:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81166081,32.17262741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Angel</name>
+            <description>
+MAC: 14:cc:20:76:cc:fe
+Signal: -85.0
+Frequency: 7.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Angel</name>
+            <description>
+MAC: 14:cc:20:76:cd:12
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-A5D</name>
+            <description>
+MAC: 40:65:a3:29:99:51
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: urigil1</name>
+            <description>
+MAC: a0:ab:1b:5d:c2:60
+Signal: -96.0
+Frequency: 10.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Azoulay</name>
+            <description>
+MAC: b4:ee:b4:a9:15:f7
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kenley-up</name>
+            <description>
+MAC: 88:dc:96:3b:f5:e0
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Helen.</name>
+            <description>
+MAC: a0:ab:1b:57:cd:42
+Signal: -93.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81188778,32.17257307</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: varda</name>
+            <description>
+MAC: c4:12:f5:85:27:c2
+Signal: -94.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81201773,32.17254432</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Gil-Up</name>
+            <description>
+MAC: 50:c7:bf:36:df:98
+Signal: -94.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81213272,32.17251092</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dlink-6A4D</name>
+            <description>
+MAC: e4:6f:13:db:6a:4d
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81213272,32.17251092</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Helen.</name>
+            <description>
+MAC: a0:ab:1b:57:cd:42
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:18</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:18Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81215514,32.17235991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: varda</name>
+            <description>
+MAC: c4:12:f5:85:27:c2
+Signal: -83.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:18</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:18Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81215514,32.17235991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ZEISS_YEHUDA</name>
+            <description>
+MAC: 00:1d:aa:fb:1f:b0
+Signal: -81.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:18</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:18Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81215514,32.17235991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: U2I8L1M0X42</name>
+            <description>
+MAC: 7c:b7:33:97:35:f1
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:18</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:18Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81215514,32.17235991</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ben_ami_2.4</name>
+            <description>
+MAC: c4:04:15:60:6a:b5
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:21</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:21Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81204662,32.17208714</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: U2I8L1M0X42</name>
+            <description>
+MAC: 54:64:d9:66:29:ef
+Signal: -92.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:21</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:21Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81204662,32.17208714</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: TP-LINK-BET</name>
+            <description>
+MAC: f8:d1:11:ce:e5:e6
+Signal: -89.0
+Frequency: 4.0
+Date: 2017-10-27 16:27:21</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:21Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81204662,32.17208714</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ben_ami_2.4</name>
+            <description>
+MAC: c4:04:15:60:6a:b5
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:24</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:24Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81191154,32.17175267</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shani - Green</name>
+            <description>
+MAC: 54:b8:0a:34:78:98
+Signal: -86.0
+Frequency: 52.0
+Date: 2017-10-27 16:27:24</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:24Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81191154,32.17175267</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shani - Green</name>
+            <description>
+MAC: 54:b8:0a:34:78:90
+Signal: -87.0
+Frequency: 5.0
+Date: 2017-10-27 16:27:24</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:24Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81191154,32.17175267</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-AC-HP OfficeJet Pro 8720</name>
+            <description>
+MAC: 70:5a:0f:f6:54:ad
+Signal: -90.0
+Frequency: 5.0
+Date: 2017-10-27 16:27:24</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:24Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81191154,32.17175267</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: urigil1</name>
+            <description>
+MAC: a0:ab:1b:5d:c2:60
+Signal: -95.0
+Frequency: 10.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Azoulay</name>
+            <description>
+MAC: b4:ee:b4:a9:15:f7
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kenley-up</name>
+            <description>
+MAC: 88:dc:96:3b:f5:e0
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Gil Kitchen</name>
+            <description>
+MAC: 80:1f:02:a3:7d:62
+Signal: -94.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Gil-Up</name>
+            <description>
+MAC: 50:c7:bf:36:df:98
+Signal: -94.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dlink-6A4D</name>
+            <description>
+MAC: e4:6f:13:db:6a:4d
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-57-Officejet Pro 8610</name>
+            <description>
+MAC: fc:15:b4:aa:9e:57
+Signal: -93.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ronkla2</name>
+            <description>
+MAC: 3c:1e:04:07:2a:fe
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-1966</name>
+            <description>
+MAC: 6c:2e:85:fe:da:b8
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:27</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:27Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81173835,32.17137454</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Helen.</name>
+            <description>
+MAC: a0:ab:1b:57:cd:42
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: varda</name>
+            <description>
+MAC: c4:12:f5:85:27:c2
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ZEISS_YEHUDA</name>
+            <description>
+MAC: 00:1d:aa:fb:1f:b0
+Signal: -89.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: U2I8L1M0X42</name>
+            <description>
+MAC: 7c:b7:33:97:35:f1
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EL</name>
+            <description>
+MAC: 14:ae:db:3d:b1:52
+Signal: -94.0
+Frequency: 9.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: U2I8L1M0X42</name>
+            <description>
+MAC: 54:64:d9:66:29:ef
+Signal: -92.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: TP-LINK-BET</name>
+            <description>
+MAC: f8:d1:11:ce:e5:e6
+Signal: -89.0
+Frequency: 4.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq Free</name>
+            <description>
+MAC: 62:04:15:60:6a:b6
+Signal: -83.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:30</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:30Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157034,32.17104698</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ben_ami_2.4</name>
+            <description>
+MAC: c4:04:15:60:6a:b5
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:33</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:33Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81143093,32.17074449</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shani - Green</name>
+            <description>
+MAC: 54:b8:0a:34:78:98
+Signal: -86.0
+Frequency: 52.0
+Date: 2017-10-27 16:27:33</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:33Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81143093,32.17074449</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shani - Green</name>
+            <description>
+MAC: 54:b8:0a:34:78:90
+Signal: -87.0
+Frequency: 5.0
+Date: 2017-10-27 16:27:33</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:33Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81143093,32.17074449</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Shani - Green</name>
+            <description>
+MAC: 54:b8:0a:34:78:d0
+Signal: -94.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:33</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:33Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81143093,32.17074449</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RDK</name>
+            <description>
+MAC: 58:b6:33:34:81:a8
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:36</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:36Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81126309,32.17046806</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guymic</name>
+            <description>
+MAC: 14:ae:db:b7:99:2d
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:36</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:36Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81126309,32.17046806</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-A53E</name>
+            <description>
+MAC: 7c:b7:33:a1:7e:98
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:36</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:36Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81126309,32.17046806</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: rdk</name>
+            <description>
+MAC: e4:d3:f1:9a:81:60
+Signal: -90.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:36</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:36Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81126309,32.17046806</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ronkla2</name>
+            <description>
+MAC: 3c:1e:04:07:2a:fe
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:39</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:39Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81109731,32.17017837</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-1966</name>
+            <description>
+MAC: 6c:2e:85:fe:da:b8
+Signal: -93.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:39</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:39Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81109731,32.17017837</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: mika1</name>
+            <description>
+MAC: c4:12:f5:fb:c0:3e
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:39</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:39Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81109731,32.17017837</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: shlomi</name>
+            <description>
+MAC: d8:5d:4c:d9:c4:68
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:39</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:39Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81109731,32.17017837</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Setup&gt;75-M277 LaserJet</name>
+            <description>
+MAC: 92:cd:b6:2b:e9:75
+Signal: -92.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Neeman2.4</name>
+            <description>
+MAC: 20:0c:c8:1d:c8:2b
+Signal: -74.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-A4-HP OfficeJet 6950</name>
+            <description>
+MAC: c8:d3:ff:f9:48:a5
+Signal: -83.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ZEISS_YEHUDA</name>
+            <description>
+MAC: 00:1d:aa:fb:1f:b0
+Signal: -85.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main_2EX</name>
+            <description>
+MAC: 74:da:38:97:66:9d
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main_2EX</name>
+            <description>
+MAC: 74:da:38:54:b8:1c
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-2E6E</name>
+            <description>
+MAC: c0:ac:54:f7:27:42
+Signal: -90.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: devolo-0f4</name>
+            <description>
+MAC: 30:d3:2d:37:20:f4
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:42</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:42Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81096842,32.16989007</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: home</name>
+            <description>
+MAC: 00:13:d4:0f:f3:ba
+Signal: -97.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81081783,32.16957016</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID:   InnovationEndeavors</name>
+            <description>
+MAC: 74:da:38:a9:1c:df
+Signal: -89.0
+Frequency: 4.0
+Date: 2017-10-27 16:27:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81081783,32.16957016</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Lili</name>
+            <description>
+MAC: c4:12:f5:f9:5c:7c
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:45</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:45Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81081783,32.16957016</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RDK</name>
+            <description>
+MAC: 58:b6:33:34:81:a8
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guymic</name>
+            <description>
+MAC: 14:ae:db:b7:99:2d
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-A53E</name>
+            <description>
+MAC: 7c:b7:33:a1:7e:98
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: rdk</name>
+            <description>
+MAC: e4:d3:f1:9a:81:60
+Signal: -90.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: stephane</name>
+            <description>
+MAC: 14:cc:20:eb:e7:53
+Signal: -92.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: edimax_2.4G_A92417</name>
+            <description>
+MAC: 74:da:38:a9:24:17
+Signal: -78.0
+Frequency: 2.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dlink-A09C</name>
+            <description>
+MAC: ac:f1:df:76:a0:9c
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Liliup</name>
+            <description>
+MAC: 74:da:38:c3:12:45
+Signal: -87.0
+Frequency: 3.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main</name>
+            <description>
+MAC: 74:da:39:54:b8:1d
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:48</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:48Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81069134,32.16925256</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: shlomi</name>
+            <description>
+MAC: d8:5d:4c:d9:c4:68
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: stephane</name>
+            <description>
+MAC: 00:24:2b:cf:13:21
+Signal: -92.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SandyAndDanny</name>
+            <description>
+MAC: d0:0e:d9:26:e8:c5
+Signal: -86.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: spielman</name>
+            <description>
+MAC: 7c:b7:33:2b:c4:52
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: spielman</name>
+            <description>
+MAC: f4:f2:6d:34:56:54
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: forestisthebest</name>
+            <description>
+MAC: c8:d7:19:da:03:16
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Home</name>
+            <description>
+MAC: 44:03:a7:e6:11:63
+Signal: -95.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:51</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:51Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81056291,32.16893268</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Neeman2.4</name>
+            <description>
+MAC: 20:0c:c8:1d:c8:2b
+Signal: -74.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ZEISS_YEHUDA</name>
+            <description>
+MAC: 00:1d:aa:fb:1f:b0
+Signal: -85.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main_2EX</name>
+            <description>
+MAC: 74:da:38:97:66:9d
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main_2EX</name>
+            <description>
+MAC: 74:da:38:54:b8:1c
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-2E6E</name>
+            <description>
+MAC: c0:ac:54:f7:27:42
+Signal: -90.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: devolo-0f4</name>
+            <description>
+MAC: 30:d3:2d:37:20:f4
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq Free F026CC</name>
+            <description>
+MAC: 6a:0c:c8:1d:c8:28
+Signal: -79.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraDev</name>
+            <description>
+MAC: 00:f6:63:15:58:81
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:15:58:80
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:27:54</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:54Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81046488,32.16860304</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID:   InnovationEndeavors</name>
+            <description>
+MAC: 74:da:38:a9:1c:df
+Signal: -89.0
+Frequency: 4.0
+Date: 2017-10-27 16:27:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81035666,32.16828928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Lili</name>
+            <description>
+MAC: c4:12:f5:f9:5c:7c
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81035666,32.16828928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqNGN_001489_2.4GHz_1</name>
+            <description>
+MAC: c0:a0:bb:cb:59:5b
+Signal: -92.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81035666,32.16828928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Oberyn Martell</name>
+            <description>
+MAC: 18:d6:c7:fb:1c:0e
+Signal: -77.0
+Frequency: 8.0
+Date: 2017-10-27 16:27:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81035666,32.16828928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-A3-HP OfficeJet Pro 8710</name>
+            <description>
+MAC: a0:8c:fd:54:7b:54
+Signal: -94.0
+Frequency: 11.0
+Date: 2017-10-27 16:27:57</description>
+            <TimeStamp>
+                <when>2017-10-27T16:27:57Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81035666,32.16828928</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: edimax_2.4G_A92417</name>
+            <description>
+MAC: 74:da:38:a9:24:17
+Signal: -78.0
+Frequency: 2.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dlink-A09C</name>
+            <description>
+MAC: ac:f1:df:76:a0:9c
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Liliup</name>
+            <description>
+MAC: 74:da:38:c3:12:45
+Signal: -87.0
+Frequency: 3.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: oved-main</name>
+            <description>
+MAC: 74:da:39:54:b8:1d
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: netbox</name>
+            <description>
+MAC: d0:d4:12:65:19:a2
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kessel_2</name>
+            <description>
+MAC: 90:ef:68:30:6b:69
+Signal: -75.0
+Frequency: 5.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: terry_ap</name>
+            <description>
+MAC: 5c:83:8f:33:bd:68
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:00</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:00Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81022347,32.16799923</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:db:6e:71:13
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Corp</name>
+            <description>
+MAC: 0a:8d:db:6e:71:13
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: spielman</name>
+            <description>
+MAC: 7c:b7:33:2b:c4:52
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SandyAndDanny</name>
+            <description>
+MAC: d0:0e:d9:26:e8:c5
+Signal: -91.0
+Frequency: 8.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 3Com</name>
+            <description>
+MAC: 00:0f:cb:b5:2e:78
+Signal: -92.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: spielman</name>
+            <description>
+MAC: f4:f2:6d:34:56:54
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: forestisthebest</name>
+            <description>
+MAC: c8:d7:19:da:03:16
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Erez Man</name>
+            <description>
+MAC: e4:8d:8c:7f:3d:0d
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: yaront-mac</name>
+            <description>
+MAC: 78:9f:70:7b:90:14
+Signal: -93.0
+Frequency: 6.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Home</name>
+            <description>
+MAC: 44:03:a7:e6:11:63
+Signal: -95.0
+Frequency: 6.0
+Date: 2017-10-27 16:28:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8100792,32.16776437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Mouly</name>
+            <description>
+MAC: 7c:b7:33:2e:76:73
+Signal: -82.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ensilo_2.4GH_1</name>
+            <description>
+MAC: 00:30:4f:82:a4:48
+Signal: -83.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -84.0
+Frequency: 5.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: island-074FA0</name>
+            <description>
+MAC: 50:a7:33:47:4f:a3
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -90.0
+Frequency: 5.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Free</name>
+            <description>
+MAC: 06:8d:db:6e:71:be
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 888Guest</name>
+            <description>
+MAC: 02:8d:db:6e:71:6d
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:06</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:06Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80992403,32.167615</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraDev</name>
+            <description>
+MAC: 00:f6:63:15:58:81
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:09</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:09Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80986741,32.16758618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:15:58:80
+Signal: -94.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:09</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:09Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80986741,32.16758618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraGuest</name>
+            <description>
+MAC: 00:f6:63:15:58:82
+Signal: -95.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:09</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:09Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80986741,32.16758618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Candan</name>
+            <description>
+MAC: c0:ff:d4:7b:82:30
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:28:12</description>
+            <TimeStamp>
+                <when>2017-10-27T16:28:12Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80985743,32.16759701</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Maxillent</name>
+            <description>
+MAC: 90:6c:ac:60:6c:8b
+Signal: -91.0
+Frequency: 3.0
+Date: 2017-10-27 16:35:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80912469,32.16706717</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: 00:02:6f:bb:fd:ac
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:35:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80912469,32.16706717</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: 00:02:6f:bb:fd:ac
+Signal: -83.0
+Frequency: 1.0
+Date: 2017-10-27 16:35:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80912469,32.16706717</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-A0-LaserJet Pro MFP</name>
+            <description>
+MAC: 30:f7:72:6e:8e:a0
+Signal: -78.0
+Frequency: 6.0
+Date: 2017-10-27 16:35:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80890703,32.16690033</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ASUS</name>
+            <description>
+MAC: d0:17:c2:60:e7:38
+Signal: -84.0
+Frequency: 3.0
+Date: 2017-10-27 16:35:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80890703,32.16690033</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Crestron_23</name>
+            <description>
+MAC: 10:fe:ed:62:9e:1a
+Signal: -86.0
+Frequency: 4.0
+Date: 2017-10-27 16:35:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80890703,32.16690033</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AEH-W4A1-b0411d255ce3</name>
+            <description>
+MAC: b0:41:1d:25:5c:e3
+Signal: -87.0
+Frequency: 7.0
+Date: 2017-10-27 16:35:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:35:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80890703,32.16690033</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Kadabra-AP</name>
+            <description>
+MAC: 00:1d:aa:7c:8c:f8
+Signal: -79.0
+Frequency: 11.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Kadabra-Guest</name>
+            <description>
+MAC: 02:1d:aa:7c:8c:f8
+Signal: -79.0
+Frequency: 11.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Hacker</name>
+            <description>
+MAC: cc:b2:55:e7:bf:ba
+Signal: -95.0
+Frequency: 6.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: LeonAP</name>
+            <description>
+MAC: 80:1f:02:36:10:68
+Signal: -85.0
+Frequency: 11.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -89.0
+Frequency: 5.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: c0:56:27:a0:6c:9a
+Signal: -91.0
+Frequency: 3.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -91.0
+Frequency: 5.0
+Date: 2017-10-27 16:36:03</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:03Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80886888,32.16686101</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: INGENEO</name>
+            <description>
+MAC: cc:b2:55:e8:4c:e6
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:36:08</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:08Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80859096,32.16689742</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks NC</name>
+            <description>
+MAC: 00:1d:aa:34:1e:58
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:36:08</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:08Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80859096,32.16689742</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTFiber-2017</name>
+            <description>
+MAC: 08:6a:0a:37:66:66
+Signal: -91.0
+Frequency: 1.0
+Date: 2017-10-27 16:36:08</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:08Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80859096,32.16689742</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BENY PUR</name>
+            <description>
+MAC: d8:fe:e3:03:c7:b1
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:36:11</description>
+            <TimeStamp>
+                <when>2017-10-27T16:36:11Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80831306,32.16698668</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rabia</name>
+            <description>
+MAC: 30:b5:c2:bd:52:40
+Signal: -89.0
+Frequency: 6.0
+Date: 2017-10-27 16:37:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80836155,32.16692966</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Vexlerar_2EX</name>
+            <description>
+MAC: 74:da:38:cc:d8:80
+Signal: -92.0
+Frequency: 9.0
+Date: 2017-10-27 16:37:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80836155,32.16692966</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: levi_1</name>
+            <description>
+MAC: f8:e9:03:0e:a1:5d
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:37:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80836155,32.16692966</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 071889240</name>
+            <description>
+MAC: f8:e9:03:14:72:44
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80836155,32.16692966</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: fa:8f:ca:93:a5:64
+Signal: -82.0
+Frequency: 6.0
+Date: 2017-10-27 16:37:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80836155,32.16692966</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: INGENEO</name>
+            <description>
+MAC: cc:b2:55:e8:4c:e6
+Signal: -82.0
+Frequency: 6.0
+Date: 2017-10-27 16:37:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80849455,32.166863</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EL</name>
+            <description>
+MAC: 14:ae:db:3d:b1:52
+Signal: -82.0
+Frequency: 9.0
+Date: 2017-10-27 16:37:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80849455,32.166863</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -90.0
+Frequency: 5.0
+Date: 2017-10-27 16:37:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80849455,32.166863</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -94.0
+Frequency: 5.0
+Date: 2017-10-27 16:37:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80849455,32.166863</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: wifi in car-1794</name>
+            <description>
+MAC: 08:97:58:33:b7:cc
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80857819,32.16680671</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:3a:f4:80
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80857819,32.16680671</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: gigi1932</name>
+            <description>
+MAC: 8c:59:c3:a2:9d:69
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:37:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80857819,32.16680671</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraGuest</name>
+            <description>
+MAC: 00:f6:63:3a:f4:82
+Signal: -80.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80857819,32.16680671</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Home.</name>
+            <description>
+MAC: a0:ab:1b:62:a7:bc
+Signal: -87.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8086177,32.16679377</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BlueSnap-Guest-2.4GHz</name>
+            <description>
+MAC: c0:56:27:a0:6c:9a
+Signal: -90.0
+Frequency: 3.0
+Date: 2017-10-27 16:37:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8086177,32.16679377</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -89.0
+Frequency: 5.0
+Date: 2017-10-27 16:37:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8086177,32.16679377</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ASUS</name>
+            <description>
+MAC: d0:17:c2:60:e7:38
+Signal: -79.0
+Frequency: 3.0
+Date: 2017-10-27 16:37:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8086177,32.16679377</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraDev</name>
+            <description>
+MAC: 00:f6:63:3a:f4:81
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8086177,32.16679377</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: cc:16:7e:97:1d:90
+Signal: -93.0
+Frequency: 1.0
+Date: 2017-10-27 16:37:29</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:29Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80872443,32.16671281</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RTI 15</name>
+            <description>
+MAC: 10:fe:ed:62:9e:5c
+Signal: -93.0
+Frequency: 5.0
+Date: 2017-10-27 16:37:32</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:32Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80876004,32.16652877</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Partner-4G-C845</name>
+            <description>
+MAC: 50:68:0a:66:c8:45
+Signal: -85.0
+Frequency: 8.0
+Date: 2017-10-27 16:37:32</description>
+            <TimeStamp>
+                <when>2017-10-27T16:37:32Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80876004,32.16652877</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: WeDiggIT</name>
+            <description>
+MAC: 64:a5:c3:6a:07:10
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: compvision</name>
+            <description>
+MAC: f8:e9:03:11:b4:83
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: WeDiggIT's Lab Guest</name>
+            <description>
+MAC: 66:a2:0b:6a:c3:a0
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Twistlock</name>
+            <description>
+MAC: 56:d9:e7:a5:e3:2e
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Intendu</name>
+            <description>
+MAC: 5c:83:8f:33:b9:18
+Signal: -92.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: IntenduCaptive</name>
+            <description>
+MAC: 5c:83:8f:33:b9:19
+Signal: -94.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Twistlock Guests</name>
+            <description>
+MAC: 46:d9:e7:a5:e3:2e
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Si-o-Net_5</name>
+            <description>
+MAC: 44:94:fc:66:61:46
+Signal: -83.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: yakov</name>
+            <description>
+MAC: e8:fc:af:9d:79:78
+Signal: -76.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:28</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:28Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81122293,32.16451351</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: V6_guest</name>
+            <description>
+MAC: 3c:1e:04:08:b2:36
+Signal: -75.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Stratoscale</name>
+            <description>
+MAC: 00:35:1a:d3:50:20
+Signal: -76.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: office</name>
+            <description>
+MAC: 14:ae:db:56:e6:d5
+Signal: -77.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: StratoGuests</name>
+            <description>
+MAC: 00:35:1a:d3:50:21
+Signal: -77.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-D6-Officejet 6700</name>
+            <description>
+MAC: 2c:59:e5:db:2c:d6
+Signal: -79.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: LIAT</name>
+            <description>
+MAC: 14:ae:db:39:31:d5
+Signal: -79.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Sugarmama</name>
+            <description>
+MAC: 2c:c5:d3:10:96:88
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: podatacall2.4</name>
+            <description>
+MAC: c4:12:f5:f7:74:f2
+Signal: -81.0
+Frequency: 9.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AmGuest1</name>
+            <description>
+MAC: 02:10:f3:63:f7:67
+Signal: -82.0
+Frequency: 4.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SP(2.4)</name>
+            <description>
+MAC: ec:08:6b:38:11:af
+Signal: -85.0
+Frequency: 10.0
+Date: 2017-10-27 16:41:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81137867,32.16475405</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-71-HP OfficeJet 7510</name>
+            <description>
+MAC: 64:51:06:f6:8a:7f
+Signal: -70.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Cellcom-WiFi_6549</name>
+            <description>
+MAC: a0:4f:d4:41:1d:e1
+Signal: -81.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: David</name>
+            <description>
+MAC: 14:ae:db:c7:78:85
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DIRECT-AD-HP OfficeJet Pro 8730</name>
+            <description>
+MAC: ee:8e:b5:09:8a:ad
+Signal: -83.0
+Frequency: 8.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 06:ae:db:c7:78:85
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: 88:dc:96:17:c1:5c
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DeCarlo_EXT</name>
+            <description>
+MAC: d8:fe:e3:b6:de:21
+Signal: -86.0
+Frequency: 10.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bizur_2.4</name>
+            <description>
+MAC: 14:ae:db:36:82:35
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Villaguest</name>
+            <description>
+MAC: 34:08:04:04:d0:1c
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: TNCAPE5A34D</name>
+            <description>
+MAC: 30:91:8f:ed:72:f7
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81150309,32.16498918</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: StratoGuests</name>
+            <description>
+MAC: 00:35:1a:05:9c:71
+Signal: -77.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 06:ae:db:c7:78:85
+Signal: -78.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Howazit</name>
+            <description>
+MAC: 1c:b9:c4:0f:44:b8
+Signal: -78.0
+Frequency: 8.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bizur_2.4</name>
+            <description>
+MAC: 14:ae:db:36:82:35
+Signal: -79.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Stratoscale</name>
+            <description>
+MAC: 00:35:1a:05:9c:70
+Signal: -79.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Aoffice</name>
+            <description>
+MAC: 00:10:f3:63:f7:67
+Signal: -81.0
+Frequency: 4.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 06:ae:db:b6:59:e5
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq</name>
+            <description>
+MAC: 00:16:e3:f1:37:7d
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-C4-Officejet Pro 6830</name>
+            <description>
+MAC: 70:5a:0f:02:dd:c4
+Signal: -85.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 8084789</name>
+            <description>
+MAC: 80:37:73:e6:96:d2
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:37</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:37Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81157186,32.16521437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:68:c6:6d
+Signal: -81.0
+Frequency: 48.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AppleWifi</name>
+            <description>
+MAC: f0:7f:06:68:c6:6f
+Signal: -83.0
+Frequency: 48.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BEZEQINT-D131</name>
+            <description>
+MAC: 14:ae:db:55:d1:35
+Signal: -83.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BeeComm</name>
+            <description>
+MAC: 80:1f:02:81:07:ec
+Signal: -84.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Howazit</name>
+            <description>
+MAC: 1c:b9:c4:0f:44:bc
+Signal: -84.0
+Frequency: 36.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BEZEQINT-2F11</name>
+            <description>
+MAC: 14:ae:db:4e:2f:15
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: MIRI</name>
+            <description>
+MAC: 70:62:b8:34:15:46
+Signal: -85.0
+Frequency: 5.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_2</name>
+            <description>
+MAC: 74:da:38:2e:ab:c9
+Signal: -86.0
+Frequency: 5.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HOTBOX-260D</name>
+            <description>
+MAC: 7c:b7:33:bf:26:13
+Signal: -87.0
+Frequency: 3.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AppleWifi</name>
+            <description>
+MAC: f0:7f:06:68:aa:6f
+Signal: -87.0
+Frequency: 36.0
+Date: 2017-10-27 16:41:40</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:40Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160634,32.16539992</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KDF</name>
+            <description>
+MAC: a8:f7:e0:09:13:a0
+Signal: -85.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:43</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:43Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160987,32.16550463</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID:   InnovationEndeavors</name>
+            <description>
+MAC: 74:da:38:a9:1c:df
+Signal: -86.0
+Frequency: 4.0
+Date: 2017-10-27 16:41:43</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:43Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160987,32.16550463</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: MOBIMIGHT</name>
+            <description>
+MAC: 00:10:f3:64:7a:ee
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:43</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:43Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160987,32.16550463</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HeliconBooks</name>
+            <description>
+MAC: e8:cc:18:eb:7b:2b
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:43</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:43Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160987,32.16550463</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID:   InnovationEndeavors</name>
+            <description>
+MAC: 74:da:38:a9:1c:df
+Signal: -79.0
+Frequency: 4.0
+Date: 2017-10-27 16:41:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160925,32.16550639</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_3</name>
+            <description>
+MAC: 74:da:38:b0:67:d6
+Signal: -81.0
+Frequency: 4.0
+Date: 2017-10-27 16:41:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160925,32.16550639</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kiosk</name>
+            <description>
+MAC: 14:ae:db:3d:28:7a
+Signal: -81.0
+Frequency: 7.0
+Date: 2017-10-27 16:41:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160925,32.16550639</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_2</name>
+            <description>
+MAC: 74:da:38:2e:ab:c9
+Signal: -78.0
+Frequency: 5.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DekelE</name>
+            <description>
+MAC: 48:ee:0c:ea:e7:c8
+Signal: -79.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:68:c6:6c
+Signal: -82.0
+Frequency: 48.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AppleWiFiSecure</name>
+            <description>
+MAC: f0:7f:06:68:c6:6e
+Signal: -82.0
+Frequency: 48.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: AppleWifi</name>
+            <description>
+MAC: f0:7f:06:75:02:ef
+Signal: -84.0
+Frequency: 48.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Gandyr-right</name>
+            <description>
+MAC: 74:da:38:3b:d8:08
+Signal: -82.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160525,32.16550181</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: office_rooter_2</name>
+            <description>
+MAC: 74:da:38:6d:45:e8
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159983,32.165498</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: PDTC</name>
+            <description>
+MAC: c8:d3:a3:21:82:29
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:41:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159983,32.165498</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:d0:4c
+Signal: -81.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159578,32.16549588</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi</name>
+            <description>
+MAC: 70:3a:cb:6a:d0:4f
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159578,32.16549588</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:75:02:e3
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159538,32.16549778</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: JOSHUA</name>
+            <description>
+MAC: 14:ae:db:3d:c0:92
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:41:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159538,32.16549778</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-97-LaserJet 400 MFP</name>
+            <description>
+MAC: 74:29:af:74:f9:97
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:41:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:41:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81159538,32.16549778</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:75:02:ed
+Signal: -88.0
+Frequency: 48.0
+Date: 2017-10-27 16:42:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8115991,32.16549769</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Playrix2.4G</name>
+            <description>
+MAC: f2:9f:c2:91:07:b0
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160421,32.16549745</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Glilot1</name>
+            <description>
+MAC: 18:a6:f7:51:67:f8
+Signal: -90.0
+Frequency: 4.0
+Date: 2017-10-27 16:42:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81160421,32.16549745</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:02:21:3c
+Signal: -84.0
+Frequency: 44.0
+Date: 2017-10-27 16:42:31</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:31Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.811607,32.16549714</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID:   InnovationEndeavors</name>
+            <description>
+MAC: 74:da:38:a9:1c:df
+Signal: -74.0
+Frequency: 4.0
+Date: 2017-10-27 16:42:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81158323,32.16550614</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_3</name>
+            <description>
+MAC: 74:da:38:b0:67:d6
+Signal: -76.0
+Frequency: 4.0
+Date: 2017-10-27 16:42:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81158323,32.16550614</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DekelG</name>
+            <description>
+MAC: 48:ee:0c:ea:e7:c9
+Signal: -88.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81158323,32.16550614</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:02:21:3d
+Signal: -87.0
+Frequency: 44.0
+Date: 2017-10-27 16:42:34</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:34Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81158323,32.16550614</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:ca:a8
+Signal: -83.0
+Frequency: 149.0
+Date: 2017-10-27 16:42:43</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:43Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81153294,32.1657019</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RealAP</name>
+            <description>
+MAC: f8:e7:1e:2e:5f:a8
+Signal: -83.0
+Frequency: 8.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: </name>
+            <description>
+MAC: f0:7f:06:68:aa:6d
+Signal: -89.0
+Frequency: 36.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: LIAT</name>
+            <description>
+MAC: 14:ae:db:39:31:d5
+Signal: -89.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:ca:ac
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GetAlert-GW</name>
+            <description>
+MAC: 70:3a:cb:cf:36:69
+Signal: -84.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Stratoscale</name>
+            <description>
+MAC: 00:35:1a:d3:50:20
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: StratoGuests</name>
+            <description>
+MAC: 00:35:1a:d3:50:21
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81141188,32.1658524</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi</name>
+            <description>
+MAC: 70:3a:cb:6a:d0:4f
+Signal: -75.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Playrix2.4G</name>
+            <description>
+MAC: f2:9f:c2:91:07:b0
+Signal: -72.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-82-LaserJet 200 color</name>
+            <description>
+MAC: 68:94:23:24:b1:82
+Signal: -81.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: JOSHUA</name>
+            <description>
+MAC: 14:ae:db:3d:c0:92
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Edimax AP</name>
+            <description>
+MAC: 80:1f:02:5d:a4:b8
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:d0:4c
+Signal: -72.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: east</name>
+            <description>
+MAC: 00:24:6c:34:dc:40
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Hyundai</name>
+            <description>
+MAC: 14:ae:db:c8:24:1d
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi</name>
+            <description>
+MAC: 70:3a:cb:6a:ca:ae
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81108466,32.16592741</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_2</name>
+            <description>
+MAC: 74:da:38:2e:ab:c9
+Signal: -70.0
+Frequency: 5.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: east</name>
+            <description>
+MAC: 00:24:6c:34:dc:40
+Signal: -74.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DELL_Guest</name>
+            <description>
+MAC: 00:24:6c:34:dc:41
+Signal: -74.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RealAP</name>
+            <description>
+MAC: f8:e7:1e:2e:5f:a8
+Signal: -77.0
+Frequency: 8.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CORP-W1F1</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:03
+Signal: -81.0
+Frequency: 9.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: real</name>
+            <description>
+MAC: 74:a2:e6:c3:77:71
+Signal: -81.0
+Frequency: 3.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: dbwguest</name>
+            <description>
+MAC: ce:d7:19:0e:ff:95
+Signal: -81.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Pivotal</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:0b
+Signal: -82.0
+Frequency: 9.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EMC-Corp</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:04
+Signal: -83.0
+Frequency: 9.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: David</name>
+            <description>
+MAC: 14:ae:db:c7:78:85
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:52</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:52Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81070264,32.16603024</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_3</name>
+            <description>
+MAC: 74:da:38:b0:67:d6
+Signal: -74.0
+Frequency: 4.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SECUBIT2017</name>
+            <description>
+MAC: 88:dc:96:2a:5d:00
+Signal: -76.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GFCM</name>
+            <description>
+MAC: 14:ae:db:32:d5:c2
+Signal: -77.0
+Frequency: 4.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-nomodel.D169B3</name>
+            <description>
+MAC: 02:27:f7:29:70:28
+Signal: -78.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Howazit</name>
+            <description>
+MAC: 1c:b9:c4:0f:44:b8
+Signal: -80.0
+Frequency: 8.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Gandyr-right</name>
+            <description>
+MAC: 74:da:38:3b:d8:08
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bi-lilly</name>
+            <description>
+MAC: 68:86:a7:53:76:14
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Telekom</name>
+            <description>
+MAC: 68:86:a7:53:76:10
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bi-automation</name>
+            <description>
+MAC: 68:86:a7:53:76:12
+Signal: -81.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:ca:ac
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:55</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:55Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.81029415,32.16617002</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi-guest</name>
+            <description>
+MAC: 72:3a:cb:6a:d0:4c
+Signal: -72.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rhodium-WiFi</name>
+            <description>
+MAC: 70:3a:cb:6a:d0:4f
+Signal: -75.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Playrix2.4G</name>
+            <description>
+MAC: f2:9f:c2:91:07:b0
+Signal: -75.0
+Frequency: 11.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Training Room</name>
+            <description>
+MAC: 8e:15:44:ac:d4:e4
+Signal: -75.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bacapital</name>
+            <description>
+MAC: 6c:b0:ce:ab:5a:a1
+Signal: -76.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Call Center</name>
+            <description>
+MAC: 88:15:44:ac:d4:e4
+Signal: -77.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: PitaroHecht</name>
+            <description>
+MAC: 00:02:6f:bf:86:cc
+Signal: -77.0
+Frequency: 1.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: FlixU</name>
+            <description>
+MAC: cc:b2:55:e5:ce:f3
+Signal: -79.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Call Center</name>
+            <description>
+MAC: 8a:15:54:ac:d4:e4
+Signal: -80.0
+Frequency: 44.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Pitarohecht</name>
+            <description>
+MAC: 24:a2:e1:f2:12:76
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:42:58</description>
+            <TimeStamp>
+                <when>2017-10-27T16:42:58Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80996014,32.1663079</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KD_Office_2</name>
+            <description>
+MAC: 74:da:38:2e:ab:c9
+Signal: -70.0
+Frequency: 5.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: east</name>
+            <description>
+MAC: 00:24:6c:34:dc:40
+Signal: -74.0
+Frequency: 11.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: DELL_Guest</name>
+            <description>
+MAC: 00:24:6c:34:dc:41
+Signal: -74.0
+Frequency: 11.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RealAP</name>
+            <description>
+MAC: f8:e7:1e:2e:5f:a8
+Signal: -77.0
+Frequency: 8.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-b7-LaserJet 300</name>
+            <description>
+MAC: 34:23:87:36:c9:b7
+Signal: -77.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Ezbob_WiFi</name>
+            <description>
+MAC: 00:02:6f:12:34:56
+Signal: -78.0
+Frequency: 11.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Ezbob_Guest</name>
+            <description>
+MAC: 06:02:6f:12:34:56
+Signal: -78.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CORP-W1F1</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:03
+Signal: -81.0
+Frequency: 9.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Pivotal</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:0b
+Signal: -82.0
+Frequency: 9.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EMC-Corp</name>
+            <description>
+MAC: 84:3d:c6:c7:eb:04
+Signal: -83.0
+Frequency: 9.0
+Date: 2017-10-27 16:43:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80965132,32.16643649</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CMT-ALap</name>
+            <description>
+MAC: 94:10:3e:a8:34:a0
+Signal: -81.0
+Frequency: 36.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Pitarohecht</name>
+            <description>
+MAC: 5c:83:8f:33:b9:e8
+Signal: -85.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -86.0
+Frequency: 5.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: 4GT</name>
+            <description>
+MAC: 82:4c:a5:1a:65:2b
+Signal: -87.0
+Frequency: 11.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CMT-Guests</name>
+            <description>
+MAC: 70:4c:a5:1a:65:2b
+Signal: -88.0
+Frequency: 11.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: PushApps</name>
+            <description>
+MAC: 14:ae:db:39:b3:6d
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80938792,32.16655618</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: SECUBIT2017</name>
+            <description>
+MAC: 88:dc:96:2a:5d:00
+Signal: -76.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GFCM</name>
+            <description>
+MAC: 14:ae:db:32:d5:c2
+Signal: -77.0
+Frequency: 4.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-nomodel.D169B3</name>
+            <description>
+MAC: 02:27:f7:29:70:28
+Signal: -78.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Training Room</name>
+            <description>
+MAC: 8e:15:54:ac:d4:e4
+Signal: -79.0
+Frequency: 44.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bi-lilly</name>
+            <description>
+MAC: 68:86:a7:53:76:14
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Telekom</name>
+            <description>
+MAC: 68:86:a7:53:76:10
+Signal: -80.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bi-automation</name>
+            <description>
+MAC: 68:86:a7:53:76:12
+Signal: -81.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: IDC-Wireless</name>
+            <description>
+MAC: e0:10:7f:09:2f:e8
+Signal: -84.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: GFCM_5</name>
+            <description>
+MAC: 14:ae:db:32:d5:c5
+Signal: -86.0
+Frequency: 48.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: IDC</name>
+            <description>
+MAC: 9c:1c:12:ab:f1:b1
+Signal: -88.0
+Frequency: 52.0
+Date: 2017-10-27 16:43:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8092036,32.16665222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq2.4</name>
+            <description>
+MAC: 14:ae:db:b3:7b:65
+Signal: -89.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:20</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:20Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80919318,32.16664266</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ASUS</name>
+            <description>
+MAC: d0:17:c2:60:e7:38
+Signal: -91.0
+Frequency: 3.0
+Date: 2017-10-27 16:43:20</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:20Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80919318,32.16664266</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: win-teuch</name>
+            <description>
+MAC: c4:12:f5:83:3a:88
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:20</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:20Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80919318,32.16664266</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Kopel</name>
+            <description>
+MAC: 00:1d:aa:e2:1a:c0
+Signal: -90.0
+Frequency: 6.0
+Date: 2017-10-27 16:43:29</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:29Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80915815,32.16659883</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: bacapital</name>
+            <description>
+MAC: 6c:b0:ce:ab:5a:a1
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80870372,32.16685391</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: RTI 15</name>
+            <description>
+MAC: 10:fe:ed:62:9e:5c
+Signal: -87.0
+Frequency: 5.0
+Date: 2017-10-27 16:43:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80870372,32.16685391</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:3a:f4:80
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:46</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:46Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80870372,32.16685391</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: HP-Print-b7-LaserJet 300</name>
+            <description>
+MAC: 34:23:87:36:c9:b7
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80837223,32.16699544</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: CMT-ALap</name>
+            <description>
+MAC: 94:10:3e:a8:34:a0
+Signal: -83.0
+Frequency: 36.0
+Date: 2017-10-27 16:43:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80837223,32.16699544</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Pitarohecht</name>
+            <description>
+MAC: 00:02:6f:a6:f1:f3
+Signal: -84.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80837223,32.16699544</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: KaymeraDev</name>
+            <description>
+MAC: 00:f6:63:3a:f4:81
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:43:49</description>
+            <TimeStamp>
+                <when>2017-10-27T16:43:49Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80837223,32.16699544</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: VIKI</name>
+            <description>
+MAC: cc:b2:55:e9:be:78
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8081139,32.16767541</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bond-MidFloor</name>
+            <description>
+MAC: 30:b5:c2:25:dc:ae
+Signal: -92.0
+Frequency: 4.0
+Date: 2017-10-27 16:44:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8081139,32.16767541</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Assor_wifi</name>
+            <description>
+MAC: 14:ae:db:a4:5b:a2
+Signal: -94.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8081139,32.16767541</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 14:af:db:a4:5b:a2
+Signal: -95.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:01</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:01Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8081139,32.16767541</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: kaymeraQA</name>
+            <description>
+MAC: 00:f6:63:3a:f4:80
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80821265,32.1679589</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Candan</name>
+            <description>
+MAC: c0:ff:d4:7b:82:30
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80821265,32.1679589</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: INGENEO</name>
+            <description>
+MAC: cc:b2:55:e8:4c:e6
+Signal: -89.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80821265,32.1679589</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Home.</name>
+            <description>
+MAC: a0:ab:1b:62:a7:bc
+Signal: -88.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80821265,32.1679589</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Rabia</name>
+            <description>
+MAC: 30:b5:c2:bd:52:40
+Signal: -89.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:04</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:04Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80821265,32.1679589</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BENY PUR</name>
+            <description>
+MAC: d8:fe:e3:03:c7:b1
+Signal: -85.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80827012,32.16811955</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: frenkel</name>
+            <description>
+MAC: 48:ee:0c:3f:38:55
+Signal: -92.0
+Frequency: 4.0
+Date: 2017-10-27 16:44:07</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:07Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80827012,32.16811955</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ORBI Tal</name>
+            <description>
+MAC: a2:3d:cf:fb:0c:b8
+Signal: -94.0
+Frequency: 8.0
+Date: 2017-10-27 16:44:10</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:10Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80839219,32.16811582</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: susanne</name>
+            <description>
+MAC: 14:ae:db:b5:94:35
+Signal: -91.0
+Frequency: 11.0
+Date: 2017-10-27 16:44:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80861988,32.16806933</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EL</name>
+            <description>
+MAC: 14:ae:db:3d:b1:52
+Signal: -94.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80861988,32.16806933</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: cohen</name>
+            <description>
+MAC: cc:b2:55:68:0b:2a
+Signal: -93.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:13</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:13Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80861988,32.16806933</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: cohen</name>
+            <description>
+MAC: cc:b2:55:68:0b:2a
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8089357,32.16801169</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ruth22</name>
+            <description>
+MAC: 8c:59:c3:ea:2c:22
+Signal: -86.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:16</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:16Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.8089357,32.16801169</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Candan</name>
+            <description>
+MAC: c0:ff:d4:7b:82:30
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: INGENEO</name>
+            <description>
+MAC: cc:b2:55:e8:4c:e6
+Signal: -87.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bond-MidFloor</name>
+            <description>
+MAC: 30:b5:c2:25:dc:ae
+Signal: -92.0
+Frequency: 4.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Assor_wifi</name>
+            <description>
+MAC: 14:ae:db:a4:5b:a2
+Signal: -94.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: BezeqFree</name>
+            <description>
+MAC: 14:af:db:a4:5b:a2
+Signal: -93.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Assor_wifi</name>
+            <description>
+MAC: 18:d6:c7:fb:1a:2f
+Signal: -96.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: frenkel</name>
+            <description>
+MAC: 48:ee:0c:3f:38:55
+Signal: -90.0
+Frequency: 4.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq-N_2db33b</name>
+            <description>
+MAC: fc:75:16:2d:b3:3c
+Signal: -86.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:19</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:19Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80927624,32.16794249</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: ORBI Tal</name>
+            <description>
+MAC: a2:3d:cf:fb:0c:b8
+Signal: -94.0
+Frequency: 8.0
+Date: 2017-10-27 16:44:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80957568,32.16788634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: shogol</name>
+            <description>
+MAC: fc:b4:e6:d1:a8:ce
+Signal: -89.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80957568,32.16788634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Erez Man</name>
+            <description>
+MAC: e4:8d:8c:7f:3d:0d
+Signal: -82.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80957568,32.16788634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Erez Man</name>
+            <description>
+MAC: 6c:3b:6b:76:4e:e1
+Signal: -90.0
+Frequency: 1.0
+Date: 2017-10-27 16:44:22</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:22Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80957568,32.16788634</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: susanne</name>
+            <description>
+MAC: 14:ae:db:b5:94:35
+Signal: -93.0
+Frequency: 11.0
+Date: 2017-10-27 16:44:25</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:25Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80980176,32.16783602</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: EL</name>
+            <description>
+MAC: 14:ae:db:3d:b1:52
+Signal: -94.0
+Frequency: 9.0
+Date: 2017-10-27 16:44:25</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:25Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80980176,32.16783602</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Bezeq Free</name>
+            <description>
+MAC: 52:62:b8:32:9d:ec
+Signal: -92.0
+Frequency: 6.0
+Date: 2017-10-27 16:44:25</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:25Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80980176,32.16783602</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Efrat Networks MM</name>
+            <description>
+MAC: 94:f6:65:5b:b2:28
+Signal: -87.0
+Frequency: 5.0
+Date: 2017-10-27 16:44:41</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:41Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987893,32.16762951</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>SSID: Guest Neetwork MM</name>
+            <description>
+MAC: 94:f6:65:1b:b2:28
+Signal: -91.0
+Frequency: 5.0
+Date: 2017-10-27 16:44:41</description>
+            <TimeStamp>
+                <when>2017-10-27T16:44:41Z</when>
+            </TimeStamp>
+            <Point>
+                <coordinates>34.80987893,32.16762951</coordinates>
+            </Point>
+        </Placemark>
+    </Folder>
+</kml>
