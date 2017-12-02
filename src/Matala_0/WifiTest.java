@@ -20,8 +20,8 @@ class WifiTest {
 	@Test
 	void testSetFrequency() {
 		Wifi a=new Wifi();
-		a.setFrequency(65);
-		if(a.getFrequency()!=65)
+		a.setFrequency("65");
+		if(a.getFrequency()!="65")
 			fail("prob with SetFrequency");
 	}
 	@Test

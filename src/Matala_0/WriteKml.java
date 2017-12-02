@@ -27,7 +27,6 @@ public class WriteKml  {
 	 * Creates a kml file from the csv data. 
 	 * @throws FileNotFoundException
 	 */
-	
 	public  void WriteKml() throws FileNotFoundException{
 
 		Wifi wifi = new Wifi();
@@ -44,8 +43,8 @@ public class WriteKml  {
 			for (int j = 6; j < array.length; j=j+4) {
 				wifi.setSSID(array[j]);
 				wifi.setMAC(array[j+1]);
-				wifi.setFrequency(Double.parseDouble(array[j+2]));
-				wifi.setSignal(Double.parseDouble(array[j+3]));		
+				wifi.setFrequency(array[j+2]);
+				wifi.setSignal(array[j+3]);		
 				CreatePlacemark(kml, folder, ld.getLat(), ld.getLon(), wifi.getSSID(), wifi.getMAC(), wifi.getSignal(),wifi.getFrequency(),ld.getTime());
 				
 			}
@@ -53,7 +52,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("finalkml_2.kml"));
+		kml.marshal(new File("test_Revital3_kml.kml"));
 
 	}
 	/**
@@ -68,28 +67,12 @@ public class WriteKml  {
 	 * @param frequency
 	 * @param time
 	 */
-	public static void CreatePlacemark(Kml kml, Folder folder, double lat, double lon, String ssid, String mac,double signal,double frequency,String time){
+	public static void CreatePlacemark(Kml kml, Folder folder, double lat, double lon, String ssid, String mac,String signal,String frequency,String time){
 		Placemark placemark = folder.createAndAddPlacemark();
-		placemark.withName("SSID: "+ssid).withTimePrimitive(makeTimeStamp(time)).withStyleUrl(getColour(signal))
+		placemark.withName("SSID: "+ssid).withTimePrimitive(makeTimeStamp(time))
 		.withDescription("\nMAC: "+mac+"\nSignal: "+signal+"\nFrequency: "+frequency+"\nDate: "+time)
 		.createAndSetPoint().addToCoordinates(lon, lat);
 		
-	}
-	/**
-	 * Receives a signal. If the signal is strong then it returns green, otherwise red. 
-	 * @param signal
-	 * @return String with colour.
-	 */
-	private static String getColour(double signal) {
-		// TODO Auto-generated method stub
-		String colour = "";
-		double sig = (signal);
-		if(signal>=-70)
-			colour = "#green";
-		else
-			colour = "#red";
-		
-		return colour;
 	}
 	/**
 	 * Receives time and makes a TimeStamp.
