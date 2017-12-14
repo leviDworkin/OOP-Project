@@ -18,9 +18,9 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException {
 
-		File folder = new File("C:\\Users\\Levi\\Desktop\\Revital_test");// insert your location
+		File folder = new File("C:\\Users\\UF\\Desktop\\data");// insert your location
 		WriteCSv b=new WriteCSv();
-		//b.openFolder(folder);
+		b.openFolder(folder);
 		
 		String path="C:\\Users\\Levi\\git\\ex_0\\test_Revital3.csv";
 		String string_date ="27-10-2017  16:16:40";
@@ -35,5 +35,6 @@ public class Main {
 		//		a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
 		//		a.filterByName("Maxillent").WriteKml();
 
+		System.out.println("hello git");
 	}
 }
