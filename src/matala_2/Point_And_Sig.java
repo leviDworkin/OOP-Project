@@ -8,6 +8,14 @@ public class Point_And_Sig {
 	private int signal;
 	
 	
+	public Point_And_Sig(String mac, double lat, double lon, double alt, int signal) {
+		super();
+		this.mac = mac;
+		this.lat = lat;
+		this.lon = lon;
+		this.alt = alt;
+		this.signal = signal;
+	}
 	public String getMac() {
 		return mac;
 	}
