@@ -13,7 +13,8 @@ public class Algo_1 implements Readable {
 
 	ArrayList<String[]> arr = new ArrayList<String[]>();
 	myHash mh=new myHash();
-	
+	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
+
 	@Override
 	public void read(String filename) {	
 		try{
@@ -22,29 +23,27 @@ public class Algo_1 implements Readable {
 			while(scanner.hasNextLine()){
 				line=scanner.nextLine(); //get the line
 				String []results=line.split(",");  //split the line
-				arr.add(results);
+				if(results[0]!=null)
+					arr.add(results);
 			}
 			scanner.close();
 		}catch (Exception e){
 			System.out.println("Error: "+ e.getMessage());
 		}
-
-		for (String[] temp : arr) {
-			System.out.println(Arrays.toString(temp));
-		}
+		
 
 		for (String[] temp : arr) {  //Runs the length of the ArrayList 
 			
-			for (int i = 0; i < temp.length; i++) { //Runs the length of one line
+			for (int i = 0; i < temp.length-1; i++) { //Runs the length of one line
 				double lat = Double.parseDouble(temp[2]);
 				double lon = Double.parseDouble(temp[3]);
 				double alt = Double.parseDouble(temp[4]);
-				int sig = Integer.parseInt(temp[9]);
-				for(int j=0; j<temp.length && temp[j]==null ; j=j+4) {
-					String mac = temp[j+7];
+				for(int j=7 , k=9; j+4<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
+					double sig = Double.parseDouble(temp[k]);
+					String mac = temp[j];
 					Point_And_Sig ps = new Point_And_Sig(mac,lat,lon,alt,sig);
 					goToHash(ps);
-				}				
+				}		
 			}	
 		}
 	}
@@ -54,12 +53,17 @@ public class Algo_1 implements Readable {
 	 */
 	private void goToHash(Point_And_Sig ps) {
 		mh.add(ps.getMac(), ps);
-		System.out.println("hash : "+mh.toString());
+		//System.out.println("hash : "+mh.toString());
 
 	}
-	
-	
+
+
 	public void calculate() {
+		
+		
+		
+//		Point_And_Sig ans=new Point_And_Sig(mac, lat, lon, alt, signal);
+//		sofi.add(ans);
 
 	}
 
