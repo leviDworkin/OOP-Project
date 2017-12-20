@@ -24,4 +24,10 @@ public class myHash {
 		}
 		
 	}
+
+	@Override
+	public String toString() {
+		return hm.toString();
+	}
+	
 }

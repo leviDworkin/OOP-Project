@@ -46,5 +46,10 @@ public class Point_And_Sig {
 	public void setSignal(int signal) {
 		this.signal = signal;
 	}
+	@Override
+	public String toString() {
+		return "Point_And_Sig [mac=" + mac + ", lat=" + lat + ", lon=" + lon + ", alt=" + alt + ", signal=" + signal
+				+ "]";
+	}
 	
 }
