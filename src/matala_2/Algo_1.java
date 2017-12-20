@@ -10,6 +10,7 @@ import Matala_0.Readable;
 import Matala_0.lineData;
 
 public class Algo_1 implements Readable {
+
 	ArrayList<String[]> arr = new ArrayList<String[]>();
 	myHash mh=new myHash();
 	
@@ -27,9 +28,11 @@ public class Algo_1 implements Readable {
 		}catch (Exception e){
 			System.out.println("Error: "+ e.getMessage());
 		}
+
 		for (String[] temp : arr) {
 			System.out.println(Arrays.toString(temp));
 		}
+
 		for (String[] temp : arr) {  //Runs the length of the ArrayList 
 			
 			for (int i = 0; i < temp.length; i++) { //Runs the length of one line
@@ -51,6 +54,8 @@ public class Algo_1 implements Readable {
 	 */
 	private void goToHash(Point_And_Sig ps) {
 		mh.add(ps.getMac(), ps);
+		System.out.println("hash : "+mh.toString());
+
 	}
 	
 	
@@ -63,11 +68,11 @@ public class Algo_1 implements Readable {
 
 
 	}
+
 	@Override
 	public String toString() {
 		return "Algo_1 [mh=" + mh + "]";
 	}
-
 
 
 }
