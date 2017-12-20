@@ -11,14 +11,11 @@ public class myHash {
 	public void add(String mac,Point_And_Sig pas) {
 		boolean ifcontain = hm.containsKey(mac);
 		
-		
 		if(ifcontain==true) {		//the key is exist
 			ArrayList<Point_And_Sig> arr=new ArrayList<Point_And_Sig>();
 			arr=hm.get(mac);
 			arr.add(pas);
 			hm.put(mac, arr);
-			
-			
 			
 		}else {
 			ArrayList<Point_And_Sig> arr=new ArrayList<Point_And_Sig>();
@@ -26,13 +23,23 @@ public class myHash {
 			hm.put(mac, arr);
 
 		}
-//		Set set=hm.keySet();
-//		System.out.println("set:"+set.toString());
 	}
 
-	@Override
-	public String toString() {
-		return hm.toString();
+	public String mytoString() {
+		String s="Hash Map keys:";
+		int i=1;
+		int j=1;
+		for ( String key : hm.keySet() ) {
+			s=s+"\n"+i+". "+key+" ";
+			for (Point_And_Sig v : hm.get(key)) {
+			   s=s+"\n\t"+j+". "+v.mytoString();
+			   j++;
+			}
+			j=1;
+			i++;
+		}
+		return s;
 	}
+	
 	
 }
