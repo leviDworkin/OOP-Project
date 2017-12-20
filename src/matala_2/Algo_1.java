@@ -10,15 +10,14 @@ import Matala_0.Readable;
 import Matala_0.lineData;
 
 public class Algo_1 implements Readable {
-	ArrayList<String[]> arr;
-	HashMap<String,Point_And_Sig> hm=new HashMap<String,Point_And_Sig>(); 
+	ArrayList<String[]> arr = new ArrayList();
+	myHash mh=new myHash();
 	
 	@Override
 	public void read(String filename) {	
 		try{
 			Scanner scanner=new Scanner(new FileReader(filename));
 			String line;
-			scanner.nextLine();
 			while(scanner.hasNextLine()){
 				line=scanner.nextLine(); //get the line
 				String []results=line.split(",");  //split the line
@@ -28,6 +27,11 @@ public class Algo_1 implements Readable {
 		}catch (Exception e){
 			System.out.println("Error: "+ e.getMessage());
 		}
+		
+		for (String[] temp: arr) {
+			System.out.println(Arrays.toString(temp));
+		}
+		
 		for (String[] temp : arr) {  //Runs the length of the ArrayList 
 			
 			for (int i = 0; i < temp.length; i++) { //Runs the length of one line
@@ -48,7 +52,8 @@ public class Algo_1 implements Readable {
 	 * @param ps Point_And_Sig with 5 variables
 	 */
 	private void goToHash(Point_And_Sig ps) {
-		
+		mh.add(ps.getMac(), ps);
+		System.out.println("hash: "+mh.toString());
 	}
 	
 	
@@ -61,7 +66,8 @@ public class Algo_1 implements Readable {
 
 
 	}
-
-
+	public String toString() {
+		return mh.toString();
+	}
 
 }

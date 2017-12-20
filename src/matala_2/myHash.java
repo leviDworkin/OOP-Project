@@ -24,4 +24,8 @@ public class myHash {
 		}
 		
 	}
+	public String toString() {
+		return hm.toString();
+		
+	}
 }
