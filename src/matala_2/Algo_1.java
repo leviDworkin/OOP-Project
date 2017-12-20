@@ -53,7 +53,7 @@ public class Algo_1 implements Readable {
 	 */
 	private void goToHash(Point_And_Sig ps) {
 		mh.add(ps.getMac(), ps);
-		System.out.println("hash: "+mh.toString());
+		System.out.println("hash : "+mh.toString());
 	}
 	
 	
