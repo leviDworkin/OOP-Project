@@ -1,12 +1,19 @@
 package matala_2;
 
 public class Point_And_Sig {
-	
+	private String mac;
 	private double lat;
 	private double lon;
 	private double alt;
 	private int signal;
 	
+	
+	public String getMac() {
+		return mac;
+	}
+	public void setMac(String mac) {
+		this.mac = mac;
+	}
 	public double getLat() {
 		return lat;
 	}
