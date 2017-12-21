@@ -9,17 +9,23 @@ import java.util.Hashtable;
 import java.util.Scanner;
 import java.util.Set;
 
-import com.sun.javafx.scene.paint.GradientUtils.Point;
-
 import Matala_0.Readable;
 import Matala_0.lineData;
-
+/**
+ * This class reads a csv file, with wifi data in it,
+ *  and it calculates the weighted sum of the coordinates of each mac.
+ * @author Levi and Uriel
+ * This class implements the Readable Interface in package Matala_0
+ */
 public class Algo_1 implements Readable {
 
 	ArrayList<String[]> arr = new ArrayList<String[]>();
 	myHash mh=new myHash();
 	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
 
+	/**
+	 * This method reads the csv file and sends each mac with its coordinates to the HashMap myHash. 
+	 */
 	@Override
 	public void read(String filename) {	
 		try{
@@ -36,7 +42,7 @@ public class Algo_1 implements Readable {
 			System.out.println("Error: "+ e.getMessage());
 		}
 
-		for (int i=0; i<arr.size()-1;i++) {  									//Runs the length of the ArrayList 
+		for (int i=0; i<arr.size()-1;i++) {  	//Runs the length of the ArrayList 
 			String temp[]=arr.get(i);
 			double lat = Double.parseDouble(temp[2]);
 			double lon = Double.parseDouble(temp[3]);
@@ -46,26 +52,39 @@ public class Algo_1 implements Readable {
 				double sig = Double.parseDouble(temp[k]);
 				String mac = temp[j];
 				Point_And_Sig ps = new Point_And_Sig(mac,lat,lon,alt,sig);
-				//System.out.println("mac: "+mac);
 				goToHash(ps);
 			}	
 		}
-		System.out.println(mh.mytoString());
 	}
 	/**
-	 * This method adds the Point_And_Signal as a value to a hashMap, with the mac as its key.
+	 * This method adds the Point_And_Signal as a value to a HashMap myHash, with the mac as its key.
 	 * @param ps Point_And_Sig with 5 variables
 	 */
 	private void goToHash(Point_And_Sig ps) {
 		mh.add(ps.getMac(), ps);
 	}
 
+	/**
+	 * Calculates the weight of a signal. f(x) = 1/(x*x).
+	 * @param signal from the Point_And_Signal
+	 * @return returns the weight of a signal as a double.
+	 */
 	private double weight(double signal) {
 		return 1/(signal*signal);
 	}
+	/**
+	 * calculates the weight of a coordinate. f(x,y) = x*y;
+	 * @param coordinate Either a latitude, longitude or altitude coordinate.
+	 * @param wsig weight of signal.
+	 * @return returns the weight of a coordinate.
+	 */
 	private double coordinate_weight(double coordinate ,double wsig ) {
 		return coordinate*wsig;
 	}
+	/**
+	 * This method runs along the HashMap myHash, and calculates the weighted sum of all the coordinates, 
+	 * then giving each mac one new weighted coordinate.
+	 */
 	public void calculate() {
 
 		for ( String key : mh.hm.keySet() ) {   // runs the length of the hashmap key by key.
@@ -93,11 +112,14 @@ public class Algo_1 implements Readable {
 
 	}
 
+	/**
+	 * This method writes the results of this class to a new csv file.
+	 */
 	@Override
 	public void write() {
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter("test_1.csv", true);
+			outfile = new java.io.FileWriter("test_2.csv", true);
 			outfile.write(toCsv(sofi));
 			outfile.close();
 
@@ -107,6 +129,11 @@ public class Algo_1 implements Readable {
 		} 
 	}
 
+	/**
+	 * This method strings an ArrayList<Point_And_Sig> to csv format. 
+	 * @param sofi ArrayList of Point and Signals
+	 * @return returns a string in csv format.
+	 */
 	private String toCsv(ArrayList<Point_And_Sig> sofi) {
 		String ans = "";
 		for (int i = 0; i < sofi.size(); i++) {
@@ -114,9 +141,12 @@ public class Algo_1 implements Readable {
 		}
 		return ans;
 	}
+	/**
+	 * Strings the object of Algo_1 only after the read(String filename) method has already read a file.
+	 */
 	@Override
 	public String toString() {
-		return "Algo_1 [mh=" + mh + "]";
+		return mh.mytoString();
 	}
 
 

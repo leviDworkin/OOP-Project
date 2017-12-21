@@ -3,11 +3,19 @@ package matala_2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
-
+/**
+ * This class builds a specific HashMap where the value is an ArrayList<Point_And_Sig>.
+ * @author Levi and Uriel
+ *
+ */
 public class myHash {
 	
 	HashMap<String,ArrayList<Point_And_Sig>> hm=new HashMap<String , ArrayList<Point_And_Sig>>(); 
-	
+	/**
+	 * Adds a Point_And_Sig object to a HashMap.
+	 * @param mac Mac from wifi as String.
+	 * @param pas Point_And_Sig object.
+	 */
 	public void add(String mac,Point_And_Sig pas) {
 		boolean ifcontain = hm.containsKey(mac);
 		
@@ -31,6 +39,10 @@ public class myHash {
     public int size() {
     	return hm.size();
     }
+    /**
+     * 
+     * @return returns a HashMap's values as strings.
+     */
 	public String mytoString() {
 		String s="Hash Map keys:";
 		int i=1;
