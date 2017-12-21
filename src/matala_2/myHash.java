@@ -2,10 +2,11 @@ package matala_2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 public class myHash {
 	
-	HashMap<String,ArrayList<Point_And_Sig>> hm=new HashMap<String,ArrayList<Point_And_Sig>>(); 
+	HashMap<String,ArrayList<Point_And_Sig>> hm=new HashMap<String , ArrayList<Point_And_Sig>>(); 
 	
 	public void add(String mac,Point_And_Sig pas) {
 		boolean ifcontain = hm.containsKey(mac);
@@ -16,18 +17,29 @@ public class myHash {
 			arr.add(pas);
 			hm.put(mac, arr);
 			
-			
 		}else {
 			ArrayList<Point_And_Sig> arr=new ArrayList<Point_And_Sig>();
 			arr.add(pas);
 			hm.put(mac, arr);
+
 		}
-		
 	}
 
-	@Override
-	public String toString() {
-		return hm.toString();
+	public String mytoString() {
+		String s="Hash Map keys:";
+		int i=1;
+		int j=1;
+		for ( String key : hm.keySet() ) {
+			s=s+"\n"+i+". "+key+" ";
+			for (Point_And_Sig v : hm.get(key)) {
+			   s=s+"\n\t"+j+". "+v.mytoString();
+			   j++;
+			}
+			j=1;
+			i++;
+		}
+		return s;
 	}
+	
 	
 }

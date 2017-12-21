@@ -13,7 +13,8 @@ public class Algo_1 implements Readable {
 
 	ArrayList<String[]> arr = new ArrayList<String[]>();
 	myHash mh=new myHash();
-	
+	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
+
 	@Override
 	public void read(String filename) {	
 		try{
@@ -22,31 +23,30 @@ public class Algo_1 implements Readable {
 			while(scanner.hasNextLine()){
 				line=scanner.nextLine(); //get the line
 				String []results=line.split(",");  //split the line
-				arr.add(results);
+				if(results[0]!=null)
+					arr.add(results);
 			}
 			scanner.close();
 		}catch (Exception e){
 			System.out.println("Error: "+ e.getMessage());
 		}
 
-		for (String[] temp : arr) {
-			System.out.println(Arrays.toString(temp));
-		}
+		for (int i=0; i<arr.size()-1;i++) {  									//Runs the length of the ArrayList 
+			String temp[]=arr.get(i);
+			double lat = Double.parseDouble(temp[2]);
+			double lon = Double.parseDouble(temp[3]);
+			double alt = Double.parseDouble(temp[4]);
 
-		for (String[] temp : arr) {  //Runs the length of the ArrayList 
+			for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
+				double sig = Double.parseDouble(temp[k]);
+				String mac = temp[j];
+				Point_And_Sig ps = new Point_And_Sig(mac,lat,lon,alt,sig);
+				System.out.println("mac: "+mac);
+				goToHash(ps);
 			
-			for (int i = 0; i < temp.length-1; i++) { //Runs the length of one line
-				double lat = Double.parseDouble(temp[2]);
-				double lon = Double.parseDouble(temp[3]);
-				double alt = Double.parseDouble(temp[4]);
-				double sig = Double.parseDouble(temp[9]);
-				for(int j=0; j<temp.length && temp[j]==null ; j=j+4) {
-					String mac = temp[j+7];
-					Point_And_Sig ps = new Point_And_Sig(mac,lat,lon,alt,sig);
-					goToHash(ps);
-				}				
 			}	
 		}
+		System.out.println(mh.mytoString());
 	}
 	/**
 	 * This method adds the Point_And_Signal as a value to a hashMap, with the mac as its key.
@@ -54,12 +54,27 @@ public class Algo_1 implements Readable {
 	 */
 	private void goToHash(Point_And_Sig ps) {
 		mh.add(ps.getMac(), ps);
-		System.out.println("hash : "+mh.toString());
+
 
 	}
-	
-	
+
+
 	public void calculate() {
+	/*	
+	weight=Formulas.weight(Integer.parseInt(macs.get(i).arr_macbig[j].Signal));
+	wlat=Formulas.walt(weight, Double.parseDouble(macs.get(i).arr_macbig[j].lat));
+	wlon=Formulas.walt(weight, Double.parseDouble(macs.get(i).arr_macbig[j].lon));
+	walt=Formulas.walt(weight, Double.parseDouble(macs.get(i).arr_macbig[j].alt));
+	
+	hel.lat = ""+Formulas.sumOfLat(helper,macs.get(i).realsize);
+	hel.lon = ""+Formulas.sumOfLon(helper,macs.get(i).realsize);
+	hel.alt = ""+Formulas.sumOfAlt(helper,macs.get(i).realsize);
+	hel.Signal = ""+Formulas.sumOfWeight(helper,macs.get(i).realsize);
+
+	*/
+
+		//		Point_And_Sig ans=new Point_And_Sig(mac, lat, lon, alt, signal);
+		//		sofi.add(ans);
 
 	}
 

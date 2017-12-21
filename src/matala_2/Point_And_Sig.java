@@ -7,7 +7,10 @@ public class Point_And_Sig {
 	private double alt;
 	private double signal;
 	
-	
+
+//	public Point_And_Sig() {		
+//	}
+
 	public Point_And_Sig(String mac, double lat, double lon, double alt, double signal) {
 		super();
 		this.mac = mac;
@@ -46,10 +49,9 @@ public class Point_And_Sig {
 	public void setSignal(double signal) {
 		this.signal = signal;
 	}
-	@Override
-	public String toString() {
-		return "Point_And_Sig [mac=" + mac + ", lat=" + lat + ", lon=" + lon + ", alt=" + alt + ", signal=" + signal
-				+ "]";
+	
+	public String mytoString() {
+		return "Point_And_Sig [mac=" + mac + ", lat=" + lat + ", lon=" + lon + ", alt=" + alt + ", signal=" + signal+ "]\n ";
 	}
 	
 }
