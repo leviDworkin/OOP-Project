@@ -35,11 +35,11 @@ public class Algo_1 implements Readable {
 
 		for (String[] temp : arr) {  //Runs the length of the ArrayList 
 			
-			for (int i = 0; i < temp.length; i++) { //Runs the length of one line
+			for (int i = 0; i < temp.length-1; i++) { //Runs the length of one line
 				double lat = Double.parseDouble(temp[2]);
 				double lon = Double.parseDouble(temp[3]);
 				double alt = Double.parseDouble(temp[4]);
-				int sig = Integer.parseInt(temp[9]);
+				double sig = Double.parseDouble(temp[9]);
 				for(int j=0; j<temp.length && temp[j]==null ; j=j+4) {
 					String mac = temp[j+7];
 					Point_And_Sig ps = new Point_And_Sig(mac,lat,lon,alt,sig);

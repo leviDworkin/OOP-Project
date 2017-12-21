@@ -5,10 +5,10 @@ public class Point_And_Sig {
 	private double lat;
 	private double lon;
 	private double alt;
-	private int signal;
+	private double signal;
 	
 	
-	public Point_And_Sig(String mac, double lat, double lon, double alt, int signal) {
+	public Point_And_Sig(String mac, double lat, double lon, double alt, double signal) {
 		super();
 		this.mac = mac;
 		this.lat = lat;
@@ -40,10 +40,10 @@ public class Point_And_Sig {
 	public void setAlt(double double1) {
 		this.alt = double1;
 	}
-	public int getSignal() {
+	public double getSignal() {
 		return signal;
 	}
-	public void setSignal(int signal) {
+	public void setSignal(double signal) {
 		this.signal = signal;
 	}
 	@Override
