@@ -15,7 +15,7 @@ public class myHash {
 			ArrayList<Point_And_Sig> arr=new ArrayList<Point_And_Sig>();
 			arr=hm.get(mac);
 			arr.add(pas);
-			hm.put(mac, arr);
+			hm.put(mac, arr); 
 			
 		}else {
 			ArrayList<Point_And_Sig> arr=new ArrayList<Point_And_Sig>();
@@ -24,7 +24,13 @@ public class myHash {
 
 		}
 	}
-
+	/**
+	 * This method returns the size of myHash HashMap.
+	 * @return returns size as int.
+	 */
+    public int size() {
+    	return hm.size();
+    }
 	public String mytoString() {
 		String s="Hash Map keys:";
 		int i=1;

@@ -8,8 +8,13 @@ public class Point_And_Sig {
 	private double signal;
 	
 
-//	public Point_And_Sig() {		
-//	}
+	public Point_And_Sig() {
+		this.mac = "";
+		this.lat = 0;
+		this.lon = 0;
+		this.alt = 0;
+		this.signal = 0;
+	}
 
 	public Point_And_Sig(String mac, double lat, double lon, double alt, double signal) {
 		super();
@@ -49,7 +54,10 @@ public class Point_And_Sig {
 	public void setSignal(double signal) {
 		this.signal = signal;
 	}
-	
+	public String toCsv() {
+        String ans = mac+","+lat+","+lon+","+alt+","+signal+",\n";
+		return ans;
+	}
 	public String mytoString() {
 		return "Point_And_Sig [mac=" + mac + ", lat=" + lat + ", lon=" + lon + ", alt=" + alt + ", signal=" + signal+ "]\n ";
 	}
