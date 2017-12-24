@@ -46,6 +46,12 @@ public class Wifi4 {
 		this.signal=fullWifi.getSignal();
 		this.MAC=fullWifi.getMAC();
 	}
+	public Wifi4() {
+		this.frequency=null;
+		this.SSID=null;
+		this.signal=null;
+		this.MAC=null;
+	}
 	/**
 	 * Strings this class's 4 variables to csv format
 	 * @return String
