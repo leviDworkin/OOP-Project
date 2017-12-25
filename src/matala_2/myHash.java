@@ -3,6 +3,8 @@ package matala_2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
+
+import Matala_0.Line_46;
 /**
  * This class builds a specific HashMap where the value is an ArrayList<Point_And_Sig>.
  * @author Levi and Uriel
@@ -11,6 +13,7 @@ import java.util.Set;
 public class myHash {
 	
 	HashMap<String,ArrayList<Point_And_Sig>> hm=new HashMap<String , ArrayList<Point_And_Sig>>(); 
+	HashMap<String,ArrayList<Line_46>> hm46=new HashMap<String , ArrayList<Line_46>>(); 
 	/**
 	 * Adds a Point_And_Sig object to a HashMap.
 	 * @param mac Mac from wifi as String.
