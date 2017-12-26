@@ -201,7 +201,7 @@ public class Algo_2 {
 		}
 		
 	}
-
+	
 	private double weight(double diff, double noGpsSig) {
 		double weight = 10000/( Math.pow(diff, 0.4)*Math.pow(noGpsSig, 2)  );
 		return weight;
