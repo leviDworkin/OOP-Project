@@ -118,6 +118,7 @@ public class Algo_2 {
 	}
 
 	public void calculate() {
+		int counter=0;
 		for (Line_46 currLine : arrNoGps) { //Runs the length of arrNoGps
 			Set<Line_46> hs = new HashSet<Line_46>();
 			for(int i=0;i<currLine.getWifiAmount();i++) {//Asking about each mac one by one
@@ -161,29 +162,50 @@ public class Algo_2 {
 				setOfPal.add(pal);
 			}
 
-
-			ArrayList<piAndLine46> arrOfPal=new ArrayList();
+			ArrayList<piAndLine46> arrOfPal = new ArrayList<piAndLine46>();
 			arrOfPal.addAll(setOfPal);
 			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
+
+			piAndLine46 pal1 = arrOfPal.get(0);
+			piAndLine46 pal2 = arrOfPal.get(1);
+			piAndLine46 pal3 = arrOfPal.get(2);
+
+			double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
+			double wlon1 = pal1.getLine46().getLon()*pal1.getPi();
+			double walt1 = pal1.getLine46().getAlt()*pal1.getPi();
+			double wlat2 = pal2.getLine46().getLat()*pal2.getPi();
+			double wlon2 = pal2.getLine46().getLon()*pal2.getPi();
+			double walt2 = pal2.getLine46().getAlt()*pal2.getPi();
+			double wlat3 = pal3.getLine46().getLat()*pal3.getPi();
+			double wlon3 = pal3.getLine46().getLon()*pal3.getPi();
+			double walt3 = pal3.getLine46().getAlt()*pal3.getPi();
+			double latSum=wlat1+wlat2+wlat3 , lonSum=wlon1+wlon2+wlon3, altSum=walt1+walt2+walt3;
+			double piSum = pal1.getPi()+pal2.getPi()+pal3.getPi();
+
+			double ansLat = latSum/piSum;
+			double ansLon = lonSum/piSum;
+			double ansAlt = altSum/piSum;
+			this.arrNoGps.get(counter).setAlt(ansAlt);
+			this.arrNoGps.get(counter).setLon(ansLon);
+			this.arrNoGps.get(counter).setLat(ansLat);
+			//Added missing coordinate go to next line
+
+			counter++;
 			
 			System.out.println("This is arr of pal:\n");
 			for (int j = 0; j < arrOfPal.size(); j++) {
 				System.out.println(arrOfPal.get(j).myToString());
 
 			}
-			
-
 			System.out.println("\n******I finished line********\n");
-		}//Don't leave this for until you set coordinates to currLine!!!!!!!
+		}
 		
 	}
 
 	private double weight(double diff, double noGpsSig) {
 		double weight = 10000/( Math.pow(diff, 0.4)*Math.pow(noGpsSig, 2)  );
-		
 		return weight;
 	}
-
 	private double difference(double noGpsSig, double comSig) {
 		double diff = Math.abs(noGpsSig-comSig);
 		if(diff == 0)
@@ -192,7 +214,17 @@ public class Algo_2 {
 	}
 
 	public void write() {
-		// TODO Auto-generated method stub
+		try {
+			FileWriter outfile;
+			outfile = new java.io.FileWriter("arrWithGps.csv", true);
+			for(Line_46 curr : this.arrNoGps) {
+				outfile.write( curr.toCsv() );
+			}
+			outfile.close();
+		} catch (IOException e) {
+			System.out.println("Error in write() method!");
+			e.printStackTrace();
+		} 
 	}
 
 	public String mytoString() {
