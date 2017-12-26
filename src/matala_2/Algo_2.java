@@ -233,6 +233,7 @@ public class Algo_2 {
 
 			}else {
 				System.out.println("no way");
+				counter++;
 			}
 						
 			System.out.println("\nThis is arr of pal:\n");
@@ -241,7 +242,7 @@ public class Algo_2 {
 				System.out.println(arrOfPal.get(j).myToString());
 
 			}
-			System.out.println("\n******I finished line********\n");
+			System.out.println("\n******I finished line "+counter+" ********\n");
 		}
 		
 		System.out.println("arr with gps: ");
