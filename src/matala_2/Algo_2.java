@@ -173,7 +173,7 @@ public class Algo_2 {
 			}
 			
 
-			System.out.println("I finished line");
+			System.out.println("\n******I finished line********\n");
 		}//Don't leave this for until you set coordinates to currLine!!!!!!!
 		
 	}
