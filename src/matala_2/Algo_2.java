@@ -19,6 +19,7 @@ import Matala_0.Line_46;
 import Matala_0.Readable;
 import Matala_0.Wifi4;
 import Matala_0.lineData;
+import Matala_0.myComperator;
 
 public class Algo_2 {
 	String combo_path;
@@ -118,10 +119,10 @@ public class Algo_2 {
 	}
 
 	public void calculate() {
-		int counter=0;
-		for (Line_46 currLine : arrNoGps) { //Runs the length of arrNoGps
+		int counter=0;	
+		for (Line_46 currLine : arrNoGps) {									 //Runs the length of arrNoGps
 			Set<Line_46> hs = new HashSet<Line_46>();
-			for(int i=0;i<currLine.getWifiAmount();i++) {//Asking about each mac one by one
+			for(int i=0;i<currLine.getWifiAmount();i++) {					//Asking about each mac one by one
 				String currNoGpsMac = currLine.getListOfWifi().get(i).getMAC();
 				System.out.println("for this mac: "+currNoGpsMac);
 				if(mh.hm46.containsKey(currNoGpsMac)) {
@@ -164,40 +165,88 @@ public class Algo_2 {
 
 			ArrayList<piAndLine46> arrOfPal = new ArrayList<piAndLine46>();
 			arrOfPal.addAll(setOfPal);
-			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
-
-			piAndLine46 pal1 = arrOfPal.get(0);
-			piAndLine46 pal2 = arrOfPal.get(1);
-			piAndLine46 pal3 = arrOfPal.get(2);
-
-			double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
-			double wlon1 = pal1.getLine46().getLon()*pal1.getPi();
-			double walt1 = pal1.getLine46().getAlt()*pal1.getPi();
-			double wlat2 = pal2.getLine46().getLat()*pal2.getPi();
-			double wlon2 = pal2.getLine46().getLon()*pal2.getPi();
-			double walt2 = pal2.getLine46().getAlt()*pal2.getPi();
-			double wlat3 = pal3.getLine46().getLat()*pal3.getPi();
-			double wlon3 = pal3.getLine46().getLon()*pal3.getPi();
-			double walt3 = pal3.getLine46().getAlt()*pal3.getPi();
-			double latSum=wlat1+wlat2+wlat3 , lonSum=wlon1+wlon2+wlon3, altSum=walt1+walt2+walt3;
-			double piSum = pal1.getPi()+pal2.getPi()+pal3.getPi();
-
-			double ansLat = latSum/piSum;
-			double ansLon = lonSum/piSum;
-			double ansAlt = altSum/piSum;
-			this.arrNoGps.get(counter).setAlt(ansAlt);
-			this.arrNoGps.get(counter).setLon(ansLon);
-			this.arrNoGps.get(counter).setLat(ansLat);
-			//Added missing coordinate go to next line
-
-			counter++;
+			Collections.sort(arrOfPal, new myComperator());
+//			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
 			
-			System.out.println("This is arr of pal:\n");
+			if(arrOfPal.size()==1) {
+				piAndLine46 pal1 = arrOfPal.get(0);
+				double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
+				double wlon1 = pal1.getLine46().getLon()*pal1.getPi();
+				double walt1 = pal1.getLine46().getAlt()*pal1.getPi();
+				double latSum=wlat1, lonSum=wlon1, altSum=walt1;
+				double piSum = pal1.getPi();
+				double ansLat = latSum/piSum;
+				double ansLon = lonSum/piSum;
+				double ansAlt = altSum/piSum;
+				this.arrNoGps.get(counter).setAlt(ansAlt);
+				this.arrNoGps.get(counter).setLon(ansLon);
+				this.arrNoGps.get(counter).setLat(ansLat);
+				//Added missing coordinate go to next line
+
+				counter++;
+			}else if(arrOfPal.size()==2) {
+				piAndLine46 pal1 = arrOfPal.get(0);
+				piAndLine46 pal2 = arrOfPal.get(1);
+				double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
+				double wlon1 = pal1.getLine46().getLon()*pal1.getPi();
+				double walt1 = pal1.getLine46().getAlt()*pal1.getPi();
+				double wlat2 = pal2.getLine46().getLat()*pal2.getPi();
+				double wlon2 = pal2.getLine46().getLon()*pal2.getPi();
+				double walt2 = pal2.getLine46().getAlt()*pal2.getPi();
+				double latSum=wlat1+wlat2, lonSum=wlon1+wlon2, altSum=walt1+walt2;
+				double piSum = pal1.getPi()+pal2.getPi();
+				double ansLat = latSum/piSum;
+				double ansLon = lonSum/piSum;
+				double ansAlt = altSum/piSum;
+				this.arrNoGps.get(counter).setAlt(ansAlt);
+				this.arrNoGps.get(counter).setLon(ansLon);
+				this.arrNoGps.get(counter).setLat(ansLat);
+				//Added missing coordinate go to next line
+
+				counter++;
+			}else if(arrOfPal.size()>2) {
+				piAndLine46 pal1 = arrOfPal.get(0);
+				piAndLine46 pal2 = arrOfPal.get(1);
+				piAndLine46 pal3 = arrOfPal.get(2);
+
+				double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
+				double wlon1 = pal1.getLine46().getLon()*pal1.getPi();
+				double walt1 = pal1.getLine46().getAlt()*pal1.getPi();
+				double wlat2 = pal2.getLine46().getLat()*pal2.getPi();
+				double wlon2 = pal2.getLine46().getLon()*pal2.getPi();
+				double walt2 = pal2.getLine46().getAlt()*pal2.getPi();
+				double wlat3 = pal3.getLine46().getLat()*pal3.getPi();
+				double wlon3 = pal3.getLine46().getLon()*pal3.getPi();
+				double walt3 = pal3.getLine46().getAlt()*pal3.getPi();
+				double latSum=wlat1+wlat2+wlat3 , lonSum=wlon1+wlon2+wlon3, altSum=walt1+walt2+walt3;
+				double piSum = pal1.getPi()+pal2.getPi()+pal3.getPi();
+
+				double ansLat = latSum/piSum;
+				double ansLon = lonSum/piSum;
+				double ansAlt = altSum/piSum;
+				this.arrNoGps.get(counter).setAlt(ansAlt);
+				this.arrNoGps.get(counter).setLon(ansLon);
+				this.arrNoGps.get(counter).setLat(ansLat);
+				//Added missing coordinate go to next line
+
+				counter++;
+
+			}else {
+				System.out.println("no way");
+			}
+						
+			System.out.println("\nThis is arr of pal:\n");
+			System.out.println("size: "+arrOfPal.size());
 			for (int j = 0; j < arrOfPal.size(); j++) {
 				System.out.println(arrOfPal.get(j).myToString());
 
 			}
 			System.out.println("\n******I finished line********\n");
+		}
+		
+		System.out.println("arr with gps: ");
+		for (int i = 0; i < arrNoGps.size(); i++) {
+			System.out.println(arrNoGps.get(i).toCsv());
 		}
 		
 	}
@@ -213,10 +262,10 @@ public class Algo_2 {
 		return diff;
 	}
 
-	public void write() {
+	public void write(String name) {
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter("arrWithGps.csv", true);
+			outfile = new java.io.FileWriter(name, true);
 			for(Line_46 curr : this.arrNoGps) {
 				outfile.write( curr.toCsv() );
 			}
