@@ -5,6 +5,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -52,6 +55,8 @@ public class Algo_2 {
 			line46.setLat(Double.parseDouble(temp[2]));
 			line46.setLon(Double.parseDouble(temp[3]));
 			line46.setAlt(Double.parseDouble(temp[4]));
+			line46.setWifiAmount(Integer.parseInt(temp[5]));
+
 
 			for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
 				Wifi4 wifi=new Wifi4();
@@ -117,8 +122,16 @@ public class Algo_2 {
 			Set<Line_46> hs = new HashSet<Line_46>();
 			for(int i=0;i<currLine.getWifiAmount();i++) {//Asking about each mac one by one
 				String currNoGpsMac = currLine.getListOfWifi().get(i).getMAC();
-				ArrayList<Line_46> hashValue = mh.hm46.get(currNoGpsMac);
-				hs.addAll(hashValue);
+				System.out.println("for this mac: "+currNoGpsMac);
+				if(mh.hm46.containsKey(currNoGpsMac)) {
+					ArrayList<Line_46> hashValue = mh.hm46.get(currNoGpsMac);
+					for (int j = 0; j < hashValue.size(); j++) {
+						System.out.println(hashValue.get(j).toCsv());
+					}
+					hs.addAll(hashValue);
+				}else {
+					System.out.println("i didn't find in the hashmap");
+				}
 			}
 			Set<piAndLine46> setOfPal = new HashSet<piAndLine46>();
 			for(Line_46 comline : hs) {
@@ -138,7 +151,7 @@ public class Algo_2 {
 							double diff = 100;
 							double weight = weight(diff,noGpsSig);
 							pi = pi*weight;
-							
+
 						}	
 					}
 				}
@@ -147,19 +160,35 @@ public class Algo_2 {
 				pal.setPi(pi);
 				setOfPal.add(pal);
 			}
+
+
+			ArrayList<piAndLine46> arrOfPal=new ArrayList();
+			arrOfPal.addAll(setOfPal);
+			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
 			
+			System.out.println("This is arr of pal:\n");
+			for (int j = 0; j < arrOfPal.size(); j++) {
+				System.out.println(arrOfPal.get(j).myToString());
+
+			}
 			
+
+			System.out.println("I finished line");
 		}//Don't leave this for until you set coordinates to currLine!!!!!!!
+		
 	}
 
 	private double weight(double diff, double noGpsSig) {
-		// TODO Auto-generated method stub
-		return 0;
+		double weight = 10000/( Math.pow(diff, 0.4)*Math.pow(noGpsSig, 2)  );
+		
+		return weight;
 	}
 
 	private double difference(double noGpsSig, double comSig) {
-		// TODO Auto-generated method stub
-		return 0;
+		double diff = Math.abs(noGpsSig-comSig);
+		if(diff == 0)
+			diff = 3;
+		return diff;
 	}
 
 	public void write() {

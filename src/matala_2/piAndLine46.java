@@ -19,5 +19,10 @@ public class piAndLine46 {
 	public void setPi(double pi) {
 		this.pi = pi;
 	}
+	public String myToString() {
+		String s="pi_and_line\n";
+		s=s+this.line46.toCsv()+"pi: "+this.getPi();
+		return s;
+	}
 	
 }
