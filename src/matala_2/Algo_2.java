@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -26,23 +28,6 @@ public class Algo_2 {
 	public Algo_2(String combo_path,String arrNoGps_path ) {
 		this.combo_path=combo_path;
 		this.arrNoGps_path=arrNoGps_path;
-	}
-
-	void calculate() {
-		for (Line_46 currLine : arrNoGps) { //Runs the length of arrNoGps
-
-			for (int i = 0; i < currLine.getWifiAmount(); i++) { //Runs along the arraylist<wifi4> in line_46
-				ArrayList<Line_46> hashValue = mh.hm46.get(currLine.getListOfWifi().get(i).getMAC()); //hashValue of the 
-
-
-			}
-
-		}
-
-	}
-
-	public void write() {
-		// TODO Auto-generated method stub
 	}
 
 	public void read() {	
@@ -125,12 +110,61 @@ public class Algo_2 {
 		for (int i = 0; i < arr.size(); i++) {
 			mh.add2(arr.get(i).getMAC(), line46);
 		}
-
 	}
 
+	public void calculate() {
+		for (Line_46 currLine : arrNoGps) { //Runs the length of arrNoGps
+			Set<Line_46> hs = new HashSet<Line_46>();
+			for(int i=0;i<currLine.getWifiAmount();i++) {//Asking about each mac one by one
+				String currNoGpsMac = currLine.getListOfWifi().get(i).getMAC();
+				ArrayList<Line_46> hashValue = mh.hm46.get(currNoGpsMac);
+				hs.addAll(hashValue);
+			}
+			Set<piAndLine46> setOfPal = new HashSet<piAndLine46>();
+			for(Line_46 comline : hs) {
+				double pi = 1;
+				for(int i=0;i<currLine.getWifiAmount();i++) {
+					double noGpsSig = Double.parseDouble(currLine.getListOfWifi().get(i).getSignal());
+					int count=0;
+					for(int j=0; j<comline.getWifiAmount();j++) {
+						double comSig = Double.parseDouble(comline.getListOfWifi().get(j).getSignal());
+						if(noGpsSig==comSig) {
+							double diff = difference(noGpsSig,comSig);
+							double weight = weight(diff,noGpsSig);
+							pi = pi*weight;
+							count++;
+						}
+						if(count==0 && j==comline.getWifiAmount()-1) {
+							double diff = 100;
+							double weight = weight(diff,noGpsSig);
+							pi = pi*weight;
+							
+						}	
+					}
+				}
+				piAndLine46 pal = new piAndLine46();
+				pal.setLine46(comline);
+				pal.setPi(pi);
+				setOfPal.add(pal);
+			}
+			
+			
+		}//Don't leave this for until you set coordinates to currLine!!!!!!!
+	}
 
+	private double weight(double diff, double noGpsSig) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
+	private double difference(double noGpsSig, double comSig) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
+	public void write() {
+		// TODO Auto-generated method stub
+	}
 
 	public String mytoString() {
 		String sline="This is combo:\n";
