@@ -20,7 +20,12 @@ import Matala_0.Readable;
 import Matala_0.Wifi4;
 import Matala_0.lineData;
 import Matala_0.myComperator;
-
+/**
+ * This class receives two csv files with data from a WiggleWifi wardriving run.
+ * One of them was done with the location off. Algo_2 calculates and adds the missing coordinates. 
+ * @author Levi and Uriel
+ *
+ */
 public class Algo_2 {
 	String combo_path;
 	String arrNoGps_path;
@@ -29,11 +34,19 @@ public class Algo_2 {
 
 	myHash mh = new myHash();
 
+	/**
+	 * Constructor receives two filenames as Strings.
+	 * @param combo_path filename of WiggleWifi done with location on.
+	 * @param arrNoGps_path filename of WiggleWifi done with location off.
+	 */
 	public Algo_2(String combo_path,String arrNoGps_path ) {
 		this.combo_path=combo_path;
 		this.arrNoGps_path=arrNoGps_path;
 	}
 
+	/**
+	 * This method reads the files, and translates them into ArrayLists.
+	 */
 	public void read() {	
 		ArrayList<String[]> arr=new ArrayList<String[]>();
 		try{
@@ -110,6 +123,10 @@ public class Algo_2 {
 		System.out.println(mh.mytoString2());
 
 	}	
+	/**
+	 * This method sends a line from the file and adds each Mac as a key to a HashMap with the line as its value.
+	 * @param line46 is one line with all of its data from csv file.
+	 */
 	private void goToHash(Line_46 line46) {
 		ArrayList<Wifi4>arr=new ArrayList<Wifi4>();
 		arr=line46.getListOfWifi();
@@ -117,7 +134,9 @@ public class Algo_2 {
 			mh.add2(arr.get(i).getMAC(), line46);
 		}
 	}
-
+	/**
+	 * This method calculates and adds the missing coordinates.
+	 */
 	public void calculate() {
 		int counter=0;	
 		for (Line_46 currLine : arrNoGps) {									 //Runs the length of arrNoGps
@@ -251,11 +270,23 @@ public class Algo_2 {
 		}
 		
 	}
-	
+	/**
+	 * This method performs a simple calculation: f(X,Y)= 10000/ (X^0.4)*(Y^2) 
+	 * @param diff The difference between two signals.
+	 * @param noGpsSig A signal from the WiggleWifi without the location.
+	 * @return A weight as a double.
+	 */
 	private double weight(double diff, double noGpsSig) {
 		double weight = 10000/( Math.pow(diff, 0.4)*Math.pow(noGpsSig, 2)  );
 		return weight;
 	}
+	/**
+	 * Calculates the difference between two signals.
+	 * @param noGpsSig A signal from the WiggleWifi without the location.
+	 * @param comSig  A signal from the WiggleWifi with the location.
+	 * @return The difference between the two signals unless the difference is 0.
+	 * If 0 then returns 3.
+	 */
 	private double difference(double noGpsSig, double comSig) {
 		double diff = Math.abs(noGpsSig-comSig);
 		if(diff == 0)
@@ -263,6 +294,10 @@ public class Algo_2 {
 		return diff;
 	}
 
+	/**
+	 * This method writes the newly calculated file to csv with the coordinates.
+	 * @param name The file will be saved as name.csv
+	 */
 	public void write(String name) {
 		try {
 			FileWriter outfile;
@@ -276,7 +311,10 @@ public class Algo_2 {
 			e.printStackTrace();
 		} 
 	}
-
+	/**
+	 * Strings this classes object for system out print.
+	 * @return String representation of this classes object.
+	 */
 	public String mytoString() {
 		String sline="This is combo:\n";
 		for (int j = 0; j < combo.size(); j++) {
