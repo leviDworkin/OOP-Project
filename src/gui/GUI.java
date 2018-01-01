@@ -18,6 +18,8 @@ public class GUI {
 	private Wrapper wrap = new Wrapper();
 	private JButton writeKml;
 	private JTextField kmlPath;
+	private JButton btnAlgo1;
+	private JButton btnAlgo2;
 
 	/**
 	 * Launch the application.
@@ -89,5 +91,13 @@ public class GUI {
 		kmlPath.setBounds(288, 11, 262, 20);
 		frame.getContentPane().add(kmlPath);
 		kmlPath.setColumns(10);
+		
+		btnAlgo1 = new JButton("Algo 1");
+		btnAlgo1.setBounds(71, 162, 89, 23);
+		frame.getContentPane().add(btnAlgo1);
+		
+		btnAlgo2 = new JButton("Algo 2");
+		btnAlgo2.setBounds(229, 162, 89, 23);
+		frame.getContentPane().add(btnAlgo2);
 	}
 }
