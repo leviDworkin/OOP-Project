@@ -18,23 +18,24 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException {
 
-		File folder = new File("C:\\Users\\UF\\Desktop\\data");// insert your location
+		File folder = new File("C:\\Users\\Levi\\Desktop\\Year 2\\OOP\\Assignments\\matala 1\\Revital_test");// insert your location
 		WriteCSv b=new WriteCSv();
-		b.openFolder(folder);
+		b.setOutputName("written_to_csv.csv");
+//		b.openFolder(folder);
 		
-		String path="C:\\Users\\Levi\\git\\ex_0\\test_Revital3.csv";
+		
+		String path="C:\\Users\\Levi\\git\\ex_0\\written_to_csv.csv";
 		String string_date ="27-10-2017  16:16:40";
 		Data a=new Data(path);
-
+		a.setOutputName("written_to_kml.kml");
 		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		Date date_user_want = format.parse(string_date);
 		
-		//		a.FilterGiveAllBeforeTime(date_user_want);
-		//		a.FilterGiveAllAfterTime(date_user_want).WriteKml();
-		//      a.loadAllFromFile().WriteKml();
-		//		a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
-		//		a.filterByName("Maxillent").WriteKml();
+//				a.FilterGiveAllBeforeTime(date_user_want);
+//				a.FilterGiveAllAfterTime(date_user_want).WriteKml();
+//		        a.loadAllFromFile().WriteKml();
+//				a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
+//				a.filterByName("Maxillent").WriteKml();
 
-		System.out.println("hello git");
 	}
 }

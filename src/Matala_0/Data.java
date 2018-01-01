@@ -18,10 +18,19 @@ import java.util.Scanner;
 public class Data {
 	ArrayList<String[]> arr;
 	String path;
-
+	private String outputName;
+	
 	public Data(String path){
 		arr= new ArrayList<String[]>();
 		this.path=path;
+	}
+
+	public String getOutputName() {
+		return outputName;
+	}
+
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
 	}
 
 	/**
@@ -31,6 +40,7 @@ public class Data {
 	public WriteKml loadAllFromFile(){
 		String pathFile=this.path;
 		WriteKml arbel=new WriteKml();
+		arbel.setOutputName(outputName);
 		try{
 			Scanner scanner=new Scanner(new FileReader(pathFile));
 			String line;

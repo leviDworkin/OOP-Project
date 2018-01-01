@@ -23,7 +23,14 @@ import Matala_0.Line_46;
  */
 public class WriteCSv implements Readable {
 	ArrayList<Line_46> sofi=new ArrayList();
+	private String outputName;
 
+	public String getOutputName() {
+		return outputName;
+	}
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
+	}
 	/**
 	 * Opens folder and reads only the csv files.
 	 * @param File folder path.
@@ -33,7 +40,7 @@ public class WriteCSv implements Readable {
 		File[] listOfFiles = folder.listFiles();	
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter("test_1.csv", true);
+			outfile = new java.io.FileWriter(outputName, true);
 			String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
 			outfile.write(title+"\n");
 			outfile.close();
@@ -167,7 +174,7 @@ public class WriteCSv implements Readable {
 
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter("test_1.csv", true);
+			outfile = new java.io.FileWriter(outputName, true);
 			outfile.write(toCsv(sofi));
 			outfile.close();
 

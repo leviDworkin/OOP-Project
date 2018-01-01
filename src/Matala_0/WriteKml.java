@@ -22,7 +22,14 @@ import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
 public class WriteKml  {
 	ArrayList<String[]> arr;
 	String path;
+	private String outputName;
 	
+	public String getOutputName() {
+		return outputName;
+	}
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
+	}
 	/**
 	 * Creates a kml file from the csv data. 
 	 * @throws FileNotFoundException
@@ -52,7 +59,7 @@ public class WriteKml  {
 		}
 		System.out.println("size of input: "+this.arr.size());
 		
-		kml.marshal(new File("test_Revital3_kml.kml"));
+		kml.marshal(new File(outputName));
 
 	}
 	/**
