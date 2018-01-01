@@ -27,12 +27,21 @@ import Matala_0.myComperator;
  *
  */
 public class Algo_2 {
+	private String outputName;
 	String combo_path;
 	String arrNoGps_path;
 	ArrayList<Line_46> arrNoGps = new ArrayList<Line_46>();
 	ArrayList<Line_46> combo = new ArrayList<Line_46>();
 
 	myHash mh = new myHash();
+
+	public String getOutputName() {
+		return outputName;
+	}
+
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
+	}
 
 	/**
 	 * Constructor receives two filenames as Strings.
@@ -298,10 +307,10 @@ public class Algo_2 {
 	 * This method writes the newly calculated file to csv with the coordinates.
 	 * @param name The file will be saved as name.csv
 	 */
-	public void write(String name) {
+	public void write() {
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter(name, true);
+			outfile = new java.io.FileWriter(outputName, true);
 			for(Line_46 curr : this.arrNoGps) {
 				outfile.write( curr.toCsv() );
 			}

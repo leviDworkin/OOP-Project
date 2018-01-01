@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.awt.event.ActionEvent;
+import javax.swing.JPanel;
 
 public class GUI {
 
@@ -20,6 +21,9 @@ public class GUI {
 	private JTextField kmlPath;
 	private JButton btnAlgo1;
 	private JButton btnAlgo2;
+	private JTextField algo1Path;
+	private JTextField noGpsPath;
+	private JTextField comboPath;
 
 	/**
 	 * Launch the application.
@@ -55,7 +59,7 @@ public class GUI {
 		
 		wigglePath = new JTextField();
 		wigglePath.setText("Enter folder path with wiggle csv's");
-		wigglePath.setBounds(10, 11, 255, 20);
+		wigglePath.setBounds(289, 11, 273, 20);
 		frame.getContentPane().add(wigglePath);
 		wigglePath.setColumns(10);
 		
@@ -67,7 +71,7 @@ public class GUI {
 			}
 		});
 		writeCsv.setFont(new Font("Tahoma", Font.BOLD, 12));
-		writeCsv.setBounds(39, 36, 136, 23);
+		writeCsv.setBounds(349, 36, 136, 23);
 		frame.getContentPane().add(writeCsv);
 		
 		writeKml = new JButton("WriteKML");
@@ -83,21 +87,54 @@ public class GUI {
 			}
 		});
 		writeKml.setFont(new Font("Tahoma", Font.BOLD, 12));
-		writeKml.setBounds(351, 36, 113, 23);
+		writeKml.setBounds(362, 118, 113, 23);
 		frame.getContentPane().add(writeKml);
 		
 		kmlPath = new JTextField();
 		kmlPath.setText("Enter the output from WriteCSV");
-		kmlPath.setBounds(288, 11, 262, 20);
+		kmlPath.setBounds(289, 83, 273, 20);
 		frame.getContentPane().add(kmlPath);
 		kmlPath.setColumns(10);
 		
 		btnAlgo1 = new JButton("Algo 1");
-		btnAlgo1.setBounds(71, 162, 89, 23);
+		btnAlgo1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String path = algo1Path.getText();
+				wrap.sendToAlgo1(path);
+			}
+		});
+		btnAlgo1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnAlgo1.setBounds(53, 42, 89, 23);
 		frame.getContentPane().add(btnAlgo1);
 		
 		btnAlgo2 = new JButton("Algo 2");
-		btnAlgo2.setBounds(229, 162, 89, 23);
+		btnAlgo2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String path1 = comboPath.getText();
+				String path2 = noGpsPath.getText();
+				wrap.sendToAlgo2(path1,path2);
+			}
+		});
+		btnAlgo2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnAlgo2.setBounds(53, 151, 89, 23);
 		frame.getContentPane().add(btnAlgo2);
+		
+		algo1Path = new JTextField();
+		algo1Path.setText("Enter combo path");
+		algo1Path.setBounds(10, 11, 177, 20);
+		frame.getContentPane().add(algo1Path);
+		algo1Path.setColumns(10);
+		
+		noGpsPath = new JTextField();
+		noGpsPath.setText("Enter path with no gps");
+		noGpsPath.setBounds(10, 120, 177, 20);
+		frame.getContentPane().add(noGpsPath);
+		noGpsPath.setColumns(10);
+		
+		comboPath = new JTextField();
+		comboPath.setText("Enter combo path");
+		comboPath.setBounds(10, 89, 177, 20);
+		frame.getContentPane().add(comboPath);
+		comboPath.setColumns(10);
 	}
 }

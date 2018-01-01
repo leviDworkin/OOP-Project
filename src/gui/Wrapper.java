@@ -33,5 +33,21 @@ public class Wrapper {
 //				a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
 //				a.filterByName("Maxillent").WriteKml();
 	}
+
+	public void sendToAlgo1(String path) {
+		Algo_1 a = new Algo_1();
+		a.setOutputName("weighted_macs.csv");
+		a.read(path);
+		a.calculate();
+		a.write();
+	}
+
+	public void sendToAlgo2(String path1, String path2) {
+		Algo_2 b = new Algo_2(path1,path2);
+		b.setOutputName("gps_restored.csv");
+		b.read();
+		b.calculate();
+		b.write();
+	}
 	
 }
