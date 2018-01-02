@@ -43,6 +43,14 @@ public class Algo_2 {
 		this.outputName = outputName;
 	}
 
+	public ArrayList<Line_46> getCombo() {
+		return combo;
+	}
+
+	public void setCombo(ArrayList<Line_46> combo) {
+		this.combo = combo;
+	}
+
 	/**
 	 * Constructor receives two filenames as Strings.
 	 * @param combo_path filename of WiggleWifi done with location on.
@@ -52,7 +60,48 @@ public class Algo_2 {
 		this.combo_path=combo_path;
 		this.arrNoGps_path=arrNoGps_path;
 	}
+	public Algo_2() {
+		
+	}
+	
+	public void loadToDB(String comboPath) {
+		ArrayList<String[]> arr=new ArrayList<String[]>();
+		try{
+			Scanner scanner=new Scanner(new FileReader(comboPath));
+			String line;
+			while(scanner.hasNextLine()){
+				line=scanner.nextLine(); //get the line
+				String []results=line.split(",");  //split the line
+				if(results[0]!=null)
+					arr.add(results);
+			}
+			scanner.close();
+		}catch (Exception e){
+			System.out.println("Error: "+ e.getMessage());
+		}
 
+		for (int i=1; i<arr.size();i++) {  	//Runs the length of the ArrayList 
+			Line_46 line46=new Line_46();
+			String temp[]=arr.get(i);
+			line46.setTime(temp[0]);
+			line46.setId(temp[1]);
+			line46.setLat(Double.parseDouble(temp[2]));
+			line46.setLon(Double.parseDouble(temp[3]));
+			line46.setAlt(Double.parseDouble(temp[4]));
+			line46.setWifiAmount(Integer.parseInt(temp[5]));
+
+			for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
+				Wifi4 wifi=new Wifi4();
+				wifi.setSSID(temp[j-1]);
+				wifi.setMAC(temp[j]);
+				wifi.setFrequency(temp[k-1]);
+				wifi.setSignal(temp[k]);
+				line46.setListOfWifi(wifi);
+			}
+			combo.add(line46);
+		}
+
+	}
 	/**
 	 * This method reads the files, and translates them into ArrayLists.
 	 */
@@ -80,13 +129,11 @@ public class Algo_2 {
 			line46.setAlt(Double.parseDouble(temp[4]));
 			line46.setWifiAmount(Integer.parseInt(temp[5]));
 
-
 			for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
 				Wifi4 wifi=new Wifi4();
 				wifi.setMAC(temp[j]);
 				wifi.setSignal(temp[k]);
 				line46.setListOfWifi(wifi);
-
 			}
 			combo.add(line46);
 		}

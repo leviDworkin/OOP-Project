@@ -5,7 +5,10 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Locale;
+import java.util.Set;
+
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Folder;
 import de.micromata.opengis.kml.v_2_2_0.Icon;
@@ -22,7 +25,7 @@ public class Main {
 		WriteCSv b=new WriteCSv();
 		b.setOutputName("written_to_csv.csv");
 //		b.openFolder(folder);
-		
+//		b.write(); 
 		
 		String path="C:\\Users\\Levi\\git\\ex_0\\written_to_csv.csv";
 		String string_date ="27-10-2017  16:16:40";

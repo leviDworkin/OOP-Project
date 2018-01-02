@@ -22,9 +22,15 @@ import Matala_0.Line_46;
  *
  */
 public class WriteCSv implements Readable {
-	ArrayList<Line_46> sofi=new ArrayList();
+	private ArrayList<Line_46> sofi=new ArrayList<Line_46>();
 	private String outputName;
 
+	public ArrayList<Line_46> getSofi() {
+		return sofi;
+	}
+	public void setSofi(ArrayList<Line_46> sofi) {
+		this.sofi = sofi;
+	}
 	public String getOutputName() {
 		return outputName;
 	}
@@ -38,17 +44,16 @@ public class WriteCSv implements Readable {
 	public void openFolder(File folder) {
 
 		File[] listOfFiles = folder.listFiles();	
-		try {
-			FileWriter outfile;
-			outfile = new java.io.FileWriter(outputName, true);
-			String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
-			outfile.write(title+"\n");
-			outfile.close();
-		} catch (IOException e) {
-			System.out.println("Error in writing the title!");
-			e.printStackTrace();
-		}
-
+		//		try {
+		//			FileWriter outfile;
+		//			outfile = new java.io.FileWriter(outputName, true);
+		//			String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
+		//			outfile.write(title+"\n");
+		//			outfile.close();
+		//		} catch (IOException e) {
+		//			System.out.println("Error in writing the title!");
+		//			e.printStackTrace();
+		//		}
 		for (int i = 0; i < listOfFiles.length; i++) {
 			File file = listOfFiles[i];
 			System.out.println("file num "+i+" name: "+file.getName());
@@ -57,7 +62,6 @@ public class WriteCSv implements Readable {
 
 			}
 		}
-		write();
 	}
 	/**
 	 * Reads csv file and prepares it to be written in new format.
@@ -65,7 +69,7 @@ public class WriteCSv implements Readable {
 	 */
 	public void read(String path) {
 
-		ArrayList<Wifi> arr=new ArrayList();
+		ArrayList<Wifi> arr=new ArrayList<Wifi>();
 		String good_id="";
 		try{
 			Scanner scanner=new Scanner(new FileReader(path));
@@ -170,20 +174,25 @@ public class WriteCSv implements Readable {
 	}
 
 	public void write() {
-		// TODO Auto-generated method stub
 
 		try {
+			String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
 			FileWriter outfile;
 			outfile = new java.io.FileWriter(outputName, true);
+
+			String pathOfProj = System.getProperty("user.dir").toString()+"\\"+outputName;
+			Scanner scanner=new Scanner(new FileReader(pathOfProj));
+			if(!scanner.hasNextLine()) {
+				outfile.write(title+"\n");
+				scanner.close();
+			}
+
 			outfile.write(toCsv(sofi));
 			outfile.close();
-
 		} catch (IOException e) {
 			System.out.println("Error in write() method!");
 			e.printStackTrace();
 		} 
 
 	}
-
-
 }
