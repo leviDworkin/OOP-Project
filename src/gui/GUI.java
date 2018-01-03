@@ -25,6 +25,10 @@ import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLayeredPane;
+import javax.swing.JRadioButton;
+import javax.swing.SwingConstants;
+import javax.swing.JCheckBox;
+import javax.swing.JInternalFrame;
 
 public class GUI {
 
@@ -36,6 +40,25 @@ public class GUI {
 	private JTextField recTextField;
 	private JTextField routerTextField;
 	private JTextField filterTextField;
+	private JTextField startTextF;
+	private JTextField endTextF;
+	private JTextField latFromTextF;
+	private JTextField latToTextF;
+	private JTextField lonFromTextF;
+	private JTextField lonToTextF;
+	private JTextField altFromTextF;
+	private JTextField altToTextF;
+	private JLabel labelLat;
+	private JLabel labelLon;
+	private JLabel labelAlt;
+	private JTextField idTextF;
+	private JLabel labelID;
+	private JRadioButton andRadioBtn;
+	private JRadioButton notRadioBtn;
+	private JRadioButton orRadioBtn;
+	JRadioButton rdbtnTime;
+	JRadioButton rdbtnLocation;
+	JRadioButton rdbtnDevice;
 	
 	/**
 	 * Launch the application.
@@ -64,7 +87,7 @@ public class GUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 665, 407);
+		frame.setBounds(100, 100, 660, 420);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -141,65 +164,214 @@ public class GUI {
 		frame.getContentPane().add(btnAddToDb);
 		
 		JLabel recordsLabel = new JLabel("Records:");
-		recordsLabel.setBounds(289, 96, 96, 14);
+		recordsLabel.setBounds(10, 327, 56, 14);
 		frame.getContentPane().add(recordsLabel);
 		
 		JLabel routersLabel = new JLabel("Routers:");
-		routersLabel.setBounds(289, 121, 96, 14);
+		routersLabel.setBounds(125, 327, 56, 14);
 		frame.getContentPane().add(routersLabel);
 		
 		JLabel statusLabel = new JLabel("Database status:");
-		statusLabel.setBounds(289, 73, 96, 14);
+		statusLabel.setBounds(10, 302, 96, 14);
 		statusLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
 		frame.getContentPane().add(statusLabel);
 		
 		JLabel statFilterLabel = new JLabel("Filter: ");
-		statFilterLabel.setBounds(289, 146, 96, 14);
+		statFilterLabel.setBounds(269, 327, 39, 14);
 		frame.getContentPane().add(statFilterLabel);
 		
 		JLabel filterByLabel = new JLabel("Filter by:");
-		filterByLabel.setBounds(10, 75, 56, 14);
-		filterByLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
+		filterByLabel.setBounds(113, 75, 111, 20);
+		filterByLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
 		frame.getContentPane().add(filterByLabel);
 		
-		
-		JButton btnTime = new JButton("Time");
-		btnTime.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
-		btnTime.setBounds(10, 101, 89, 23);
-		btnTime.setFont(new Font("Tahoma", Font.BOLD, 12));
-		frame.getContentPane().add(btnTime);
-		
-		JButton btnDevice = new JButton("Device");
-		btnDevice.setBounds(10, 178, 89, 23);
-		btnDevice.setFont(new Font("Tahoma", Font.BOLD, 12));
-		frame.getContentPane().add(btnDevice);
-		
-		JButton btnLocation = new JButton("Location");
-		btnLocation.setBounds(10, 141, 89, 23);
-		btnLocation.setFont(new Font("Tahoma", Font.BOLD, 12));
-		frame.getContentPane().add(btnLocation);
-		
 		recTextField = new JTextField();
-		recTextField.setBounds(395, 93, 231, 20);
+		recTextField.setBounds(61, 324, 56, 20);
 		frame.getContentPane().add(recTextField);
 		recTextField.setColumns(10);
 		recTextField.setEditable(false);
 		
 		routerTextField = new JTextField();
-		routerTextField.setBounds(395, 118, 231, 20);
+		routerTextField.setBounds(181, 324, 78, 20);
 		frame.getContentPane().add(routerTextField);
 		routerTextField.setColumns(10);
 		routerTextField.setEditable(false);
 		
 		filterTextField = new JTextField();
-		filterTextField.setBounds(395, 143, 231, 20);
+		filterTextField.setBounds(307, 324, 280, 20);
 		frame.getContentPane().add(filterTextField);
 		filterTextField.setColumns(10);
 		filterTextField.setEditable(false);
 		
+		rdbtnTime = new JRadioButton("Time");
+		rdbtnTime.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(rdbtnLocation.isSelected()&&rdbtnDevice.isSelected()) {
+					rdbtnTime.setSelected(false);
+				}
+				
+			}
+		});
+		rdbtnTime.setFont(new Font("Tahoma", Font.BOLD, 11));
+		rdbtnTime.setBounds(10, 92, 78, 23);
+		frame.getContentPane().add(rdbtnTime);
+		
+		rdbtnLocation = new JRadioButton("Location");
+		rdbtnLocation.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(rdbtnTime.isSelected()&&rdbtnDevice.isSelected()) {
+					rdbtnLocation.setSelected(false);
+				}
+				
+			}
+		});
+		rdbtnLocation.setFont(new Font("Tahoma", Font.BOLD, 11));
+		rdbtnLocation.setBounds(6, 189, 77, 23);
+		frame.getContentPane().add(rdbtnLocation);
+		
+		rdbtnDevice = new JRadioButton("Device");
+		rdbtnDevice.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(rdbtnLocation.isSelected()&&rdbtnTime.isSelected()) {
+					rdbtnDevice.setSelected(false);
+				}
+				
+			}
+		});
+		rdbtnDevice.setFont(new Font("Tahoma", Font.BOLD, 11));
+		rdbtnDevice.setBounds(289, 92, 78, 23);
+		frame.getContentPane().add(rdbtnDevice);
+		
+		startTextF = new JTextField();
+		startTextF.setBounds(76, 118, 182, 20);
+		frame.getContentPane().add(startTextF);
+		startTextF.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("Start time:");
+		lblNewLabel.setBounds(10, 121, 66, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		endTextF = new JTextField();
+		endTextF.setBounds(76, 149, 182, 20);
+		frame.getContentPane().add(endTextF);
+		endTextF.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("End time:");
+		lblNewLabel_1.setBounds(10, 152, 66, 14);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		latFromTextF = new JTextField();
+		latFromTextF.setBounds(76, 218, 66, 20);
+		frame.getContentPane().add(latFromTextF);
+		latFromTextF.setColumns(10);
+		
+		latToTextF = new JTextField();
+		latToTextF.setBounds(76, 255, 66, 20);
+		frame.getContentPane().add(latToTextF);
+		latToTextF.setColumns(10);
+		
+		lonFromTextF = new JTextField();
+		lonFromTextF.setBounds(152, 218, 72, 20);
+		frame.getContentPane().add(lonFromTextF);
+		lonFromTextF.setColumns(10);
+		
+		lonToTextF = new JTextField();
+		lonToTextF.setBounds(152, 255, 72, 20);
+		frame.getContentPane().add(lonToTextF);
+		lonToTextF.setColumns(10);
+		
+		altFromTextF = new JTextField();
+		altFromTextF.setBounds(234, 218, 66, 20);
+		frame.getContentPane().add(altFromTextF);
+		altFromTextF.setColumns(10);
+		
+		altToTextF = new JTextField();
+		altToTextF.setBounds(234, 255, 66, 20);
+		frame.getContentPane().add(altToTextF);
+		altToTextF.setColumns(10);
+		
+		JLabel labelFrom = new JLabel("From:");
+		labelFrom.setBounds(20, 221, 46, 14);
+		frame.getContentPane().add(labelFrom);
+		
+		JLabel labelTo = new JLabel("To:");
+		labelTo.setBounds(20, 258, 46, 14);
+		frame.getContentPane().add(labelTo);
+		
+		labelLat = new JLabel("Lat");
+		labelLat.setHorizontalAlignment(SwingConstants.CENTER);
+		labelLat.setBounds(76, 198, 66, 14);
+		frame.getContentPane().add(labelLat);
+		
+		labelLon = new JLabel("Lon");
+		labelLon.setHorizontalAlignment(SwingConstants.CENTER);
+		labelLon.setBounds(160, 198, 64, 14);
+		frame.getContentPane().add(labelLon);
+		
+		labelAlt = new JLabel("Alt");
+		labelAlt.setHorizontalAlignment(SwingConstants.CENTER);
+		labelAlt.setBounds(234, 198, 66, 14);
+		frame.getContentPane().add(labelAlt);
+		
+		idTextF = new JTextField();
+		idTextF.setBounds(339, 122, 190, 20);
+		frame.getContentPane().add(idTextF);
+		idTextF.setColumns(10);
+		
+		labelID = new JLabel("ID:");
+		labelID.setBounds(307, 122, 22, 14);
+		frame.getContentPane().add(labelID);
+		
+		andRadioBtn = new JRadioButton("And");
+		andRadioBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				orRadioBtn.setSelected(false);
+			}
+		});
+		andRadioBtn.setBounds(406, 161, 65, 23);
+		frame.getContentPane().add(andRadioBtn);
+		
+		notRadioBtn = new JRadioButton("Not");
+		notRadioBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		notRadioBtn.setBounds(339, 161, 66, 23);
+		frame.getContentPane().add(notRadioBtn);
+		
+		orRadioBtn = new JRadioButton("Or");
+		orRadioBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				andRadioBtn.setSelected(false);
+			}
+		});
+		orRadioBtn.setBounds(473, 161, 66, 23);
+		frame.getContentPane().add(orRadioBtn);
+		
+		JButton btnDeleteFilter = new JButton("Delete filter");
+		btnDeleteFilter.setForeground(Color.RED);
+		btnDeleteFilter.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnDeleteFilter.setBounds(449, 189, 109, 42);
+		frame.getContentPane().add(btnDeleteFilter);
+		
+		JButton saveFilterBtn = new JButton("Save filter");
+		saveFilterBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
+		saveFilterBtn.setBounds(331, 242, 108, 35);
+		frame.getContentPane().add(saveFilterBtn);
+		
+		JButton loadFilterBtn = new JButton("Load filter");
+		loadFilterBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
+		loadFilterBtn.setBounds(450, 242, 108, 36);
+		frame.getContentPane().add(loadFilterBtn);
+		
+		JButton filterBtn = new JButton("Filter");
+		filterBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		filterBtn.setFont(new Font("Tahoma", Font.BOLD, 12));
+		filterBtn.setBounds(331, 189, 108, 42);
+		frame.getContentPane().add(filterBtn);
 	}
 }
