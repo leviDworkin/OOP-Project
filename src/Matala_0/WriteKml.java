@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import de.micromata.opengis.kml.v_2_2_0.Folder;
 import de.micromata.opengis.kml.v_2_2_0.Icon;
@@ -20,21 +22,48 @@ import de.micromata.opengis.kml.v_2_2_0.TimeStamp;
  *
  */
 public class WriteKml  {
+	private Set<Line_46> dataBase = new HashSet<Line_46>();
 	ArrayList<String[]> arr;
 	String path;
 	private String outputName;
 	
+	public Set<Line_46> getDataBase() {
+		return dataBase;
+	}
+	public void setDataBase(Set<Line_46> dataBase) {
+		this.dataBase = dataBase;
+	}
 	public String getOutputName() {
 		return outputName;
 	}
 	public void setOutputName(String outputName) {
 		this.outputName = outputName;
 	}
+	public void writeDbToKml() {
+		Kml kml = new Kml();
+		Folder folder = kml.createAndSetFolder();
+		for (Line_46 temp : dataBase) {
+			ArrayList<Wifi4> arr = temp.getListOfWifi();
+			//To get all the wifi's on the line
+			for (int j = 0; j < arr.size() && arr.get(j)!=null; j=j+4) {
+				Wifi4 curr = arr.get(j);
+				CreatePlacemark(kml, folder, temp.getLat(), temp.getLon(), curr.getSSID(), curr.getMAC(), curr.getSignal(),curr.getFrequency(),temp.getTime());
+			}	
+		}
+		try {
+			kml.marshal(new File(outputName));
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+
+	}
+	
 	/**
 	 * Creates a kml file from the csv data. 
 	 * @throws FileNotFoundException
 	 */
-	public  void WriteKml() throws FileNotFoundException{
+	public void WriteKml() throws FileNotFoundException{
 
 		Wifi wifi = new Wifi();
 		lineData ld;

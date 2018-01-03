@@ -78,8 +78,7 @@ public class GUI {
 		writeCsvBtn.setBounds(10, 10, 123, 23);
 		writeCsvBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				String path = wigglePath.getText();
-//				wrap.sendToWriteCsv(path);
+				wrap.writeCsv();
 			}
 		});
 		writeCsvBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -89,13 +88,12 @@ public class GUI {
 		writeKmlBtn.setBounds(10, 41, 123, 23);
 		writeKmlBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				String filename = comboPath.getText();
-//				try {
-//					wrap.sendToWriteKml(filename);
-//				} catch (FileNotFoundException e1) {
-//					System.out.println(e1.getMessage());
-//					e1.printStackTrace();
-//				}
+				try {
+					wrap.writeKml();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		writeKmlBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -164,6 +162,7 @@ public class GUI {
 		filterByLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
 		frame.getContentPane().add(filterByLabel);
 		
+		
 		JButton btnTime = new JButton("Time");
 		btnTime.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -201,23 +200,6 @@ public class GUI {
 		frame.getContentPane().add(filterTextField);
 		filterTextField.setColumns(10);
 		filterTextField.setEditable(false);
-
-	}
-	private static void addPopup(Component component, final JPopupMenu popup) {
-		component.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			public void mouseReleased(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			private void showMenu(MouseEvent e) {
-				popup.show(e.getComponent(), e.getX(), e.getY());
-			}
-		});
+		
 	}
 }

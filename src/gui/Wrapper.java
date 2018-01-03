@@ -16,27 +16,36 @@ import matala_2.*;
 public class Wrapper {
 
 	private Set<Line_46> dataBase = new HashSet<Line_46>();
-	
-	public void sendToWriteCsv(String folderPath) {
-		File folder = new File(folderPath);
+
+	public void writeCsv() {
+
 		WriteCSv b=new WriteCSv();
+		b.getSofi().clear();
+		b.getSofi().addAll(dataBase);
 		b.setOutputName("gui_writeToCSV.csv");
-		b.openFolder(folder);
+		b.write();
 	}
 
-	public void sendToWriteKml(String filename) throws FileNotFoundException {	
-		Data a=new Data(filename);
-		a.setOutputName("gui_writeToKML.kml");
-		a.loadAllFromFile().WriteKml();
-		
-//		String string_date ="27-10-2017  16:16:40";
-//		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-//		Date date_user_want = format.parse(string_date);
-//				a.FilterGiveAllBeforeTime(date_user_want);
-//				a.FilterGiveAllAfterTime(date_user_want).WriteKml();	        
-//				a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
-//				a.filterByName("Maxillent").WriteKml();
-	}
+	public void writeKml() throws FileNotFoundException {	
+		if(dataBase.size()!=0) {
+			WriteKml wk = new WriteKml();
+			wk.setDataBase(dataBase);
+			wk.setOutputName("gui_writtenToKml.kml");
+			wk.writeDbToKml();
+		}
+	}	
+	//		Data a=new Data(dataBase);
+	//		a.setOutputName("gui_writeToKML.kml");
+	//		a.loadAllFromDB().WriteKml();
+
+	//		String string_date ="27-10-2017  16:16:40";
+	//		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+	//		Date date_user_want = format.parse(string_date);
+	//				a.FilterGiveAllBeforeTime(date_user_want);
+	//				a.FilterGiveAllAfterTime(date_user_want).WriteKml();	        
+	//				a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
+	//				a.filterByName("Maxillent").WriteKml();
+
 
 	public void addToDB(String wigPath, String comPath) {
 		File folder = new File(wigPath);
@@ -47,7 +56,7 @@ public class Wrapper {
 				dataBase.add(temp);
 			}
 			//dataBase.addAll(b.getSofi());
-			
+
 		}
 		File file = new File(comPath);
 		if(file.isFile() && file.getName().endsWith(".csv")) {
@@ -57,21 +66,21 @@ public class Wrapper {
 		}
 	}
 
-//	public void sendToAlgo1(String path) {
-//		Algo_1 a = new Algo_1();
-//		a.setOutputName("weighted_macs.csv");
-//		a.read(path);
-//		a.calculate();
-//		a.write();
-//	}
-//
-//	public void sendToAlgo2(String path1, String path2) {
-//		Algo_2 b = new Algo_2(path1,path2);
-//		b.setOutputName("gps_restored.csv");
-//		b.read();
-//		b.calculate();
-//		b.write();
-//	}
+	//	public void sendToAlgo1(String path) {
+	//		Algo_1 a = new Algo_1();
+	//		a.setOutputName("weighted_macs.csv");
+	//		a.read(path);
+	//		a.calculate();
+	//		a.write();
+	//	}
+	//
+	//	public void sendToAlgo2(String path1, String path2) {
+	//		Algo_2 b = new Algo_2(path1,path2);
+	//		b.setOutputName("gps_restored.csv");
+	//		b.read();
+	//		b.calculate();
+	//		b.write();
+	//	}
 	public Set getDataBase() {
 		return dataBase;
 	}
@@ -79,4 +88,5 @@ public class Wrapper {
 	public void setDataBase(Set dataBase) {
 		this.dataBase = dataBase;
 	}
+
 }
