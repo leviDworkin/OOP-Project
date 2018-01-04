@@ -54,11 +54,12 @@ public class GUI {
 	private JTextField idTextF;
 	private JLabel labelID;
 	private JRadioButton andRadioBtn;
-	private JRadioButton notRadioBtn;
+	private JRadioButton notDeviceRadioBtn;
 	private JRadioButton orRadioBtn;
 	JRadioButton rdbtnTime;
 	JRadioButton rdbtnLocation;
 	JRadioButton rdbtnDevice;
+	private JRadioButton notLocationRdBtn;
 	
 	/**
 	 * Launch the application.
@@ -213,7 +214,7 @@ public class GUI {
 			}
 		});
 		rdbtnTime.setFont(new Font("Tahoma", Font.BOLD, 11));
-		rdbtnTime.setBounds(10, 92, 78, 23);
+		rdbtnTime.setBounds(10, 92, 66, 23);
 		frame.getContentPane().add(rdbtnTime);
 		
 		rdbtnLocation = new JRadioButton("Location");
@@ -226,7 +227,7 @@ public class GUI {
 			}
 		});
 		rdbtnLocation.setFont(new Font("Tahoma", Font.BOLD, 11));
-		rdbtnLocation.setBounds(6, 189, 77, 23);
+		rdbtnLocation.setBounds(10, 176, 77, 23);
 		frame.getContentPane().add(rdbtnLocation);
 		
 		rdbtnDevice = new JRadioButton("Device");
@@ -328,17 +329,17 @@ public class GUI {
 				orRadioBtn.setSelected(false);
 			}
 		});
-		andRadioBtn.setBounds(406, 161, 65, 23);
+		andRadioBtn.setBounds(339, 152, 65, 23);
 		frame.getContentPane().add(andRadioBtn);
 		
-		notRadioBtn = new JRadioButton("Not");
-		notRadioBtn.addActionListener(new ActionListener() {
+		notDeviceRadioBtn = new JRadioButton("Not");
+		notDeviceRadioBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 			}
 		});
-		notRadioBtn.setBounds(339, 161, 66, 23);
-		frame.getContentPane().add(notRadioBtn);
+		notDeviceRadioBtn.setBounds(373, 92, 66, 23);
+		frame.getContentPane().add(notDeviceRadioBtn);
 		
 		orRadioBtn = new JRadioButton("Or");
 		orRadioBtn.addActionListener(new ActionListener() {
@@ -346,7 +347,7 @@ public class GUI {
 				andRadioBtn.setSelected(false);
 			}
 		});
-		orRadioBtn.setBounds(473, 161, 66, 23);
+		orRadioBtn.setBounds(406, 149, 66, 23);
 		frame.getContentPane().add(orRadioBtn);
 		
 		JButton btnDeleteFilter = new JButton("Delete filter");
@@ -368,10 +369,19 @@ public class GUI {
 		JButton filterBtn = new JButton("Filter");
 		filterBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 			}
 		});
 		filterBtn.setFont(new Font("Tahoma", Font.BOLD, 12));
 		filterBtn.setBounds(331, 189, 108, 42);
 		frame.getContentPane().add(filterBtn);
+		
+		JRadioButton notTimeRadiodBtn = new JRadioButton("Not");
+		notTimeRadiodBtn.setBounds(82, 92, 88, 23);
+		frame.getContentPane().add(notTimeRadiodBtn);
+		
+		notLocationRdBtn = new JRadioButton("Not");
+		notLocationRdBtn.setBounds(99, 176, 56, 23);
+		frame.getContentPane().add(notLocationRdBtn);
 	}
 }

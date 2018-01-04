@@ -34,28 +34,13 @@ public class Wrapper {
 			wk.writeDbToKml();
 		}
 	}	
-	//		Data a=new Data(dataBase);
-	//		a.setOutputName("gui_writeToKML.kml");
-	//		a.loadAllFromDB().WriteKml();
-
-	//		String string_date ="27-10-2017  16:16:40";
-	//		SimpleDateFormat format= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-	//		Date date_user_want = format.parse(string_date);
-	//				a.FilterGiveAllBeforeTime(date_user_want);
-	//				a.FilterGiveAllAfterTime(date_user_want).WriteKml();	        
-	//				a.FilterByDist(32.1678190337,34.8061381, 5).WriteKml();
-	//				a.filterByName("Maxillent").WriteKml();
-
 
 	public void addToDB(String wigPath, String comPath) {
 		File folder = new File(wigPath);
 		if(folder.isDirectory()) {
 			WriteCSv b=new WriteCSv();
 			b.openFolder(folder);
-			for(Line_46 temp : b.getSofi()) {
-				dataBase.add(temp);
-			}
-			//dataBase.addAll(b.getSofi());
+			dataBase.addAll(b.getSofi());
 
 		}
 		File file = new File(comPath);
