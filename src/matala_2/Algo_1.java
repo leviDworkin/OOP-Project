@@ -116,10 +116,10 @@ public class Algo_1 implements Readable {
 	 * This method writes the results of this class to a new csv file.
 	 */
 	@Override
-	public void write() {
+	public void write(String name) {
 		try {
 			FileWriter outfile;
-			outfile = new java.io.FileWriter("test_2.csv", true);
+			outfile = new java.io.FileWriter(name, true);
 			outfile.write(toCsv(sofi));
 			outfile.close();
 
@@ -147,6 +147,11 @@ public class Algo_1 implements Readable {
 	@Override
 	public String toString() {
 		return mh.mytoString();
+	}
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
 	}
 
 

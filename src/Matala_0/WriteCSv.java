@@ -177,6 +177,11 @@ public class WriteCSv implements Readable {
 		} 
 
 	}
+	@Override
+	public void write(String name) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 }
