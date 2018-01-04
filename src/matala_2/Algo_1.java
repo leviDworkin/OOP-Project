@@ -1,5 +1,6 @@
 package matala_2;
 import java.io.FileReader;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,11 +19,18 @@ import Matala_0.lineData;
  * This class implements the Readable Interface in package Matala_0
  */
 public class Algo_1 implements Readable {
-
+	private String outputName;
 	ArrayList<String[]> arr = new ArrayList<String[]>();
 	myHash mh=new myHash();
 	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
 
+
+	public String getOutputName() {
+		return outputName;
+	}
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
+	}
 	/**
 	 * This method reads the csv file and sends each mac with its coordinates to the HashMap myHash. 
 	 */
@@ -115,19 +123,6 @@ public class Algo_1 implements Readable {
 	/**
 	 * This method writes the results of this class to a new csv file.
 	 */
-	@Override
-	public void write(String name) {
-		try {
-			FileWriter outfile;
-			outfile = new java.io.FileWriter(name, true);
-			outfile.write(toCsv(sofi));
-			outfile.close();
-
-		} catch (IOException e) {
-			System.out.println("Error in write() method!");
-			e.printStackTrace();
-		} 
-	}
 
 	/**
 	 * This method strings an ArrayList<Point_And_Sig> to csv format. 
@@ -150,8 +145,16 @@ public class Algo_1 implements Readable {
 	}
 	@Override
 	public void write() {
-		// TODO Auto-generated method stub
-		
+		try {
+			FileWriter outfile;
+			outfile = new java.io.FileWriter(outputName, true);
+			outfile.write(toCsv(sofi));
+			outfile.close();
+
+		} catch (IOException e) {
+			System.out.println("Error in write() method!");
+			e.printStackTrace();
+		} 
 	}
 
 

@@ -10,20 +10,41 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.Set;
 /**
  * This class prepares data from a csv type file for the WriteKml class to write.
  * @author Levi and Uriel
  *
  */
 public class Data {
+	Set<Line_46> dataBase;
 	ArrayList<String[]> arr;
 	String path;
+	private String outputName;
 
 	public Data(String path){
 		arr= new ArrayList<String[]>();
 		this.path=path;
 	}
+	public Data(Set<Line_46> db) {
+		dataBase = db;
+	}
+	public String getOutputName() {
+		return outputName;
+	}
 
+	public void setOutputName(String outputName) {
+		this.outputName = outputName;
+	}
+	public WriteKml loadAllFromDB() {
+		WriteKml wk = new WriteKml();
+		lineData record;
+		for(Line_46 temp : dataBase) {
+			record= new lineData(temp.getTime(), temp.getLat(), temp.getLon());
+		}
+
+		return wk;
+	}
 	/**
 	 * Loads all the data from the current pathfile.
 	 * 
@@ -31,6 +52,7 @@ public class Data {
 	public WriteKml loadAllFromFile(){
 		String pathFile=this.path;
 		WriteKml arbel=new WriteKml();
+		arbel.setOutputName(outputName);
 		try{
 			Scanner scanner=new Scanner(new FileReader(pathFile));
 			String line;
@@ -73,7 +95,7 @@ public class Data {
 		String pathFile=this.path;
 		try{
 			Scanner scanner=new Scanner(new FileReader(pathFile));
-			
+
 			String line;
 			lineData ld;
 			scanner.nextLine();
@@ -88,10 +110,10 @@ public class Data {
 
 				double distance_from_me=distance(user_lat, lat, user_lon, lon, 0, 0);
 				System.out.println("distance from me: "+distance_from_me);
-				
+
 				if(distance_from_me<dist_by_meter&&distance_from_me!=0) {
 					arr.add(results);
-					
+
 				}
 			}
 			scanner.close();
@@ -167,7 +189,7 @@ public class Data {
 				double lat=Double.parseDouble(results[2]);
 				String time=results[0];
 				ld= new lineData(time, lat, lon);
-	
+
 				DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				Date wifi_date=format.parse(ld.getTime());
 				System.out.println("wifi :"+wifi_date);
@@ -206,7 +228,7 @@ public class Data {
 				double lat=Double.parseDouble(results[2]);
 				String time=results[0];
 				ld= new lineData(time, lat, lon);
-	
+
 				DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				Date wifi_date=format.parse(ld.getTime());
 				System.out.println("wifi :"+wifi_date);
