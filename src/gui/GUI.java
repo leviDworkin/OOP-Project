@@ -161,7 +161,7 @@ public class GUI {
 		btnEraseDB.setFont(new Font("Tahoma", Font.BOLD, 11));
 		frame.getContentPane().add(btnEraseDB);
 
-
+	
 		JButton btnAddToDb = new JButton("Add to database");
 		btnAddToDb.setBounds(143, 10, 123, 23);
 		btnAddToDb.addActionListener(new ActionListener() {
@@ -174,6 +174,10 @@ public class GUI {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				MyThread thread = new MyThread();
+				thread.setFilePath(wigPath);
+				thread.start();
+				System.out.println("Thread is running");
 				printStats();
 			}
 		});
@@ -491,41 +495,6 @@ public class GUI {
 		filterBtn.setFont(new Font("Tahoma", Font.BOLD, 12));
 		filterBtn.setBounds(331, 189, 108, 42);
 		frame.getContentPane().add(filterBtn);
-
-
-
-	}
-	public synchronized void myThread() {
-		WatchService watchService;
-		try {
-			watchService = FileSystems.getDefault().newWatchService();
-			File folder = new File(this.wigglePath.getText());
-			if(folder.isDirectory()) {
-				Path path = Paths.get(wigglePath.getText());
-				path.register(
-						watchService, 
-						StandardWatchEventKinds.ENTRY_CREATE, 
-						StandardWatchEventKinds.ENTRY_DELETE, 
-						StandardWatchEventKinds.ENTRY_MODIFY);
-
-				WatchKey key;
-				while ((key = watchService.take()) != null) {
-
-					for (WatchEvent<?> event : key.pollEvents()) {
-						System.out.println(
-								"Event kind:" + event.kind() 
-								+ ". File affected: " + event.context() + ".");
-					}
-					key.reset();
-				}
-			}
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}
 	}
 	
 	public void printStats() {
