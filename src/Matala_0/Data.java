@@ -102,7 +102,7 @@ public class Data {
 			while(scanner.hasNextLine()){
 				line=scanner.nextLine(); //get the line
 				//System.out.println("line"+line);
-				String []results=line.split(",");	//split the line
+				String []results=line.split(",");//split the line
 				double lon=Double.parseDouble(results[3]);
 				double lat=Double.parseDouble(results[2]);
 				String time=results[0];

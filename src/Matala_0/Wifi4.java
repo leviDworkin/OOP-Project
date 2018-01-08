@@ -1,16 +1,19 @@
 package Matala_0;
+
+import java.io.Serializable;
+
 /**
  * This class creates an object Wifi4 which contains 4 variables ssid, mac, frequency and signal.
  * @author Uriel and Levi
  *
  */
-public class Wifi4 {
+public class Wifi4 implements Serializable{
 
 	private String SSID;
 	private String MAC;
 	private String frequency;
 	private String signal;
-	
+
 	public String getSSID() {
 		return SSID;
 	}
@@ -60,5 +63,24 @@ public class Wifi4 {
 		String swifi="";
 		swifi= this.SSID+","+this.MAC+","+this.frequency+","+this.signal+",";
 		return swifi;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Wifi4) {
+			Wifi4 ob = (Wifi4)obj;
+			if(!ob.getFrequency().equals(this.frequency) && !ob.getMAC().equals(this.MAC) 
+					&& !ob.getSignal().equals(this.signal) && !ob.getSSID().equals(this.SSID))
+				return false;
+		}		
+		return true;
+	}
+	@Override
+	public int hashCode() {
+		int hash = 7;
+		hash = 31 * hash + (null == this.SSID ? 0 : this.SSID.hashCode());
+		hash = 31 * hash + (null ==this.frequency ? 0 : this.frequency.hashCode());
+		hash = 31 * hash + (null == this.MAC ? 0 : this.MAC.hashCode());
+		hash = 31 * hash + (null ==this.signal ? 0 : this.signal.hashCode());
+		return hash;
 	}
 }

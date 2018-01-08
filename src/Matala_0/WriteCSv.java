@@ -44,16 +44,7 @@ public class WriteCSv implements Readable {
 	public void openFolder(File folder) {
 
 		File[] listOfFiles = folder.listFiles();	
-		//		try {
-		//			FileWriter outfile;
-		//			outfile = new java.io.FileWriter(outputName, true);
-		//			String title=("Time, ID, Lat, Lon, Alt, #number of networks, SSID1, MAC1, Frequncy1, Signal1,SSID2, MAC2, Frequncy2, Signal2,SSID3, MAC3, Frequncy3, Signal3,SSID4, MAC4, Frequncy4, Signal4,SSID5, MAC5, Frequncy5, Signal5,SSID6, MAC6, Frequncy6, Signal6,SSID7, MAC7, Frequncy7, Signal7,SSID8, MAC8, Frequncy8, Signal8,SSID9, MAC9, Frequncy9, Signal9,SSID10, MAC10, Frequncy10, Signal10");
-		//			outfile.write(title+"\n");
-		//			outfile.close();
-		//		} catch (IOException e) {
-		//			System.out.println("Error in writing the title!");
-		//			e.printStackTrace();
-		//		}
+
 		for (int i = 0; i < listOfFiles.length; i++) {
 			File file = listOfFiles[i];
 			System.out.println("file num "+i+" name: "+file.getName());
@@ -76,29 +67,30 @@ public class WriteCSv implements Readable {
 			String line;
 			String lineid=scanner.nextLine();
 			String []idFromLine=lineid.split(",");
-			String id = idFromLine[5];
-			good_id=id.substring(8, id.length());
+			if(idFromLine[0].contains("Wigle")) {
+				String id = idFromLine[5];
+				good_id=id.substring(8, id.length());
 
-			scanner.nextLine();
-			while(scanner.hasNextLine()){
-				line=scanner.nextLine(); 						//get the line
+				scanner.nextLine();
+				while(scanner.hasNextLine()){
+					line=scanner.nextLine(); 						//get the line
 
-				String []results=line.split(",");				//split the line
-				Wifi wifispot= new Wifi();
-				wifispot.setMAC(results[0]);
-				wifispot.setSSID(results[1]);
-				wifispot.setSignal(results[5]);
-				wifispot.setFrequency(results[4]);
-				wifispot.setTime(results[3]);
-				wifispot.setLat(results[6]);
-				wifispot.setLon(results[7]);
-				wifispot.setAlt(results[8]);
-				wifispot.setType(results[10]);
-				wifispot.setId(good_id);
-				if(wifispot.getType().equals("WIFI"))
-					arr.add(wifispot);
+					String []results=line.split(",");				//split the line
+					Wifi wifispot= new Wifi();
+					wifispot.setMAC(results[0]);
+					wifispot.setSSID(results[1]);
+					wifispot.setSignal(results[5]);
+					wifispot.setFrequency(results[4]);
+					wifispot.setTime(results[3]);
+					wifispot.setLat(results[6]);
+					wifispot.setLon(results[7]);
+					wifispot.setAlt(results[8]);
+					wifispot.setType(results[10]);
+					wifispot.setId(good_id);
+					if(wifispot.getType().equals("WIFI"))
+						arr.add(wifispot);
+				}
 			}
-
 			scanner.close();
 		}catch (Exception e){
 			System.out.println("Error: "+ e.getMessage());

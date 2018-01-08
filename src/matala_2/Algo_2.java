@@ -61,9 +61,9 @@ public class Algo_2 {
 		this.arrNoGps_path=arrNoGps_path;
 	}
 	public Algo_2() {
-		
+
 	}
-	
+
 	public void loadToDB(String comboPath) {
 		ArrayList<String[]> arr=new ArrayList<String[]>();
 		try{
@@ -80,25 +80,29 @@ public class Algo_2 {
 			System.out.println("Error: "+ e.getMessage());
 		}
 
-		for (int i=1; i<arr.size();i++) {  	//Runs the length of the ArrayList 
+		for (int i=0; i<arr.size()-1;i++) { //Runs the length of the ArrayList 
 			Line_46 line46=new Line_46();
 			String temp[]=arr.get(i);
-			line46.setTime(temp[0]);
-			line46.setId(temp[1]);
-			line46.setLat(Double.parseDouble(temp[2]));
-			line46.setLon(Double.parseDouble(temp[3]));
-			line46.setAlt(Double.parseDouble(temp[4]));
-			line46.setWifiAmount(Integer.parseInt(temp[5]));
+			if(temp[0].equals("Time")) {
 
-			for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) {
-				Wifi4 wifi=new Wifi4();
-				wifi.setSSID(temp[j-1]);
-				wifi.setMAC(temp[j]);
-				wifi.setFrequency(temp[k-1]);
-				wifi.setSignal(temp[k]);
-				line46.setListOfWifi(wifi);
+			}else {
+				line46.setTime(temp[0]);
+				line46.setId(temp[1]);
+				line46.setLat(Double.parseDouble(temp[2]));
+				line46.setLon(Double.parseDouble(temp[3]));
+				line46.setAlt(Double.parseDouble(temp[4]));
+				line46.setWifiAmount(Integer.parseInt(temp[5]));
+
+				for(int j=7 , k=9; j<temp.length && temp[j]!=null ; j=j+4,k=k+4) { //Wifi4's on the line_46
+					Wifi4 wifi=new Wifi4();
+					wifi.setSSID(temp[j-1]);
+					wifi.setMAC(temp[j]);
+					wifi.setFrequency(temp[k-1]);
+					wifi.setSignal(temp[k]);
+					line46.setListOfWifi(wifi);
+				}
+				combo.add(line46);
 			}
-			combo.add(line46);
 		}
 
 	}
@@ -241,8 +245,8 @@ public class Algo_2 {
 			ArrayList<piAndLine46> arrOfPal = new ArrayList<piAndLine46>();
 			arrOfPal.addAll(setOfPal);
 			Collections.sort(arrOfPal, new myComperator());
-//			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
-			
+			//			arrOfPal.sort(Comparator.comparing(piAndLine46::getPi));
+
 			if(arrOfPal.size()==1) {
 				piAndLine46 pal1 = arrOfPal.get(0);
 				double wlat1 = pal1.getLine46().getLat()*pal1.getPi();
@@ -310,7 +314,7 @@ public class Algo_2 {
 				System.out.println("no way");
 				counter++;
 			}
-						
+
 			System.out.println("\nThis is arr of pal:\n");
 			System.out.println("size: "+arrOfPal.size());
 			for (int j = 0; j < arrOfPal.size(); j++) {
@@ -319,12 +323,12 @@ public class Algo_2 {
 			}
 			System.out.println("\n******I finished line "+counter+" ********\n");
 		}
-		
+
 		System.out.println("arr with gps: ");
 		for (int i = 0; i < arrNoGps.size(); i++) {
 			System.out.println(arrNoGps.get(i).toCsv());
 		}
-		
+
 	}
 	/**
 	 * This method performs a simple calculation: f(X,Y)= 10000/ (X^0.4)*(Y^2) 

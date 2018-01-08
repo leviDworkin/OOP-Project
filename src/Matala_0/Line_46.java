@@ -1,5 +1,6 @@
 package Matala_0;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ import gui.Circle;
  * @author Uriel and Levi
  *
  */
-public class Line_46 {
+public class Line_46 implements Serializable{
 
 	String Time;
 	String Id;
@@ -66,11 +67,10 @@ public class Line_46 {
 			Line_46 line = (Line_46) obj;
 			if( line.getTime().equals(this.Time) && line.getId().equals(this.Id) && line.getAlt()==this.Alt
 					&&	line.getLat()==this.Lat && line.getLon()==this.Lon && line.getWifiAmount()==this.WifiAmount ) {
-				for(int i=0 ; i<line.getListOfWifi().size() && i<this.ListOfWifi.size();i++) {
+				for(int i=0 ; i<line.getListOfWifi().size();i++) {
 					Wifi4 ob = line.getListOfWifi().get(i);
 					Wifi4 thi = this.ListOfWifi.get(i);
-					if(!ob.getFrequency().equals(thi.getFrequency()) && !ob.getMAC().equals(thi.getMAC()) 
-							&& !ob.getSignal().equals(thi.getSignal()) && !ob.getSSID().equals(thi.getSSID()))
+					if(!ob.equals(thi))
 						return false;
 				}
 			}			
@@ -79,16 +79,18 @@ public class Line_46 {
 	}
 	@Override
 	public int hashCode() {
-		int res = 10;
-		res+= this.Lat;
-		res+= this.Alt;
-		res+= this.Lat;
-		res+= this.getWifiAmount();
-		for(Wifi4 thi : this.ListOfWifi) {
-			res+=Double.parseDouble(thi.getSignal());
-			res+=Double.parseDouble(thi.getFrequency());
+		int hash = 7;
+		hash = (int) (31 * hash + this.Lat);
+		hash = (int) (31 * hash + this.Lon);
+		hash = (int) (31 * hash + this.Alt);
+		hash = 31*hash+this.WifiAmount;
+		hash = 31 * hash + (null == this.Time ? 0 : this.Time.hashCode());
+		hash = 31 * hash + (null ==this.Id ? 0 : this.Id.hashCode());
+		for(Wifi4 temp : this.ListOfWifi) {
+			hash = 31*hash + temp.hashCode();
 		}
-		return res;
+		
+		return hash;
 	}
 	/**
 	 * Strings this classes variables to csv format.
