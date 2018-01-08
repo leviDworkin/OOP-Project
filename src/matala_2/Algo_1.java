@@ -24,7 +24,7 @@ public class Algo_1 implements Readable {
 	myHash mh=new myHash();
 	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
 
-	
+
 	public String getOutputName() {
 		return outputName;
 	}
@@ -123,19 +123,6 @@ public class Algo_1 implements Readable {
 	/**
 	 * This method writes the results of this class to a new csv file.
 	 */
-	@Override
-	public void write() {
-		try {
-			FileWriter outfile;
-			outfile = new java.io.FileWriter(outputName, true);
-			outfile.write(toCsv(sofi));
-			outfile.close();
-
-		} catch (IOException e) {
-			System.out.println("Error in write() method!");
-			e.printStackTrace();
-		} 
-	}
 
 	/**
 	 * This method strings an ArrayList<Point_And_Sig> to csv format. 
@@ -155,6 +142,19 @@ public class Algo_1 implements Readable {
 	@Override
 	public String toString() {
 		return mh.mytoString();
+	}
+	@Override
+	public void write() {
+		try {
+			FileWriter outfile;
+			outfile = new java.io.FileWriter(outputName, true);
+			outfile.write(toCsv(sofi));
+			outfile.close();
+
+		} catch (IOException e) {
+			System.out.println("Error in write() method!");
+			e.printStackTrace();
+		} 
 	}
 
 
