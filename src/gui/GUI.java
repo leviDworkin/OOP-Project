@@ -42,6 +42,7 @@ import javax.swing.JRadioButton;
 import javax.swing.SwingConstants;
 import javax.swing.JCheckBox;
 import javax.swing.JInternalFrame;
+import javax.swing.JSeparator;
 
 public class GUI {
 
@@ -74,6 +75,22 @@ public class GUI {
 	private JTextField radiusTextField;
 	private Random rand = new Random(); 
 	private int x = rand.nextInt(2);
+	private JTextField algo1TextField;
+	private JTextField algo1ResultTextField;
+	private JTextField txtEnterStringRep;
+	private JLabel algo2result1;
+	private JTextField algo2result1textField;
+	private JTextField mac2textField;
+	private JTextField mac3textField;
+	private JTextField mac1textField;
+	private JTextField sig1textField;
+	private JTextField sig2textField;
+	private JTextField sig3textField;
+	private JLabel lblNewLabel_3;
+	private JLabel lblNewLabel_4;
+	private JButton algo2calc2btn;
+	private JLabel lblResult;
+	private JTextField algo2result2textField;
 	/**
 	 * Launch the application.
 	 * @throws InterruptedException 
@@ -106,7 +123,7 @@ public class GUI {
 	 */
 	private synchronized void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 660, 420);
+		frame.setBounds(100, 100, 1068, 420);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
@@ -161,7 +178,7 @@ public class GUI {
 		btnEraseDB.setFont(new Font("Tahoma", Font.BOLD, 11));
 		frame.getContentPane().add(btnEraseDB);
 
-	
+
 		JButton btnAddToDb = new JButton("Add to database");
 		btnAddToDb.setBounds(143, 10, 123, 23);
 		btnAddToDb.addActionListener(new ActionListener() {
@@ -174,10 +191,13 @@ public class GUI {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				MyThread thread = new MyThread();
-				thread.setFilePath(wigPath);
-				thread.start();
-				System.out.println("Thread is running");
+				File folder = new File(wigPath);
+				if(folder.isDirectory()) {
+					MyThread thread = new MyThread();
+					thread.setFilePath(wigPath);
+					thread.start();
+					System.out.println("Thread is running");
+				}	
 				printStats();
 			}
 		});
@@ -207,18 +227,21 @@ public class GUI {
 		frame.getContentPane().add(filterByLabel);
 
 		recTextField = new JTextField();
+		recTextField.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		recTextField.setBounds(61, 324, 72, 20);
 		frame.getContentPane().add(recTextField);
 		recTextField.setColumns(10);
 		recTextField.setEditable(false);
 
 		routerTextField = new JTextField();
+		routerTextField.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		routerTextField.setBounds(209, 324, 78, 20);
 		frame.getContentPane().add(routerTextField);
 		routerTextField.setColumns(10);
 		routerTextField.setEditable(false);
 
 		filterTextField = new JTextField();
+		filterTextField.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		filterTextField.setBounds(43, 353, 583, 20);
 		frame.getContentPane().add(filterTextField);
 		filterTextField.setColumns(10);
@@ -495,8 +518,176 @@ public class GUI {
 		filterBtn.setFont(new Font("Tahoma", Font.BOLD, 12));
 		filterBtn.setBounds(331, 189, 108, 42);
 		frame.getContentPane().add(filterBtn);
+
+		JSeparator separator = new JSeparator();
+		separator.setOrientation(SwingConstants.VERTICAL);
+		separator.setForeground(Color.BLACK);
+		separator.setBounds(631, 11, 7, 359);
+		frame.getContentPane().add(separator);
+
+		JButton algo1Btn = new JButton("Calculate");
+		algo1Btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String mac = algo1TextField.getText(); //d4:68:4d:79:27:a3
+				int countMatches = countMatches(mac,':');
+				if(countMatches == 5) {
+					String ans = wrap.Algo1(mac);
+					algo1ResultTextField.setText(ans);
+				}else
+					algo1ResultTextField.setText("The input must be a proper mac");
+				
+			}
+		});
+		algo1Btn.setFont(new Font("Tahoma", Font.BOLD, 11));
+		algo1Btn.setBounds(711, 28, 89, 28);
+		frame.getContentPane().add(algo1Btn);
+
+		algo1TextField = new JTextField();
+		algo1TextField.setText("Enter mac");
+		algo1TextField.setBounds(810, 33, 198, 20);
+		frame.getContentPane().add(algo1TextField);
+		algo1TextField.setColumns(10);
+
+		algo1ResultTextField = new JTextField();
+		algo1ResultTextField.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		algo1ResultTextField.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		algo1ResultTextField.setEditable(false);
+		algo1ResultTextField.setBounds(648, 64, 394, 20);
+		frame.getContentPane().add(algo1ResultTextField);
+		algo1ResultTextField.setColumns(10);
+
+		JLabel algo1ResultLabel = new JLabel("Result:");
+		algo1ResultLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		algo1ResultLabel.setBounds(648, 43, 56, 19);
+		frame.getContentPane().add(algo1ResultLabel);
+
+		JLabel lblNewLabel_2 = new JLabel("Algo 1:");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_2.setBounds(647, 14, 54, 23);
+		frame.getContentPane().add(lblNewLabel_2);
+
+		JLabel lblAlgo = new JLabel("Algo 2:");
+		lblAlgo.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblAlgo.setBounds(648, 96, 56, 19);
+		frame.getContentPane().add(lblAlgo);
+
+		txtEnterStringRep = new JTextField();
+		txtEnterStringRep.setText("Enter string rep. of one line in noGps");
+		txtEnterStringRep.setBounds(747, 118, 261, 20);
+		frame.getContentPane().add(txtEnterStringRep);
+		txtEnterStringRep.setColumns(10);
+
+		JButton algo2calc1btn = new JButton("Calculate");
+		algo2calc1btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String rep = txtEnterStringRep.getText();
+				String ans = wrap.algo2rep(rep);
+				algo2result1textField.setText(ans);
+			}
+		});
+		algo2calc1btn.setFont(new Font("Tahoma", Font.BOLD, 11));
+		algo2calc1btn.setBounds(648, 114, 89, 28);
+		frame.getContentPane().add(algo2calc1btn);
+
+		algo2result1 = new JLabel("Result:");
+		algo2result1.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		algo2result1.setBounds(648, 148, 46, 20);
+		frame.getContentPane().add(algo2result1);
+
+		algo2result1textField = new JTextField();
+		algo2result1textField.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		algo2result1textField.setEditable(false);
+		algo2result1textField.setBounds(648, 167, 394, 20);
+		frame.getContentPane().add(algo2result1textField);
+		algo2result1textField.setColumns(10);
+
+		mac2textField = new JTextField();
+		mac2textField.setBounds(769, 249, 130, 20);
+		frame.getContentPane().add(mac2textField);
+		mac2textField.setColumns(10);
+
+		mac3textField = new JTextField();
+		mac3textField.setBounds(769, 280, 130, 20);
+		frame.getContentPane().add(mac3textField);
+		mac3textField.setColumns(10);
+
+		mac1textField = new JTextField();
+		mac1textField.setBounds(769, 218, 130, 20);
+		frame.getContentPane().add(mac1textField);
+		mac1textField.setColumns(10);
+
+		sig1textField = new JTextField();
+		sig1textField.setBounds(922, 218, 86, 20);
+		frame.getContentPane().add(sig1textField);
+		sig1textField.setColumns(10);
+
+		sig2textField = new JTextField();
+		sig2textField.setBounds(922, 249, 86, 20);
+		frame.getContentPane().add(sig2textField);
+		sig2textField.setColumns(10);
+
+		sig3textField = new JTextField();
+		sig3textField.setBounds(922, 280, 86, 20);
+		frame.getContentPane().add(sig3textField);
+		sig3textField.setColumns(10);
+
+		lblNewLabel_3 = new JLabel("Macs:");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel_3.setBounds(768, 194, 56, 20);
+		frame.getContentPane().add(lblNewLabel_3);
+
+		lblNewLabel_4 = new JLabel("Signals:");
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel_4.setBounds(922, 194, 56, 20);
+		frame.getContentPane().add(lblNewLabel_4);
+
+		algo2calc2btn = new JButton("Calculate");
+		algo2calc2btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String mac1 = mac1textField.getText();
+				String mac2 = mac2textField.getText();
+				String mac3 = mac3textField.getText();
+				String sig1 = sig1textField.getText();
+				String sig2 = sig2textField.getText();
+				String sig3 = sig3textField.getText();
+				
+				String ans = wrap.sendToAlgo2(mac1,sig1,mac2,sig2,mac3,sig3);
+				algo2result2textField.setText(ans);
+			}
+		});
+		algo2calc2btn.setFont(new Font("Tahoma", Font.BOLD, 12));
+		algo2calc2btn.setBounds(648, 252, 89, 35);
+		frame.getContentPane().add(algo2calc2btn);
+
+		lblResult = new JLabel("Result:");
+		lblResult.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblResult.setBounds(648, 298, 46, 20);
+		frame.getContentPane().add(lblResult);
+
+		algo2result2textField = new JTextField();
+		algo2result2textField.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		algo2result2textField.setEditable(false);
+		algo2result2textField.setBounds(648, 324, 394, 20);
+		frame.getContentPane().add(algo2result2textField);
+		algo2result2textField.setColumns(10);
 	}
-	
+	/**
+	 * counts how many times a char appears in a string.
+	 * @param str string
+	 * @param c char
+	 * @return int the amount of times c is found in str
+	 */
+	public int countMatches(String str, char c) {
+		int count=0;
+		for (int i = 0; i < str.length(); i++) {
+			if(str.charAt(i) == c)
+				count++;
+		}
+		return count;
+	}
 	public void printStats() {
 		String rec = Integer.toString(wrap.getDataBase().size());
 		recTextField.setText(rec);

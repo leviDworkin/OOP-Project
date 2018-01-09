@@ -6,11 +6,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Scanner;
 import java.util.Set;
 
+import Matala_0.Line_46;
 import Matala_0.Readable;
+import Matala_0.Wifi4;
 import Matala_0.lineData;
 /**
  * This class reads a csv file, with wifi data in it,
@@ -20,16 +23,38 @@ import Matala_0.lineData;
  */
 public class Algo_1 implements Readable {
 	private String outputName;
-	ArrayList<String[]> arr = new ArrayList<String[]>();
-	myHash mh=new myHash();
-	ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
+	private Set<Line_46> dataBase = new HashSet<Line_46>();
+	private ArrayList<String[]> arr = new ArrayList<String[]>();
+	private myHash mh=new myHash();
+	private ArrayList<Point_And_Sig>sofi=new ArrayList<Point_And_Sig>();
 
-
+	
+	public ArrayList<Point_And_Sig> getSofi() {
+		return sofi;
+	}
+	public Set<Line_46> getDataBase() {
+		return dataBase;
+	}
+	public void setDataBase(Set<Line_46> dataBase) {
+		this.dataBase.addAll(dataBase);
+	}
 	public String getOutputName() {
 		return outputName;
 	}
 	public void setOutputName(String outputName) {
 		this.outputName = outputName;
+	}
+	
+	public void loadToDB() {	
+		for(Line_46 line : dataBase) {
+			double lat = line.getLat();
+			double lon = line.getLon();
+			double alt = line.getAlt();
+			for(Wifi4 wifi : line.getListOfWifi() ) {
+				Point_And_Sig ps = new Point_And_Sig(wifi.getMAC(),lat,lon,alt,Double.parseDouble(wifi.getSignal()));
+				goToHash(ps);
+			}
+		}
 	}
 	/**
 	 * This method reads the csv file and sends each mac with its coordinates to the HashMap myHash. 
@@ -64,6 +89,7 @@ public class Algo_1 implements Readable {
 			}	
 		}
 	}
+	
 	/**
 	 * This method adds the Point_And_Signal as a value to a HashMap myHash, with the mac as its key.
 	 * @param ps Point_And_Sig with 5 variables

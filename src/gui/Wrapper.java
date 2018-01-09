@@ -32,10 +32,10 @@ public class Wrapper implements Serializable{
 	private File f;
 	private int num=1 , num2=1;
 	private String stats = "";
-	
-	
+
+
 	public void writeCsv() {
-		
+
 		WriteCSv b=new WriteCSv();
 		b.getSofi().clear();
 		b.getSofi().addAll(dataBase);
@@ -62,7 +62,7 @@ public class Wrapper implements Serializable{
 		FileInputStream fis = new FileInputStream(f);
 		ObjectInputStream oos = new ObjectInputStream(fis);
 		dataBase = (Set<Line_46>) oos.readObject();
-		
+
 	}
 	public void addToDB(String wigPath, String comPath) throws IOException {
 		File folder = new File(wigPath);
@@ -81,27 +81,93 @@ public class Wrapper implements Serializable{
 		this.f = new File("currentDatabase.ser");
 		FileOutputStream fos = new FileOutputStream(f);
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
-		oos.writeObject(dataBase);
-		
-		
+		oos.writeObject(dataBase);	
 	}
 
-	//	public void sendToAlgo1(String path) {
-	//		Algo_1 a = new Algo_1();
-	//		a.setOutputName("weighted_macs.csv");
-	//		a.read(path);
-	//		a.calculate();
-	//		a.write();
-	//	}
-	//
-	//	public void sendToAlgo2(String path1, String path2) {
-	//		Algo_2 b = new Algo_2(path1,path2);
-	//		b.setOutputName("gps_restored.csv");
-	//		b.read();
-	//		b.calculate();
-	//		b.write();
-	//	}
+	public String Algo1(String mac) {
+		Algo_1 a = new Algo_1();
+		a.setDataBase(this.dataBase);
+		a.loadToDB();
+		a.calculate();
+		Point_And_Sig pas = new Point_And_Sig();
+		for(Point_And_Sig temp : a.getSofi()) {
+			if(temp.getMac().equals(mac)) {
+				pas.setLat(temp.getLat());
+				pas.setLon(temp.getLon());
+				pas.setAlt(temp.getAlt());
+			}
+		}
+		if(pas.getLat()==0 && pas.getLon()==0 && pas.getAlt()==0)
+			return "This Mac was not found in the DataBase";
+		return "Lat:"+pas.getLat()+" Lon:"+pas.getLon()+" Alt:"+pas.getAlt();
+	}
 
+	public String sendToAlgo2(String mac1,String sig1,String mac2,String sig2,String mac3,String sig3) {
+		String ans = "";
+		Wifi4 wifi1 = new Wifi4();
+		if(mac1=="")
+			wifi1 = null;
+		else {wifi1.setMAC(mac1); wifi1.setSignal(sig1);}				
+		Wifi4 wifi2 = new Wifi4();
+		if(mac2=="")
+			wifi2=null;
+		else {wifi2.setMAC(mac2); wifi2.setSignal(sig2);}				
+		Wifi4 wifi3 = new Wifi4();
+		if(mac3=="")
+			wifi3=null;
+		else {wifi3.setMAC(mac3); wifi3.setSignal(sig3);}			
+		Algo_2 b = new Algo_2();
+		ArrayList<Line_46> array = new ArrayList<Line_46>();
+		array.addAll(dataBase);
+		b.setCombo(array);
+		b.addToHash();
+		array.clear();
+		Line_46 line = new Line_46();
+		if(wifi1!=null)
+			line.getListOfWifi().add(wifi1);
+		if(wifi2!=null)
+			line.getListOfWifi().add(wifi2);
+		if(wifi3!=null)
+			line.getListOfWifi().add(wifi3);
+		if(wifi1==null && wifi2==null && wifi3==null) {
+			ans = "No macs entered";
+		}else {
+			line.setWifiAmount(line.getListOfWifi().size());
+			array.add(line);
+			b.setArrNoGps(array);
+			b.calcV2();
+			if(b.getArrNoGps().get(0).getLat()==null) {
+				ans = "mac not found";
+			}else {
+				double lat = b.getArrNoGps().get(0).getLat();
+				double lon = b.getArrNoGps().get(0).getLon();
+				double alt = b.getArrNoGps().get(0).getAlt();
+				ans = "Lat:"+Double.toString(lat) + " Lon:"+Double.toString(lon) + " Alt:"+Double.toString(alt);
+			}			
+		}					
+		return ans;
+	}
+	public String algo2rep(String rep) {
+		String ans="";
+		if(rep.contains("?")) {
+			Algo_2 a = new Algo_2();
+			ArrayList<Line_46> array = new ArrayList<Line_46>();
+			array.addAll(dataBase);
+			a.setCombo(array);
+			a.calcV1(rep);
+			a.addToHash();
+			a.calcV2();
+			if(a.getArrNoGps().get(0).getLat()==null) {
+				ans = "macs not found";
+			}else {
+				double lat = a.getArrNoGps().get(0).getLat();
+				double lon = a.getArrNoGps().get(0).getLon();
+				double alt = a.getArrNoGps().get(0).getAlt();
+				ans = "Lat:"+Double.toString(lat) + " Lon:"+Double.toString(lon) + " Alt:"+Double.toString(alt);
+			}		
+		}
+		return ans;
+	}
 	public void withoutTime(String startTime, String endTime) throws ParseException {
 		FilterByTime fbt = new FilterByTime(startTime, endTime);
 		fbt.setArr(dataBase);
@@ -185,5 +251,6 @@ public class Wrapper implements Serializable{
 	public void setStats(String stats) {
 		this.stats = stats;
 	}
+
 
 }
