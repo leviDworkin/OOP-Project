@@ -7,7 +7,11 @@ import java.util.Set;
 import Matala_0.Line_46;
 import javafx.geometry.Point2D;
 import javafx.geometry.Point3D;
-
+/**
+ * Gets combo and returns an ArrayList<Line_46> with, or without, only the location requested.
+ * @author Levi and Uriel
+ *
+ */
 public class FilterByLocation implements Filter{
 	private ArrayList<Line_46> arr = new ArrayList<Line_46>();
 	private ArrayList<Line_46> filtered = new ArrayList<Line_46>();
@@ -18,6 +22,9 @@ public class FilterByLocation implements Filter{
 		p = new Point3D(lat, lon,alt);
 		this.dist_by_meter = dist_by_meter;
 	}
+	/**
+	 * filters out any coordinates outside the given radius.
+	 */
 	public void with() {
 		final int R = 6371; // Radius of the earth
 		for(Line_46 temp : arr) {
@@ -28,6 +35,9 @@ public class FilterByLocation implements Filter{
 				filtered.add(temp);		
 		}
 	}
+	/**
+	 * filters out any coordinates within the given radius.
+	 */
 	public void without() {
 		final int R = 6371; // Radius of the earth
 		for(Line_46 temp : arr) {

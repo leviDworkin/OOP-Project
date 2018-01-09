@@ -33,9 +33,10 @@ public class Wrapper implements Serializable{
 	private int num=1 , num2=1;
 	private String stats = "";
 
-
+	/**
+	 * writes the dataBase to a csv file
+	 */
 	public void writeCsv() {
-
 		WriteCSv b=new WriteCSv();
 		b.getSofi().clear();
 		b.getSofi().addAll(dataBase);
@@ -48,7 +49,10 @@ public class Wrapper implements Serializable{
 		}
 		b.write();
 	}
-
+	/**
+	 * Writes the dataBase to a kml file
+	 * @throws FileNotFoundException
+	 */
 	public void writeKml() throws FileNotFoundException {	
 		if(dataBase.size()!=0) {
 			WriteKml wk = new WriteKml();
@@ -57,13 +61,23 @@ public class Wrapper implements Serializable{
 			wk.writeDbToKml();
 		}
 	}	
-
+	/**
+	 * Removes the filter and restores the dataBase
+	 * @throws ClassNotFoundException
+	 * @throws IOException
+	 */
 	public void deleteFilter() throws ClassNotFoundException, IOException {
 		FileInputStream fis = new FileInputStream(f);
 		ObjectInputStream oos = new ObjectInputStream(fis);
 		dataBase = (Set<Line_46>) oos.readObject();
 
 	}
+	/**
+	 * Adds the input files to the dataBase
+	 * @param wigPath folder
+	 * @param comPath combo file
+	 * @throws IOException
+	 */
 	public void addToDB(String wigPath, String comPath) throws IOException {
 		File folder = new File(wigPath);
 		if(folder.isDirectory()) {
@@ -83,7 +97,11 @@ public class Wrapper implements Serializable{
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(dataBase);	
 	}
-
+	/**
+	 * calculates the macs location based on the data in the dataBase
+	 * @param mac 
+	 * @return core coordinate
+	 */
 	public String Algo1(String mac) {
 		Algo_1 a = new Algo_1();
 		a.setDataBase(this.dataBase);
@@ -101,7 +119,16 @@ public class Wrapper implements Serializable{
 			return "This Mac was not found in the DataBase";
 		return "Lat:"+pas.getLat()+" Lon:"+pas.getLon()+" Alt:"+pas.getAlt();
 	}
-
+	/**
+	 * calculates the macs location based on the data in the dataBase
+	 * @param mac1
+	 * @param sig1
+	 * @param mac2
+	 * @param sig2
+	 * @param mac3
+	 * @param sig3
+	 * @return string coordinate
+	 */
 	public String sendToAlgo2(String mac1,String sig1,String mac2,String sig2,String mac3,String sig3) {
 		String ans = "";
 		Wifi4 wifi1 = new Wifi4();
@@ -147,6 +174,11 @@ public class Wrapper implements Serializable{
 		}					
 		return ans;
 	}
+	/**
+	 *  calculates the missing location based on the data in the dataBase
+	 * @param rep
+	 * @return string coordinate
+	 */
 	public String algo2rep(String rep) {
 		String ans="";
 		if(rep.contains("?")) {
@@ -168,6 +200,12 @@ public class Wrapper implements Serializable{
 		}
 		return ans;
 	}
+	/**
+	 * filters the dataBase based on the time input
+	 * @param startTime
+	 * @param endTime
+	 * @throws ParseException
+	 */
 	public void withoutTime(String startTime, String endTime) throws ParseException {
 		FilterByTime fbt = new FilterByTime(startTime, endTime);
 		fbt.setArr(dataBase);
@@ -175,6 +213,12 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbt.getFiltered());	
 		stats = stats+ fbt.toStringWithout();
 	}
+	/**
+	 * filters the dataBase based on the time input
+	 * @param startTime
+	 * @param endTime
+	 * @throws ParseException
+	 */
 	public void withTime(String startTime, String endTime) throws ParseException {
 		FilterByTime fbt = new FilterByTime(startTime, endTime);
 		fbt.setArr(dataBase);
@@ -182,6 +226,10 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbt.getFiltered());	
 		stats = stats+ fbt.toStringWith();
 	}
+	/**
+	 * filters the dataBase based on the id input
+	 * @param id
+	 */
 	public void withDevice(String id) {
 		FilterByID fbid = new FilterByID(id);
 		fbid.setArr(dataBase);
@@ -189,7 +237,10 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbid.getFiltered());
 		stats = stats + fbid.toString();
 	}
-
+	/**
+	 * filters the dataBase based on the id input
+	 * @param id
+	 */
 	public void withoutDevice(String id) {
 		FilterByID fbid = new FilterByID(id);
 		fbid.setArr(dataBase);
@@ -197,7 +248,13 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbid.getFiltered());	
 		stats = stats + fbid.toString();
 	}
-
+	/**
+	 * filters the dataBase based on the location input
+	 * @param lat
+	 * @param lon
+	 * @param alt
+	 * @param dist_by_meter
+	 */
 	public void withoutLocation(String lat,String lon,String alt, String dist_by_meter) {
 		FilterByLocation fbl = new FilterByLocation(Double.parseDouble(lat), Double.parseDouble(lon),Double.parseDouble(alt), Double.parseDouble(dist_by_meter));
 		fbl.setArr(dataBase);
@@ -205,7 +262,13 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbl.getFiltered());
 		stats = stats + fbl.toString();
 	}
-
+	/**
+	 *  filters the dataBase based on the location input
+	 * @param lat coordinate
+	 * @param lon coordinate
+	 * @param alt coordinate
+	 * @param dist_by_meter radius
+	 */
 	public void withLocation(String lat,String lon,String alt , String dist_by_meter) {
 		FilterByLocation fbl = new FilterByLocation(Double.parseDouble(lat), Double.parseDouble(lon), Double.parseDouble(alt), Double.parseDouble(dist_by_meter));
 		fbl.setArr(dataBase);
@@ -213,7 +276,9 @@ public class Wrapper implements Serializable{
 		filtered.addAll(fbl.getFiltered());
 		stats = stats + fbl.toString();
 	}
-
+	/**
+	 * saves the current filter to a csv
+	 */
 	public void saveFilter() {
 		if(filtered!=null) {
 			WriteCSv b=new WriteCSv();

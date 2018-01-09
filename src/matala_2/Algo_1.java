@@ -44,7 +44,9 @@ public class Algo_1 implements Readable {
 	public void setOutputName(String outputName) {
 		this.outputName = outputName;
 	}
-	
+	/**
+	 * Receives a dataBase of line 46's and sends it to a hashmap
+	 */
 	public void loadToDB() {	
 		for(Line_46 line : dataBase) {
 			double lat = line.getLat();

@@ -43,7 +43,11 @@ import javax.swing.SwingConstants;
 import javax.swing.JCheckBox;
 import javax.swing.JInternalFrame;
 import javax.swing.JSeparator;
-
+/**
+ * This class translates our OOP project to a GUI representation.
+ * @author Levi and Uriel
+ *
+ */
 public class GUI {
 
 	private JFrame frame;
@@ -688,6 +692,9 @@ public class GUI {
 		}
 		return count;
 	}
+	/**
+	 * Prints the dataBases current status.
+	 */
 	public void printStats() {
 		String rec = Integer.toString(wrap.getDataBase().size());
 		recTextField.setText(rec);

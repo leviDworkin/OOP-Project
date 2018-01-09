@@ -1,7 +1,10 @@
 package Filters;
 
-import java.io.Serializable;
-
+/**
+ * All filters in this project need a with and without function.
+ * @author Levi and Uriel
+ *
+ */
 public interface Filter{
 	
 	public void with();

@@ -9,7 +9,11 @@ import java.util.Date;
 import java.util.Set;
 
 import Matala_0.Line_46;
-
+/**
+ * Gets combo and returns an ArrayList<Line_46> with, or without, only the time requested.
+ * @author Levi and Uriel
+ *
+ */
 public class FilterByTime implements Filter{
 
 	private ArrayList<Line_46> arr = new ArrayList<Line_46>();
@@ -24,7 +28,9 @@ public class FilterByTime implements Filter{
 		this.start = startTime;
 		this.end = endTime;
 	}
-
+	/**
+	 * filters out any time not within the given start and end time.
+	 */
 	public void with()  {
 		for(Line_46 temp : arr) {
 			try {
@@ -38,6 +44,9 @@ public class FilterByTime implements Filter{
 			}
 		}
 	}
+	/**
+	 * filters out any time within the given start and end time.
+	 */
 	public void without()  {
 		for(Line_46 temp : arr) {
 			try {

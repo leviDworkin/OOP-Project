@@ -16,13 +16,18 @@ public class FilterByID implements Filter{
 	public FilterByID(String name) {
 		this.id = name;
 	}
-	
+	/**
+	 * filters out any id's that don't match the given id.
+	 */
 	public void with() {
 		for(Line_46 temp : arr) {
 			if(temp.getId().equals(this.id))
 				filtered.add(temp);		
 		}
 	}
+	/**
+	 * filters out any id's that match the given id.
+	 */
 	public void without() {
 		for(Line_46 temp : arr) {
 			if(!temp.getId().equals(this.id))
