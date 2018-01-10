@@ -1,4 +1,6 @@
 package gui;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,13 +28,15 @@ import matala_2.*;
  * 
  */
 public class Wrapper implements Serializable{
-
+	private static final Double NumberFormatException = null;
+	private setAndString sas = new setAndString();
 	private Set<Line_46> dataBase = new HashSet<Line_46>();
 	private Set<Line_46> filtered = new HashSet<Line_46>();
-	private File f;
+	private File f,temp;
+	private ArrayList<File> saved = new ArrayList<File>();
 	private int num=1 , num2=1;
 	private String stats = "";
-
+	private int indexSaved=0 , indexRetrieve=0;
 	/**
 	 * writes the dataBase to a csv file
 	 */
@@ -132,15 +136,15 @@ public class Wrapper implements Serializable{
 	public String sendToAlgo2(String mac1,String sig1,String mac2,String sig2,String mac3,String sig3) {
 		String ans = "";
 		Wifi4 wifi1 = new Wifi4();
-		if(mac1=="")
+		if(mac1=="" || sig1=="")
 			wifi1 = null;
 		else {wifi1.setMAC(mac1); wifi1.setSignal(sig1);}				
 		Wifi4 wifi2 = new Wifi4();
-		if(mac2=="")
+		if(mac2=="" || sig2=="")
 			wifi2=null;
 		else {wifi2.setMAC(mac2); wifi2.setSignal(sig2);}				
 		Wifi4 wifi3 = new Wifi4();
-		if(mac3=="")
+		if(mac3=="" || sig3 == "")
 			wifi3=null;
 		else {wifi3.setMAC(mac3); wifi3.setSignal(sig3);}			
 		Algo_2 b = new Algo_2();
@@ -159,7 +163,7 @@ public class Wrapper implements Serializable{
 		if(wifi1==null && wifi2==null && wifi3==null) {
 			ans = "No macs entered";
 		}else {
-			line.setWifiAmount(line.getListOfWifi().size());
+			line.setWifiAmount(line.getListOfWifi().size()-1);
 			array.add(line);
 			b.setArrNoGps(array);
 			b.calcV2();
@@ -180,8 +184,8 @@ public class Wrapper implements Serializable{
 	 * @return string coordinate
 	 */
 	public String algo2rep(String rep) {
-		String ans="";
-		if(rep.contains("?")) {
+		String ans="Invalid input";
+		if(!rep.contains("Enter string rep. of one line in noGps") && isLine46(rep)) {
 			Algo_2 a = new Algo_2();
 			ArrayList<Line_46> array = new ArrayList<Line_46>();
 			array.addAll(dataBase);
@@ -198,6 +202,34 @@ public class Wrapper implements Serializable{
 				ans = "Lat:"+Double.toString(lat) + " Lon:"+Double.toString(lon) + " Alt:"+Double.toString(alt);
 			}		
 		}
+
+		return ans;
+	}
+	/**
+	 * counts how many times a char appears in a string.
+	 * @param str string
+	 * @param c char
+	 * @return int the amount of times c is found in str
+	 */
+	public int countMatches(String str, char c) {
+		int count=0;
+		for (int i = 0; i < str.length(); i++) {
+			if(str.charAt(i) == c)
+				count++;
+		}
+		return count;
+	}
+	/**
+	 * checks if a string is of type line_46
+	 * @param rep string of combo without gps
+	 * @return true if rep is of line_46
+	 */
+	private boolean isLine46(String rep) {
+		boolean ans = true;
+		if(countMatches(rep, ',')>=9) {
+			
+		}else
+			ans = false;
 		return ans;
 	}
 	/**
@@ -277,22 +309,29 @@ public class Wrapper implements Serializable{
 		stats = stats + fbl.toString();
 	}
 	/**
-	 * saves the current filter to a csv
+	 * saves the current filter 
+	 * @throws IOException 
 	 */
-	public void saveFilter() {
-		if(filtered!=null) {
-			WriteCSv b=new WriteCSv();
-			b.getSofi().clear();
-			b.getSofi().addAll(filtered);
-			File save = new File(System.getProperty("user.dir")+"\\"+"filtered.csv");
-			if(!save.exists())
-				b.setOutputName("filtered.csv");
-			else {
-				b.setOutputName("filtered("+num2+").csv");
-				this.num++;
-			}
-			b.write();
-		}		
+	public void saveFilter() throws IOException {
+		temp = new File("currentFiltered"+num2+".ser");
+		num2++;
+		saved.add(temp); 
+		indexSaved++;
+		sas.setDataBase(filtered);
+		sas.setStats(stats);
+		FileOutputStream fos = new FileOutputStream(temp);
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(sas);	
+	}	
+
+	public void loadFilters() throws IOException, ClassNotFoundException {
+		FileInputStream fis = new FileInputStream(saved.get(indexRetrieve++));
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		sas = (setAndString) ois.readObject();
+		dataBase = sas.getDataBase();
+		this.stats = sas.getStats();
+		if(indexRetrieve==saved.size())
+			indexRetrieve=0;
 	}
 	public Set getDataBase() {
 		return dataBase;

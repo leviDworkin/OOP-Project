@@ -95,6 +95,7 @@ public class GUI {
 	private JButton algo2calc2btn;
 	private JLabel lblResult;
 	private JTextField algo2result2textField;
+	private int in=0;
 	/**
 	 * Launch the application.
 	 * @throws InterruptedException 
@@ -187,6 +188,7 @@ public class GUI {
 		btnAddToDb.setBounds(143, 10, 123, 23);
 		btnAddToDb.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				in++;
 				String wigPath = wigglePath.getText();
 				String comPath = comboPath.getText();
 				try {
@@ -381,17 +383,19 @@ public class GUI {
 		JButton btnDeleteFilter = new JButton("Delete filter");
 		btnDeleteFilter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				try {
-					wrap.deleteFilter();
-				} catch (ClassNotFoundException e1) {
-					e1.printStackTrace();
-					System.out.println(e1.getMessage());
-				} catch (IOException e1) {
-					System.out.println(e1.getMessage());
-					e1.printStackTrace();
+				if(in>0) {
+					try {
+						wrap.deleteFilter();
+					} catch (ClassNotFoundException e1) {
+						e1.printStackTrace();
+						System.out.println(e1.getMessage());
+					} catch (IOException e1) {
+						System.out.println(e1.getMessage());
+						e1.printStackTrace();
+					}
+					wrap.setStats("");
+					printStats();
 				}
-				wrap.setStats("");
-				printStats();
 			}
 		});
 		btnDeleteFilter.setForeground(Color.RED);
@@ -402,7 +406,14 @@ public class GUI {
 		JButton saveFilterBtn = new JButton("Save filter");
 		saveFilterBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				wrap.saveFilter();
+				if(wrap.getFiltered().size()!=0) {		
+					try {
+						wrap.saveFilter();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}			
 			}
 		});
 		saveFilterBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -410,6 +421,22 @@ public class GUI {
 		frame.getContentPane().add(saveFilterBtn);
 
 		JButton loadFilterBtn = new JButton("Load filter");
+		loadFilterBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(wrap.getFiltered().size()!=0) {				
+					try {
+						wrap.loadFilters();
+					} catch (ClassNotFoundException e1) {
+						System.out.println(e1.getMessage());
+						e1.printStackTrace();
+					} catch (IOException e1) {
+						System.out.println(e1.getMessage());
+						e1.printStackTrace();
+					}
+					printStats();
+				}
+			}
+		});
 		loadFilterBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
 		loadFilterBtn.setBounds(450, 242, 108, 36);
 		frame.getContentPane().add(loadFilterBtn);
@@ -539,7 +566,7 @@ public class GUI {
 					algo1ResultTextField.setText(ans);
 				}else
 					algo1ResultTextField.setText("The input must be a proper mac");
-				
+
 			}
 		});
 		algo1Btn.setFont(new Font("Tahoma", Font.BOLD, 11));
@@ -657,7 +684,7 @@ public class GUI {
 				String sig1 = sig1textField.getText();
 				String sig2 = sig2textField.getText();
 				String sig3 = sig3textField.getText();
-				
+
 				String ans = wrap.sendToAlgo2(mac1,sig1,mac2,sig2,mac3,sig3);
 				algo2result2textField.setText(ans);
 			}

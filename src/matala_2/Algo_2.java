@@ -360,6 +360,7 @@ public class Algo_2 {
 			wifi.setMAC(temp[j]);
 			wifi.setSignal(temp[k]);
 			line46.setListOfWifi(wifi);
+			
 		}
 		arrNoGps.add(line46);
 	}
