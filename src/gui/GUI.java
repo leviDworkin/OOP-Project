@@ -463,53 +463,57 @@ public class GUI {
 		JButton filterBtn = new JButton("Filter");
 		filterBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				wrap.getFiltered().clear();
-				wrap.setStats("");
-				if(andRadioBtn.isSelected()) { //And Button
-					if(timeBtn.isSelected() && deviceBtn.isSelected()) {
-						timeSelected();
-						wrap.setStats(wrap.getStats()+" & ");
-						deviceSelected();
-					}
-					if(timeBtn.isSelected() && locationBtn.isSelected()) {
-						timeSelected();
-						wrap.setStats(wrap.getStats()+" & ");
-						locationSelected();
-					}
-					if(locationBtn.isSelected() && deviceBtn.isSelected()) {
-						locationSelected();
-						wrap.setStats(wrap.getStats()+" & ");
-						deviceSelected();
-					}
-				}else if(orRadioBtn.isSelected()) { //Or Button
-					if(timeBtn.isSelected() && deviceBtn.isSelected()) {
-						if(x==1)
+				if(wrap.getDataBase().size()!=0) {
+					wrap.getFiltered().clear();
+					wrap.setStats("");
+					if(andRadioBtn.isSelected()) { //And Button
+						if(timeBtn.isSelected() && deviceBtn.isSelected()) {
 							timeSelected();
-						else
+							wrap.setStats(wrap.getStats()+" & ");
 							deviceSelected();
-					}
-					if(timeBtn.isSelected() && locationBtn.isSelected()) {
-						if(x==1)
+						}else if(timeBtn.isSelected() && locationBtn.isSelected()) {
 							timeSelected();
-						else
+							wrap.setStats(wrap.getStats()+" & ");
 							locationSelected();
-					}
-					if(locationBtn.isSelected() && deviceBtn.isSelected()) {
-						if(x==1)
+						}else if(locationBtn.isSelected() && deviceBtn.isSelected()) {
 							locationSelected();
-						else
+							wrap.setStats(wrap.getStats()+" & ");
 							deviceSelected();
+						}else
+							wrap.setStats("If you want only one filter then unpress the And button.");
+					}else if(orRadioBtn.isSelected()) { //Or Button
+						if(timeBtn.isSelected() && deviceBtn.isSelected()) {
+							if(x==1)
+								timeSelected();
+							else
+								deviceSelected();
+						}else if(timeBtn.isSelected() && locationBtn.isSelected()) {
+							if(x==1)
+								timeSelected();
+							else
+								locationSelected();
+						}else if(locationBtn.isSelected() && deviceBtn.isSelected()) {
+							if(x==1)
+								locationSelected();
+							else
+								deviceSelected();
+						}else
+							wrap.setStats("If you want only one filter then unpress the Or button.");
+					}else { //Neither And nor Or
+						if(timeBtn.isSelected()) 
+							timeSelected();				
+						else if(deviceBtn.isSelected()) 
+							deviceSelected();					
+						else if(locationBtn.isSelected()) 
+							locationSelected();
+						else
+							wrap.setStats("No filter selected.");
 					}
-				}else { //Neither And nor Or
-					if(timeBtn.isSelected()) 
-						timeSelected();				
-					if(deviceBtn.isSelected()) 
-						deviceSelected();					
-					if(locationBtn.isSelected()) 
-						locationSelected();					
-				}
-				wrap.getDataBase().clear();
-				wrap.setDataBase(wrap.getFiltered());
+					wrap.getDataBase().clear();
+					wrap.setDataBase(wrap.getFiltered());
+
+				}else
+					wrap.setStats("DataBase is empty.");
 				printStats();
 			}
 

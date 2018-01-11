@@ -28,30 +28,32 @@ import matala_2.*;
  * 
  */
 public class Wrapper implements Serializable{
-	private static final Double NumberFormatException = null;
+
 	private setAndString sas = new setAndString();
 	private Set<Line_46> dataBase = new HashSet<Line_46>();
 	private Set<Line_46> filtered = new HashSet<Line_46>();
 	private File f,temp;
 	private ArrayList<File> saved = new ArrayList<File>();
-	private int num=1 , num2=1;
+	private int num=1 , num2=1 , num3=1;
 	private String stats = "";
 	private int indexSaved=0 , indexRetrieve=0;
 	/**
 	 * writes the dataBase to a csv file
 	 */
 	public void writeCsv() {
-		WriteCSv b=new WriteCSv();
-		b.getSofi().clear();
-		b.getSofi().addAll(dataBase);
-		File save = new File(System.getProperty("user.dir")+"\\"+"gui_writeToCSV.csv");
-		if(!save.exists())
-			b.setOutputName("gui_writeToCSV.csv");
-		else {
-			b.setOutputName("gui_writeToCSV("+num+").csv");
-			this.num++;
-		}
-		b.write();
+		if(dataBase.size()!=0) {
+			WriteCSv b=new WriteCSv();
+			b.getSofi().clear();
+			b.getSofi().addAll(dataBase);
+			File save = new File(System.getProperty("user.dir")+"\\"+"dataBase_writtenAsCSV.csv");
+			if(!save.exists())
+				b.setOutputName("dataBase_writtenAsCSV.csv");
+			else {
+				b.setOutputName("dataBase_writtenAsCSV("+num+").csv");
+				this.num++;
+			}
+			b.write();
+		}	
 	}
 	/**
 	 * Writes the dataBase to a kml file
@@ -61,7 +63,13 @@ public class Wrapper implements Serializable{
 		if(dataBase.size()!=0) {
 			WriteKml wk = new WriteKml();
 			wk.setDataBase(dataBase);
-			wk.setOutputName("gui_writtenToKml.kml");
+			File save = new File(System.getProperty("user.dir")+"\\"+"dataBase_writtenAsKml.csv");
+			if(!save.exists())
+				wk.setOutputName("dataBase_writtenAsKml.csv");
+			else {
+				wk.setOutputName("dataBase_writtenAsKml("+num3+").csv");
+				this.num3++;
+			}
 			wk.writeDbToKml();
 		}
 	}	
@@ -227,7 +235,7 @@ public class Wrapper implements Serializable{
 	private boolean isLine46(String rep) {
 		boolean ans = true;
 		if(countMatches(rep, ',')>=9) {
-			
+
 		}else
 			ans = false;
 		return ans;
@@ -309,7 +317,7 @@ public class Wrapper implements Serializable{
 		stats = stats + fbl.toString();
 	}
 	/**
-	 * saves the current filter 
+	 * saves the current filter as a serial.
 	 * @throws IOException 
 	 */
 	public void saveFilter() throws IOException {
@@ -323,7 +331,11 @@ public class Wrapper implements Serializable{
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(sas);	
 	}	
-
+	/**
+	 * Loads the filters that were saved.
+	 * @throws IOException
+	 * @throws ClassNotFoundException
+	 */
 	public void loadFilters() throws IOException, ClassNotFoundException {
 		FileInputStream fis = new FileInputStream(saved.get(indexRetrieve++));
 		ObjectInputStream ois = new ObjectInputStream(fis);
