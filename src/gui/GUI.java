@@ -708,6 +708,17 @@ public class GUI {
 		algo2result2textField.setBounds(648, 324, 394, 20);
 		frame.getContentPane().add(algo2result2textField);
 		algo2result2textField.setColumns(10);
+		
+		JButton sqlBtn = new JButton("Remote sql");
+		sqlBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				wrap.addSQL(wrap);
+				printStats();
+			}
+		});
+		sqlBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
+		sqlBtn.setBounds(331, 288, 108, 33);
+		frame.getContentPane().add(sqlBtn);
 	}
 	/**
 	 * counts how many times a char appears in a string.

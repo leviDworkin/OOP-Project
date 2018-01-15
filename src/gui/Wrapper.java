@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import DB.MySQL_101;
 import Filters.FilterByID;
 import Filters.FilterByLocation;
 import Filters.FilterByTime;
@@ -28,7 +29,7 @@ import matala_2.*;
  * 
  */
 public class Wrapper implements Serializable{
-
+	private ArrayList<Line_46> arr = new ArrayList<Line_46>();
 	private setAndString sas = new setAndString();
 	private Set<Line_46> dataBase = new HashSet<Line_46>();
 	private Set<Line_46> filtered = new HashSet<Line_46>();
@@ -37,6 +38,8 @@ public class Wrapper implements Serializable{
 	private int num=1 , num2=1 , num3=1;
 	private String stats = "";
 	private int indexSaved=0 , indexRetrieve=0;
+	
+	
 	/**
 	 * writes the dataBase to a csv file
 	 */
@@ -345,6 +348,12 @@ public class Wrapper implements Serializable{
 		if(indexRetrieve==saved.size())
 			indexRetrieve=0;
 	}
+	public ArrayList<Line_46> getArr() {
+		return arr;
+	}
+	public void setArr(ArrayList<Line_46> array) {
+		this.arr.addAll(array);
+	}
 	public Set getDataBase() {
 		return dataBase;
 	}
@@ -366,6 +375,11 @@ public class Wrapper implements Serializable{
 
 	public void setStats(String stats) {
 		this.stats = stats;
+	}
+	public void addSQL(Wrapper w) {
+		arr.addAll(dataBase);
+		MySQL_101 sql = new MySQL_101(w);
+		dataBase.addAll(arr);
 	}
 
 
