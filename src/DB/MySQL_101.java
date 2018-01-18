@@ -41,12 +41,12 @@ public class MySQL_101 {
       
 	  public MySQL_101(Wrapper w) {
 		  int max_id = test_ex4_db();
-		  insert_table2(max_id , w);
+		  
 	  }
     public static void main(String[] args) {
-    	Wrapper w = new Wrapper();
+    	
     	int max_id = test_ex4_db();
-  	    insert_table2(max_id , w);
+  	   
     }
     public static int test_101() {
         Statement st = null;
@@ -114,13 +114,17 @@ public class MySQL_101 {
             rs = pst.executeQuery();
             int ind=0;
             while (rs.next()) {
+            	
             	int size = rs.getInt(7);
             	int len = 7+2*size;
             	if(ind%100==0) {
-            		for(int i=1;i<=len;i++){
-            			System.out.print(ind+") "+rs.getString(i)+",");
+            		String ans = "";
+            		for(int i=2;i<=len;i++){
+            			//System.out.print(ind+") "+rs.getString(i)+",");
+            			//System.out.print(rs.getString(i)+",");
+            			ans = ans+rs.getString(i)+",";          			
             		}
-            		System.out.println();
+            		System.out.println(ans);
             	}
             	ind++;
             }

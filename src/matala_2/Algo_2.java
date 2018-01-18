@@ -71,7 +71,7 @@ public class Algo_2 {
 	public Algo_2() {
 
 	}
-
+	
 	/**
 	 * Reads a combo and adds it to the combo ArrayList<Line_46>.
 	 * @param comboPath string
@@ -117,6 +117,25 @@ public class Algo_2 {
 			}
 		}
 
+	}
+	public void loadToDB2(String line) {
+		String []temp=line.split(",");
+		Line_46 line46=new Line_46();
+		line46.setTime(temp[0]);
+		line46.setId(temp[1]);
+		line46.setLat(Double.parseDouble(temp[2]));
+		line46.setLon(Double.parseDouble(temp[3]));
+		line46.setAlt(Double.parseDouble(temp[4]));
+		line46.setWifiAmount(Integer.parseInt(temp[5]));
+
+		for(int j=6 , k=7; j<temp.length && temp[j]!=null ; j=j+2,k=k+2) { //Wifi4's on the line_46
+			Wifi4 wifi=new Wifi4();			
+				wifi.setMAC(temp[j]);
+				wifi.setSignal(temp[k]);
+				line46.setListOfWifi(wifi);		
+		
+		}
+		combo.add(line46);
 	}
 	/**
 	 * This method reads the files, and translates them into ArrayLists.

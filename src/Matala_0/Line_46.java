@@ -1,10 +1,11 @@
 package Matala_0;
 
 import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import gui.Circle;
+
 /**
  * This class creates an object Line_46 which contains all the data needed to reformat the WiggleWifi csv file.
  * @author Uriel and Levi

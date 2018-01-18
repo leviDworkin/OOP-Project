@@ -15,19 +15,19 @@ class DataTest {
 
 	private int num;
 
-	@Test
-	void testLoadAllFromFile() {
-
-		try{
-			a.loadAllFromFile();
-			if(a.getSize()==0) {
-				fail("prob with LoadllFromFile");
-			}
-		}catch (Exception e) {
-			fail("prob with LoadAllFromFile");
-		}
-
-	}
+//	@Test
+//	void testLoadAllFromFile() {
+//
+//		try{
+//			a.loadAllFromFile();
+//			if(a.getSize()==0) {
+//				fail("prob with LoadllFromFile");
+//			}
+//		}catch (Exception e) {
+//			fail("prob with LoadAllFromFile");
+//		}
+//
+//	}
 
 	@Test
 	void testFilterByDist() {

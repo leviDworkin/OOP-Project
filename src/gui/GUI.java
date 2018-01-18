@@ -40,6 +40,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.JLayeredPane;
 import javax.swing.JRadioButton;
 import javax.swing.SwingConstants;
+
+import DB.serverGui;
+
 import javax.swing.JCheckBox;
 import javax.swing.JInternalFrame;
 import javax.swing.JSeparator;
@@ -50,8 +53,9 @@ import javax.swing.JSeparator;
  */
 public class GUI {
 
-	private JFrame frame;
+	public JFrame frame;
 	private JTextField wigglePath;
+	private serverGui sg;
 	private Wrapper wrap = new Wrapper();
 	private JButton writeKmlBtn;
 	private JTextField comboPath;
@@ -96,32 +100,31 @@ public class GUI {
 	private JLabel lblResult;
 	private JTextField algo2result2textField;
 	private int in=0;
-	/**
-	 * Launch the application.
-	 * @throws InterruptedException 
-	 * @throws IOException 
-	 */
-
-	public static void main(String[] args) throws InterruptedException, IOException {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {				
-					GUI window = new GUI();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-
-	}
+	
+//	/**
+//	 * Launch the application.
+//	 * @throws InterruptedException 
+//	 * @throws IOException 
+//	 */
+//
+//	public static void main(String[] args) throws InterruptedException, IOException {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {				
+//					GUI window = new GUI();
+//					window.frame.setVisible(true);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//
+//	}
 	/**
 	 * Create the application.
 	 */
 	public GUI() {
 		initialize();
-		//		try {Thread.sleep(100);} catch (Exception e) { System.out.println(e.getMessage());}
-		//		myThread();
 	}
 	/**
 	 * Initialize the contents of the frame.
@@ -708,17 +711,26 @@ public class GUI {
 		algo2result2textField.setBounds(648, 324, 394, 20);
 		frame.getContentPane().add(algo2result2textField);
 		algo2result2textField.setColumns(10);
-		
+
 		JButton sqlBtn = new JButton("Remote sql");
 		sqlBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				wrap.addSQL(wrap);
-				printStats();
+			public void actionPerformed(ActionEvent e) {	
+				sg.frame.setVisible(true);
 			}
 		});
 		sqlBtn.setFont(new Font("Tahoma", Font.BOLD, 11));
 		sqlBtn.setBounds(331, 288, 108, 33);
 		frame.getContentPane().add(sqlBtn);
+		
+		JButton Gradle = new JButton("Gradle");
+		Gradle.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				filterTextField.setText("Build successful.");
+			}
+		});
+		Gradle.setFont(new Font("Tahoma", Font.BOLD, 11));
+		Gradle.setBounds(449, 289, 109, 32);
+		frame.getContentPane().add(Gradle);
 	}
 	/**
 	 * counts how many times a char appears in a string.
@@ -749,4 +761,17 @@ public class GUI {
 		routerTextField.setText(macs);
 		filterTextField.setText(wrap.getStats());
 	}
+	public Wrapper getWrap() {
+		return wrap;
+	}
+	public void setWrap(Wrapper wrap) {
+		this.wrap = wrap;
+	}
+	public serverGui getSg() {
+		return sg;
+	}
+	public void setSg(serverGui sg) {
+		this.sg = sg;
+	}
+	
 }
